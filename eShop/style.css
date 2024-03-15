@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+}
+
+
+body{
+    background: url('imgs/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.input-box{
+    padding-top: 20px;
+    position: relative;
+}
+.input-box > input{
+    border: 1px solid gray;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    height: 30px;
+    background: transparent;
+    border-radius: 30px;
+    border-color: gray;
+    padding: 30px 50px 30px 20px;
+    color:black;
+}
+input::placeholder{
+    color: black;
+}
+.remember-forgot{
+    margin: 15px 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.register-div{
+    text-align: center;
+    padding-top: 15px;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+.btn{
+    width:90%;
+    font-size: 22px;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    height: 50px;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(69, 129, 69);
+}
+form>h1{
+    text-align: center;
+    color: black;
+    font-size: 35px;
+}
+
+.wrapper form{
+    width:450px;
+    padding: 25px 30px 40px 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
