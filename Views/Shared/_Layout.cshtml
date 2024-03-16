@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    @* connection iccons *@
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    @* font connection *@
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="upper-header">
+            <button class="logo">LOGO</button>
+
+            <form class="search-form" action="#" method="get">
+                <input type="text"
+                       class="search-line"
+                       placeholder="Search on Megawheels" />
+                <input class="search-button" type="submit" value="FIND" />
+            </form>
+
+            <div class="additional">
+                <button class="image-button">
+                    <box-icon name="log-in-circle"></box-icon>
+                    <span>Sign in</span>
+                </button>
+
+                <button class="image-button">
+                    <box-icon name="support"></box-icon>
+                    <span>Support</span>
+                </button>
+
+                <button class="image-button">
+                    <box-icon name="cog"></box-icon>
+                    <span>Settings</span>
+                </button>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <nav>
+                <ul>
+                    <li><a href="#">Passenger cars</a></li>
+                    <li><a href="#">Motorcycles</a></li>
+                    <li><a href="#">Trucks</a></li>
+                    <li><a href="#">Special vehicles</a></li>
+                    <li><a href="#">Buses</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <box-icon name="github" type="logo"></box-icon>
+                <a href="https://github.com/MaXiMKnjsh">GitHub</a>
+            </div>
+            <div>
+                <box-icon type="logo" name="telegram"></box-icon>
+                <a href="https://t.me/maximknjsh">Telegram</a>
+            </div>
+            <div>
+                <box-icon name="envelope" type="solid"></box-icon>
+                <span>maks.knysh.00@mail.ru</span>
+            </div>
+        </div>
+    </footer>
+    <script src="~/js/Site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
