@@ -37,8 +37,7 @@ header {
 }
 
 .logo {
-    width: 195px;
-    height: 57px;
+    height: 40px;
 }
 
 .search-line, .search-button {
@@ -83,6 +82,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items:center;
     margin-bottom: 10px;
 }
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ApanICxTh6WA9jKTMD8ihK8++hII1GdpYITGYhCO68U=",
+  "Hash": "qRMUrAsk6dTK94xAqUbN0rZpqABoUEZW+dxCMr9NUzo=",
   "Source": "web-application-eAutoStore",
   "BasePath": "_content/web-application-eAutoStore",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\defaultcar.jpg"
+    },
+    {
+      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\images\\logo.png",
+      "SourceId": "web-application-eAutoStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\js\\site.js",

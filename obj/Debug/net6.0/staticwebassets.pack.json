@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\images\\defaultcar.jpg"
     },
     {
+      "Id": "D:\\web-application-eAutoStore\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
