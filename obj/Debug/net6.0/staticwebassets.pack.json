@@ -33,8 +33,16 @@
       "PackagePath": "staticwebassets\\images\\defaultcar.jpg"
     },
     {
+      "Id": "D:\\web-application-eAutoStore\\wwwroot\\images\\github-ad.png",
+      "PackagePath": "staticwebassets\\images\\github-ad.png"
+    },
+    {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\web-application-eAutoStore\\wwwroot\\images\\telegram-ad.png",
+      "PackagePath": "staticwebassets\\images\\telegram-ad.png"
     },
     {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\js\\site.js",

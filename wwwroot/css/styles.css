@@ -9,14 +9,17 @@ body, header, footer {
     margin: 0 auto;
     width: 75%;
 }
+
 body {
     height: 100%;
     width: 75%;
 }
+
 html {
     position: relative;
     min-height: 100%;
 }
+
 header {
     padding: 20px;
     position: fixed;
@@ -82,7 +85,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -135,8 +138,9 @@ header {
 footer {
     position: relative;
     bottom: 0;
-    background-color:white;
+    background-color: white;
 }
+
 .info-block {
     display: inline-flex;
 }
@@ -170,6 +174,7 @@ footer {
         .footer-container > div > a {
             text-decoration: underline;
         }
-.main-container{
-    margin-top:147px;
+
+.main-container {
+    margin-top: 147px;
 }
