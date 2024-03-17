@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\web-application-eAutoStore.bundle.scp.css"
     },
     {
+      "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\card-styles.css",
+      "PackagePath": "staticwebassets\\css\\card-styles.css"
+    },
+    {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\index-styles.css",
       "PackagePath": "staticwebassets\\css\\index-styles.css"
     },
@@ -23,6 +27,10 @@
     {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\images\\background.jpg",
       "PackagePath": "staticwebassets\\images\\background.jpg"
+    },
+    {
+      "Id": "D:\\web-application-eAutoStore\\wwwroot\\images\\defaultcar.jpg",
+      "PackagePath": "staticwebassets\\images\\defaultcar.jpg"
     },
     {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\js\\site.js",

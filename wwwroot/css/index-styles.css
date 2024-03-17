@@ -1,4 +1,14 @@
-﻿.advertisement-block{
-    height:1500px;
-    background-color:blue;
+﻿.latest-additions {
+    width: 71%;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    /*padding-bottom:45px;*/
+}
+.filters{
+    background-color: red;
+    flex-grow:1;
+    display: inline-flex;
 }

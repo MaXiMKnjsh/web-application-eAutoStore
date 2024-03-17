@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+CRcIu8TbqXoC79+7l5E1jTx1OaI1Rt16YOVB5AMFn8=",
+  "Hash": "ApanICxTh6WA9jKTMD8ihK8++hII1GdpYITGYhCO68U=",
   "Source": "web-application-eAutoStore",
   "BasePath": "_content/web-application-eAutoStore",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\web-application-eAutoStore\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\web-application-eAutoStore.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\card-styles.css",
+      "SourceId": "web-application-eAutoStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore",
+      "RelativePath": "css/card-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\card-styles.css"
     },
     {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\index-styles.css",
@@ -148,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\background.jpg"
+    },
+    {
+      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\images\\defaultcar.jpg",
+      "SourceId": "web-application-eAutoStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore",
+      "RelativePath": "images/defaultcar.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\defaultcar.jpg"
     },
     {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\js\\site.js",

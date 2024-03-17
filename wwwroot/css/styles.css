@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", "sans-serif";
-    text-decoration: none;
 }
 
 body, header, footer {
@@ -13,7 +12,7 @@ body, header, footer {
 body {
     height: 100%;
     width: 75%;
-}   
+}
 html {
     position: relative;
     min-height: 100%;
@@ -25,6 +24,7 @@ header {
     right: 0;
     left: 0;
     background: rgb(255, 255, 255);
+    z-index: 9999;
 }
 
 .search-form {
@@ -133,7 +133,7 @@ header {
     }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     background-color:white;
 }

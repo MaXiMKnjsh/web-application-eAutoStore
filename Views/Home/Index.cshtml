@@ -1,17 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "MegaWheels";
+	ViewData["Title"] = "MegaWheels";
 }
 
 <link rel="stylesheet" href="~/css/index-styles.css" type="text/css" asp-append-version="true" />
 
 <div class="main-block">
-    <div class="advertisement-block">
-
-    </div>
-    <div class="github-block">
-
-    </div>
-    <div class="latest-additions">
-
-    </div>
+	<div class="advertisement-block">
+	</div>
+	<div class="github-block">
+	</div>
+	<div class="latest-cars-block">
+		<div class="latest-additions">
+			@for (int i = 0; i < 12; i++)
+			{
+				@Html.Partial("~/Views/Shared/Partials/Card.cshtml")
+			}
+		</div>
+		<div class="filters">
+			
+		</div>
+	</div>
 </div>
