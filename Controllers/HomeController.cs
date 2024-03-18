@@ -18,6 +18,12 @@ namespace web_application_eAutoStore.Controllers
 			return View();
 		}
 
+		[HttpGet]
+		public IActionResult Vehicles()
+		{
+			return View();
+		}
+
 		public IActionResult Login()
 		{
 			return View();

@@ -17,13 +17,16 @@
     cursor:pointer;
 }
 
+.upper-header a{
+    color:black;
+}
+
 .filters {
     background-color: rgb(247, 247, 247);
     width: 29%;
     display: inline-flex;
     position: sticky;
     float: right;
-    right:0;
     top: 132px;
     margin-top: 10px;
     border-radius: 10px;
@@ -80,4 +83,24 @@
 
 .buttons-block {
     text-align: center;
+}
+.button-more:hover {
+    background-color: rgb(69, 129, 69);
+}
+.button-more {
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-more-container {
+    width: 100%;
 }

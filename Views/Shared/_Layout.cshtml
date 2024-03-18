@@ -16,9 +16,11 @@
 <body>
     <header>
         <div class="upper-header">
-            <img class="logo" src="~/images/logo.png" alt="Image" />
+            <a asp-controller="Home" asp-action="">
+                <img class="logo" src="~/images/logo.png" alt="Image" />
+            </a>
 
-            <form class="search-form" action="#" method="get">
+            <form class="search-form" method="get" asp-controller="Home" asp-action="Vehicles">
                 <input type="text"
                        class="search-line"
                        placeholder="Search on Megawheels" />
@@ -26,10 +28,10 @@
             </form>
 
             <div class="additional">
-                <button class="image-button">
+                <a class="image-button" asp-controller="Home" asp-action="Login">
                     <box-icon name="log-in-circle"></box-icon>
                     <span>Sign in</span>
-                </button>
+                </a>
 
                 <button class="image-button">
                     <box-icon name="support"></box-icon>
