@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\login-styles.css"
     },
     {
+      "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\settingsmodal-styles.css",
+      "PackagePath": "staticwebassets\\css\\settingsmodal-styles.css"
+    },
+    {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
@@ -45,8 +49,8 @@
       "PackagePath": "staticwebassets\\images\\telegram-ad.png"
     },
     {
-      "Id": "D:\\web-application-eAutoStore\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "D:\\web-application-eAutoStore\\wwwroot\\js\\syte.js",
+      "PackagePath": "staticwebassets\\js\\syte.js"
     },
     {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\lib\\bootstrap\\LICENSE",

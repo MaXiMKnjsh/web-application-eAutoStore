@@ -20,7 +20,7 @@ namespace web_application_eAutoStore.Controllers
 
 		[HttpGet]
 		public IActionResult Vehicles()
-		{
+		{	
 			return View();
 		}
 

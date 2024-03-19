@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+69QbERihB2o0j/qq+kszR3m2nT+8u5jGFGpN1XzlH0=",
+  "Hash": "Hf5oKGEDXkl49ACTMtxAovJsJyVQAIXFy2wUoQMS3ZY=",
   "Source": "web-application-eAutoStore",
   "BasePath": "_content/web-application-eAutoStore",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login-styles.css"
+    },
+    {
+      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\settingsmodal-styles.css",
+      "SourceId": "web-application-eAutoStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore",
+      "RelativePath": "css/settingsmodal-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\settingsmodal-styles.css"
     },
     {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\styles.css",
@@ -245,12 +264,12 @@
       "OriginalItemSpec": "wwwroot\\images\\telegram-ad.png"
     },
     {
-      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\js\\site.js",
+      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\js\\syte.js",
       "SourceId": "web-application-eAutoStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
       "BasePath": "_content/web-application-eAutoStore",
-      "RelativePath": "js/site.js",
+      "RelativePath": "js/syte.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -261,7 +280,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot\\js\\syte.js"
     },
     {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

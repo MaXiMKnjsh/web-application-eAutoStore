@@ -38,7 +38,7 @@
                     <span>Support</span>
                 </button>
 
-                <button class="image-button">
+                <button class="image-button" id="settings-button">
                     <box-icon name="cog"></box-icon>
                     <span>Settings</span>
                 </button>
@@ -47,12 +47,12 @@
         <div class="bottom-header">
             <nav>
                 <ul>
-                    <li><a href="#">Passenger cars</a></li>
-                    <li><a href="#">Motorcycles</a></li>
-                    <li><a href="#">Trucks</a></li>
-                    <li><a href="#">Special vehicles</a></li>
-                    <li><a href="#">Buses</a></li>
-                    <li><a href="#">Other</a></li>
+                    <li><a href="@ViewBag.VehiclesURL?type=passenger">Passenger cars</a></li>
+                    <li><a href="@ViewBag.VehiclesURL?type=motorcycles">Motorcycles</a></li>
+                    <li><a href="@ViewBag.VehiclesURL?type=trucks">Trucks</a></li>
+                    <li><a href="@ViewBag.VehiclesURL?type=special">Special vehicles</a></li>
+                    <li><a href="@ViewBag.VehiclesURL?type=buses">Buses</a></li>
+                    <li><a href="@ViewBag.VehiclesURL?type=other">Other</a></li>
                 </ul>
             </nav>
         </div>
@@ -61,6 +61,7 @@
     <div class="main-container">
         <main role="main" class="pb-3">
             @RenderBody()
+            @Html.Partial("~/Views/Shared/Partials/SettingsModal.cshtml")
         </main>
     </div>
 
@@ -80,7 +81,8 @@
             </div>
         </div>
     </footer>
-    <script src="~/js/Site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    @* script connection *@
+    <script src="~/js/syte.js"></script>
 </body>
 </html>

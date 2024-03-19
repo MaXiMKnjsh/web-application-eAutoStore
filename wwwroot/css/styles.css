@@ -89,6 +89,10 @@ header {
     align-items: center;
     margin-bottom: 10px;
 }
+.upper-header > a{
+   display: flex;
+   align-items:center;
+}
 
 .image-button {
     width: 50px;
@@ -179,3 +183,4 @@ footer {
 .main-container {
     margin-top: 147px;
 }
+
