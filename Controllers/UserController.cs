@@ -2,9 +2,9 @@
 
 namespace web_application_eAutoStore.Controllers
 {
-	public class MessagesController : Controller
+	public class UserController : Controller
 	{
-		public IActionResult Index()
+		public IActionResult Login()
 		{
 			return View();
 		}

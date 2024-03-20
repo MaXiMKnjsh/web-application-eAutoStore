@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/layout-styles.css" asp-append-version="true" />
     @* connection iccons *@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,11 +16,11 @@
 <body>
     <header>
         <div class="upper-header">
-            <a asp-controller="Home" asp-action="">
+            <a asp-controller="Home">
                 <img class="logo" src="~/images/logo.png" alt="Image" />
             </a>
 
-            <form class="search-form" method="get" asp-controller="Home" asp-action="Vehicles">
+            <form class="search-form" method="get" asp-controller="Vehicles">
                 <input type="text"
                        class="search-line"
                        placeholder="Search on Megawheels" />
@@ -28,7 +28,7 @@
             </form>
 
             <div class="additional">
-                <a class="image-button" asp-controller="Home" asp-action="Login">
+                <a class="image-button" asp-controller="User" asp-action="Login">
                     <box-icon name="log-in-circle"></box-icon>
                     <span>Sign in</span>
                 </a>
@@ -83,6 +83,6 @@
     </footer>
     @await RenderSectionAsync("Scripts", required: false)
     @* script connection *@
-    <script src="~/js/syte.js"></script>
+    <script src="~/js/layout.js"></script>
 </body>
 </html>

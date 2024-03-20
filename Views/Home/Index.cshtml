@@ -15,15 +15,15 @@
 		<div class="latest-additions">
 			@for (int i = 0; i < 12; i++)
 			{
-				@Html.Partial("~/Views/Shared/Partials/Card.cshtml")
+				@await Html.PartialAsync("~/Views/Shared/Partials/Card.cshtml")
 			}
 			<div class="button-more-container">
-				<a class="button-more" asp-controller="Home" asp-action="Vehicles">&#9660;</a>
+				<a class="button-more" asp-controller="Vehicles">&#9660;</a>
 			</div>
 		</div>
 		
 		<div class="filters">
-			<form method="get" asp-controller="Home" asp-action="Vehicles">
+			<form method="get" asp-controller="Vehicles">
 				<h1>Filters</h1>
 				<div class="filter-div">
 					<label for="price-from">Price: </label>

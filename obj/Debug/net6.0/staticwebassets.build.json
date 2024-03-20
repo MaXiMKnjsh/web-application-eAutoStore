@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Hf5oKGEDXkl49ACTMtxAovJsJyVQAIXFy2wUoQMS3ZY=",
+  "Hash": "sf0rnfRn95i6BbM5ivZCILkkUu1Ze67wXcpDPqtSWhA=",
   "Source": "web-application-eAutoStore",
   "BasePath": "_content/web-application-eAutoStore",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\css\\index-styles.css"
     },
     {
+      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\layout-styles.css",
+      "SourceId": "web-application-eAutoStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore",
+      "RelativePath": "css/layout-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\layout-styles.css"
+    },
+    {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\login-styles.css",
       "SourceId": "web-application-eAutoStore",
       "SourceType": "Discovered",
@@ -129,25 +148,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\settingsmodal-styles.css"
-    },
-    {
-      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\styles.css",
-      "SourceId": "web-application-eAutoStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
-      "BasePath": "_content/web-application-eAutoStore",
-      "RelativePath": "css/styles.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\favicon.ico",
@@ -264,12 +264,12 @@
       "OriginalItemSpec": "wwwroot\\images\\telegram-ad.png"
     },
     {
-      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\js\\syte.js",
+      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\js\\layout.js",
       "SourceId": "web-application-eAutoStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
       "BasePath": "_content/web-application-eAutoStore",
-      "RelativePath": "js/syte.js",
+      "RelativePath": "js/layout.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -280,7 +280,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\syte.js"
+      "OriginalItemSpec": "wwwroot\\js\\layout.js"
     },
     {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
