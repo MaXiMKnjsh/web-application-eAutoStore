@@ -47,9 +47,9 @@ input::placeholder {
     justify-content: space-between;
 }
 
-.register-div {
+.register-div, .login-div {
     text-align: center;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .icon {
@@ -85,4 +85,8 @@ form > h1 {
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
+}
+.remember{
+    margin:10px 0;
+    align-items:center;
 }

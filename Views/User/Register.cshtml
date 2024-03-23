@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mega Wheels | Login</title>
+    <title>Mega Wheels | Register</title>
     <link rel="stylesheet" href="~/css/login-register-styles.css" type="text/css" asp-append-version="true" />
     @* connection iccons *@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -17,7 +17,14 @@
 <body>
     <div class="wrapper">
         <form action="#" method="post">
-            <h1>Login</h1>
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text"
+                       name="emailfield"
+                       id="emailfield"
+                       placeholder="Email" />
+                <box-icon class="icon" type='solid' name='envelope'></box-icon>
+            </div>
             <div class="input-box">
                 <input type="text"
                        name="usernamefield"
@@ -32,17 +39,23 @@
                        placeholder="Password" />
                 <box-icon class="icon" type="solid" name="lock-alt"></box-icon>
             </div>
-            <div class="remember-forgot">
+            <div class="input-box">
+                <input type="password"
+                       name="repeat-passwordfield"
+                       id="repeat-passwordfield"
+                       placeholder="Repeat password" />
+                <box-icon class="icon" type="solid" name="lock-alt"></box-icon>
+            </div>
+            <div class="remember">
                 <div>
                     <input type="checkbox" name="remember" id="remember" />
                     <label for="remember">Remember me</label>
                 </div>
-                <a href="#">Forgot password?</a>
             </div>
-            <input class="btn" type="submit" value="Sign in" />
-            <div class="register-div">
-                <span>Don't have an account?</span>
-                <a asp-controller="User" asp-action="Register" id="signup">Sign up</a>
+            <input class="btn" type="submit" value="Sign up" />
+            <div class="login-div">
+                <span>Already have an account?</span>
+                <a asp-controller="User" asp-action="Login" id="signin">Sign in</a>
             </div>
         </form>
     </div>

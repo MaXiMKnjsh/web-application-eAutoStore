@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vk0mCPtJj45eHLREK3p4bM5Xa7LCInCOJWJ5nBsYBO8=",
+  "Hash": "2ZANiZfNKaL7twRjdF4K9ScTea0n1/mxxkulAaIL1HA=",
   "Source": "web-application-eAutoStore",
   "BasePath": "_content/web-application-eAutoStore",
   "Mode": "Default",
@@ -112,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\css\\layout-styles.css"
     },
     {
-      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\login-styles.css",
+      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\login-register-styles.css",
       "SourceId": "web-application-eAutoStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
       "BasePath": "_content/web-application-eAutoStore",
-      "RelativePath": "css/login-styles.css",
+      "RelativePath": "css/login-register-styles.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\login-styles.css"
+      "OriginalItemSpec": "wwwroot\\css\\login-register-styles.css"
     },
     {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\settingsmodal-styles.css",

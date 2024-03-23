@@ -1,24 +1,24 @@
 ﻿.latest-additions {
-    flex-grow:1;
+    flex-grow: 1;
     width: 71%;
     border-radius: 10px;
     display: inline-flex;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
     position: relative;
 }
 
-.advertisement-block{
-    width:100%;
+.advertisement-block {
+    width: 100%;
     height: 100px;
-    background-color:green;
-    border-radius:10px;
-    margin-bottom:10px;
-    cursor:pointer;
+    background-color: green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-.upper-header a{
-    color:black;
+.upper-header a {
+    color: black;
 }
 
 .filters {
@@ -32,9 +32,11 @@
     border-radius: 10px;
     background: linear-gradient(to bottom, #328f00 1%,#f7f7f7 1%);
 }
+
 .latest-cars-block {
     position: relative;
 }
+
 .filters > form > h1 {
     text-align: center;
     font-weight: 600;
@@ -77,6 +79,7 @@
     cursor: pointer;
 }
 
+
     .btn:hover {
         background-color: rgb(69, 129, 69);
     }
@@ -84,9 +87,11 @@
 .buttons-block {
     text-align: center;
 }
+
 .button-more:hover {
     background-color: rgb(69, 129, 69);
 }
+
 .button-more {
     width: 100%;
     display: block;

@@ -8,5 +8,9 @@ namespace web_application_eAutoStore.Controllers
 		{
 			return View();
 		}
-	}
+        public IActionResult Register()
+        {
+            return View();
+        }
+    }
 }

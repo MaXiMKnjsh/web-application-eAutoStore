@@ -17,8 +17,8 @@
       "PackagePath": "staticwebassets\\css\\layout-styles.css"
     },
     {
-      "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\login-styles.css",
-      "PackagePath": "staticwebassets\\css\\login-styles.css"
+      "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\login-register-styles.css",
+      "PackagePath": "staticwebassets\\css\\login-register-styles.css"
     },
     {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\settingsmodal-styles.css",

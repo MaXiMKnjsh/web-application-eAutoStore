@@ -28,7 +28,7 @@ namespace web_application_eAutoStore
 
 			app.MapControllerRoute(
 				name: "default",
-				pattern: "{controller=Support}/{action=Index}/{id?}");
+				pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
 		}
