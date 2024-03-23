@@ -9,8 +9,8 @@
       "PackagePath": "staticwebassets\\css\\card-styles.css"
     },
     {
-      "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\index-styles.css",
-      "PackagePath": "staticwebassets\\css\\index-styles.css"
+      "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\home-styles.css",
+      "PackagePath": "staticwebassets\\css\\home-styles.css"
     },
     {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\layout-styles.css",
@@ -23,6 +23,10 @@
     {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\settingsmodal-styles.css",
       "PackagePath": "staticwebassets\\css\\settingsmodal-styles.css"
+    },
+    {
+      "Id": "D:\\web-application-eAutoStore\\wwwroot\\css\\support-styles.css",
+      "PackagePath": "staticwebassets\\css\\support-styles.css"
     },
     {
       "Id": "D:\\web-application-eAutoStore\\wwwroot\\favicon.ico",

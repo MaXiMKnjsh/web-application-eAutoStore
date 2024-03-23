@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sf0rnfRn95i6BbM5ivZCILkkUu1Ze67wXcpDPqtSWhA=",
+  "Hash": "Vk0mCPtJj45eHLREK3p4bM5Xa7LCInCOJWJ5nBsYBO8=",
   "Source": "web-application-eAutoStore",
   "BasePath": "_content/web-application-eAutoStore",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\css\\card-styles.css"
     },
     {
-      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\index-styles.css",
+      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\home-styles.css",
       "SourceId": "web-application-eAutoStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
       "BasePath": "_content/web-application-eAutoStore",
-      "RelativePath": "css/index-styles.css",
+      "RelativePath": "css/home-styles.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\index-styles.css"
+      "OriginalItemSpec": "wwwroot\\css\\home-styles.css"
     },
     {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\layout-styles.css",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\settingsmodal-styles.css"
+    },
+    {
+      "Identity": "D:\\web-application-eAutoStore\\wwwroot\\css\\support-styles.css",
+      "SourceId": "web-application-eAutoStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore",
+      "RelativePath": "css/support-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\support-styles.css"
     },
     {
       "Identity": "D:\\web-application-eAutoStore\\wwwroot\\favicon.ico",

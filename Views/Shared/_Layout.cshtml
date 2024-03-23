@@ -33,15 +33,15 @@
                     <span>Sign in</span>
                 </a>
 
-                <button class="image-button">
+                <a class="image-button" asp-controller="Support">
                     <box-icon name="support"></box-icon>
                     <span>Support</span>
-                </button>
+                </a>
 
-                <button class="image-button" id="settings-button">
+                <a class="image-button" id="settings-button">
                     <box-icon name="cog"></box-icon>
                     <span>Settings</span>
-                </button>
+                </a>
             </div>
         </div>
         <div class="bottom-header">
@@ -61,7 +61,7 @@
     <div class="main-container">
         <main role="main" class="pb-3">
             @RenderBody()
-            @Html.Partial("~/Views/Shared/Partials/SettingsModal.cshtml")
+            @await Html.PartialAsync("~/Views/Shared/Partials/SettingsModal.cshtml")
         </main>
     </div>
 
