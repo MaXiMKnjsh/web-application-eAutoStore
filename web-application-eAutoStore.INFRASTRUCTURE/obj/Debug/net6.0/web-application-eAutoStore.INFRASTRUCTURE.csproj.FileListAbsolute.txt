@@ -1,0 +1,28 @@
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.deps.json
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.dll
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.pdb
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.AssemblyInfoInputs.cache
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.AssemblyInfo.cs
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.csproj.CoreCompileInputs.cache
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.dll
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\refint\web-application-eAutoStore.INFRASTRUCTURE.dll
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.pdb
+D:\New folder\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\ref\web-application-eAutoStore.INFRASTRUCTURE.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.csproj.AssemblyReference.cache
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.GeneratedMSBuildEditorConfig.editorconfig
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.AssemblyInfoInputs.cache
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.AssemblyInfo.cs
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.csproj.CoreCompileInputs.cache
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.deps.json
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.pdb
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.APPLICATION.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.APPLICATION.pdb
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.csproj.CopyComplete
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\refint\web-application-eAutoStore.INFRASTRUCTURE.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.pdb
+D:\mainAUTOSTORE\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\ref\web-application-eAutoStore.INFRASTRUCTURE.dll
