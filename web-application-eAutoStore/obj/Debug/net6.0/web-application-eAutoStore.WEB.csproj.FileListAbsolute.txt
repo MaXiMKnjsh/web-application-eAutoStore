@@ -1,0 +1,482 @@
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.csproj.AssemblyReference.cache
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.AssemblyInfoInputs.cache
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.AssemblyInfo.cs
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.csproj.CoreCompileInputs.cache
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.MvcApplicationPartsAssemblyInfo.cache
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.RazorAssemblyInfo.cache
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.RazorAssemblyInfo.cs
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.sourcelink.json
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\appsettings.Development.json
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\appsettings.json
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.staticwebassets.runtime.json
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.exe
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.deps.json
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.runtimeconfig.json
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.pdb
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Humanizer.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\MessagePack.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\MessagePack.Annotations.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Build.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Build.Framework.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.Features.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\dotnet-aspnet-codegenerator-design.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Common.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Configuration.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Frameworks.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\NuGet.LibraryModel.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Packaging.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\NuGet.ProjectModel.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Protocol.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Versioning.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Composition.AttributedModel.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Composition.Convention.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Composition.Hosting.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Composition.Runtime.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Composition.TypedParts.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\af\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ar\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\az\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\bg\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\bn-BD\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\cs\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\da\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\de\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\el\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\es\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fa\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fi-FI\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fr\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fr-BE\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\he\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\hr\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\hu\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\hy\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\id\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\is\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\it\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ja\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ko-KR\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ku\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\lv\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ms-MY\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\mt\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\nb\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\nb-NO\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\nl\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pl\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pt\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ro\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ru\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\sk\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\sl\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\sr\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\sr-Latn\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\sv\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\th-TH\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\tr\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\uk\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\vi\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-CN\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Humanizer.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\New folder\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets.build.json
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets.development.json
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets\msbuild.web-application-eAutoStore.WEB.Microsoft.AspNetCore.StaticWebAssets.props
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets\msbuild.build.web-application-eAutoStore.WEB.props
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.web-application-eAutoStore.WEB.props
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.web-application-eAutoStore.WEB.props
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets.pack.json
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\scopedcss\bundle\web-application-eAutoStore.WEB.styles.css
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\scopedcss\projectbundle\web-application-eAutoStore.WEB.bundle.scp.css
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.csproj.CopyComplete
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.dll
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\refint\web-application-eAutoStore.WEB.dll
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.pdb
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.genruntimeconfig.cache
+D:\New folder\web-application-eAutoStore\obj\Debug\net6.0\ref\web-application-eAutoStore.WEB.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\appsettings.Development.json
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\appsettings.json
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.staticwebassets.runtime.json
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.exe
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.deps.json
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.runtimeconfig.json
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.WEB.pdb
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Humanizer.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\MessagePack.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\MessagePack.Annotations.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Build.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Build.Framework.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.Features.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\dotnet-aspnet-codegenerator-design.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Common.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Configuration.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Frameworks.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\NuGet.LibraryModel.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Packaging.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\NuGet.ProjectModel.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Protocol.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\NuGet.Versioning.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Composition.AttributedModel.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Composition.Convention.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Composition.Hosting.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Composition.Runtime.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Composition.TypedParts.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\af\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ar\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\az\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\bg\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\bn-BD\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\cs\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\da\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\de\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\el\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\es\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fa\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fi-FI\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fr\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fr-BE\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\he\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\hr\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\hu\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\hy\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\id\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\is\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\it\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ja\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ko-KR\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ku\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\lv\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ms-MY\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\mt\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\nb\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\nb-NO\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\nl\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pl\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pt\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ro\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ru\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\sk\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\sl\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\sr\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\sr-Latn\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\sv\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\th-TH\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\tr\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\uk\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\vi\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-CN\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Humanizer.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.csproj.AssemblyReference.cache
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.GeneratedMSBuildEditorConfig.editorconfig
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.AssemblyInfoInputs.cache
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.AssemblyInfo.cs
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.csproj.CoreCompileInputs.cache
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.MvcApplicationPartsAssemblyInfo.cache
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.RazorAssemblyInfo.cache
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.RazorAssemblyInfo.cs
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.sourcelink.json
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets.build.json
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets.development.json
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets\msbuild.web-application-eAutoStore.WEB.Microsoft.AspNetCore.StaticWebAssets.props
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets\msbuild.build.web-application-eAutoStore.WEB.props
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.web-application-eAutoStore.WEB.props
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.web-application-eAutoStore.WEB.props
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\staticwebassets.pack.json
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\scopedcss\bundle\web-application-eAutoStore.WEB.styles.css
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\scopedcss\projectbundle\web-application-eAutoStore.WEB.bundle.scp.css
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.csproj.CopyComplete
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\refint\web-application-eAutoStore.WEB.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.pdb
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\web-application-eAutoStore.WEB.genruntimeconfig.cache
+D:\mainAUTOSTORE\web-application-eAutoStore\obj\Debug\net6.0\ref\web-application-eAutoStore.WEB.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\BCrypt.Net-Next.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.APPLICATION.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.pdb
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.APPLICATION.pdb
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb

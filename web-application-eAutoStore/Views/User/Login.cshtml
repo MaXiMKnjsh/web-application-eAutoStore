@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega Wheels | Login</title>
+    <link rel="stylesheet" href="~/css/login-register-styles.css" type="text/css" asp-append-version="true" />
+    @* connection iccons *@
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#" method="post">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text"
+                       name="usernamefield"
+                       id="usernamefield"
+                       placeholder="Username" />
+                <box-icon class="icon" type="solid" name="user"></box-icon>
+            </div>
+            <div class="input-box">
+                <input type="password"
+                       name="passwordfield"
+                       id="passwordfield"
+                       placeholder="Password" />
+                <box-icon class="icon" type="solid" name="lock-alt"></box-icon>
+            </div>
+            <div class="remember-forgot">
+                <div>
+                    <input type="checkbox" name="remember" id="remember" />
+                    <label for="remember">Remember me</label>
+                </div>
+                <a href="#">Forgot password?</a>
+            </div>
+            <input class="btn" type="submit" value="Sign in" />
+            <div class="register-div">
+                <span>Don't have an account?</span>
+                <a asp-controller="User" asp-action="Register" id="signup">Sign up</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
