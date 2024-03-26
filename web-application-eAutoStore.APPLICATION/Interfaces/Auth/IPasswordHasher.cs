@@ -1,4 +1,4 @@
-﻿namespace web_application_eAutoStore.Interfaces.Auth
+﻿namespace web_application_eAutoStore.APPLICATION.Interfaces.Auth
 {
     public interface IPasswordHasher
     {

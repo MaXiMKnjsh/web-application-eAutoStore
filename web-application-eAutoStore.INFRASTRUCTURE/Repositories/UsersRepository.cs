@@ -18,6 +18,11 @@ namespace web_application_eAutoStore.Repositories
             return await SaveAsync();
         }
 
+        public async Task<User> GetByEmailAsync(string email)
+        {
+            return await _dataContext.Users.FirstOrDefaultAsync(x=>x.Email==email);
+        }
+
         public async Task<bool> IsExistAsync(string email)
         {
             var user = await _dataContext.Users.FirstOrDefaultAsync(x => x.Email == email);

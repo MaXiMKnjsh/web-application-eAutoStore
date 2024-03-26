@@ -7,5 +7,6 @@ namespace web_application_eAutoStore.Interfaces.Repositories
         Task<bool> AddAsync(User user);
         Task<bool> SaveAsync();
         Task<bool> IsExistAsync(string email);
+        Task<User> GetByEmailAsync(string email);
     }
 }

@@ -1,5 +1,5 @@
 ﻿using BCrypt.Net;
-using web_application_eAutoStore.Interfaces.Auth;
+using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
 
 namespace web_application_eAutoStore.Services
 {

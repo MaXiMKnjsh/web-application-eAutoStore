@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using web_application_eAutoStore.DTOs.Users;
+using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using web_application_eAutoStore.Interfaces.Services;
 
 namespace web_application_eAutoStore.Controllers
@@ -15,19 +15,44 @@ namespace web_application_eAutoStore.Controllers
         public IActionResult Register() => View();
 
         [HttpPost]
-        public async Task<IActionResult> ProcessRegisterForm(RegisterUserRequest request)
+        public async Task<IActionResult> ProcessRegisterForm([FromForm]RegisterUserRequest request)
         {
+            if (!ModelState.IsValid)
+                return RedirectToAction("Register");
+
             bool isUserExist = await _usersService.IsExistAsync(request.Email);
 
             if (isUserExist)
-                return Conflict();
+                return RedirectToAction("Register");
+            //return Conflict();
 
             bool isSuccessRegistration = await _usersService.RegisterAsync(request.Name, request.Email, request.Password);
 
-            if (!isSuccessRegistration) 
-                return StatusCode(500);
+            if (!isSuccessRegistration)
+                return RedirectToAction("Register");
+            //return StatusCode(500);
 
-            return Ok();
+            return RedirectToAction("Login");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ProcessLoginForm([FromForm]LoginUserRequest request)
+        {
+            if (!ModelState.IsValid)
+                return RedirectToAction("Login");
+
+            bool isUserExist = await _usersService.IsExistAsync(request.Email);
+
+            if (!isUserExist)
+                return RedirectToAction("Login");
+
+            bool isSuccessLogin = await _usersService.LoginAsync(request.Email, request.Password);
+
+            if (!isSuccessLogin)
+                return RedirectToAction("Login");
+            //return StatusCode(500);
+
+            return RedirectToAction("Index","Home");
         }
     }
 }

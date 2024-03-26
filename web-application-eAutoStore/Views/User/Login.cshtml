@@ -16,20 +16,20 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="#" method="post">
+        <form method="post" asp-controller="User" asp-action="ProcessLoginForm">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text"
-                       name="usernamefield"
-                       id="usernamefield"
-                       placeholder="Username" />
+                <input type="email"
+                       name="email"
+                       id="email"
+                       placeholder="Email" required/>
                 <box-icon class="icon" type="solid" name="user"></box-icon>
             </div>
             <div class="input-box">
                 <input type="password"
-                       name="passwordfield"
-                       id="passwordfield"
-                       placeholder="Password" />
+                       name="password"
+                       id="password"
+                       placeholder="Password" required/>
                 <box-icon class="icon" type="solid" name="lock-alt"></box-icon>
             </div>
             <div class="remember-forgot">

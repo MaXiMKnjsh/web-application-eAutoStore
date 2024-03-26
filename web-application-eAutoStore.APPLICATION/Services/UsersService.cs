@@ -1,4 +1,5 @@
-﻿using web_application_eAutoStore.Interfaces.Auth;
+﻿using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
+using web_application_eAutoStore.Enumerations;
 using web_application_eAutoStore.Interfaces.Repositories;
 using web_application_eAutoStore.Interfaces.Services;
 using web_application_eAutoStore.Models;
@@ -9,28 +10,44 @@ namespace web_application_eAutoStore.Services
     {
         private readonly IPasswordHasher _passwordHasher;
         private readonly IUsersRepository _usersRepository;
-        public UsersService(IUsersRepository usersRepository,IPasswordHasher passwordHasher)
+        private readonly IJwtProvider _jwtProvider;
+        public UsersService(IUsersRepository usersRepository, IPasswordHasher passwordHasher, IJwtProvider jwtProvider)
         {
             _usersRepository = usersRepository;
             _passwordHasher = passwordHasher;
+            _jwtProvider= jwtProvider;
         }
 
         public async Task<bool> IsExistAsync(string email) => await _usersRepository.IsExistAsync(email);
+
+        public async Task<bool> LoginAsync(string email, string password)
+        {
+            var user = await _usersRepository.GetByEmailAsync(email);
+
+            var result = _passwordHasher.Verify(password, user.HashedPassword);
+
+            if (!result)
+                return false;
+
+            var token = _jwtProvider.GenerateToken(user);
+            //TODO
+            return true;
+        }
 
         public async Task<bool> RegisterAsync(string name, string email, string password)
         {
             var hashedPassword = _passwordHasher.Generate(password);
 
-            //TODO user id autoincr and interacting with repository
             var user = new User()
             {
                 Name = name,
                 Email = email,
-                HashedPassword = hashedPassword
+                HashedPassword = hashedPassword,
+                Role = UserRole.User
             };
 
             return await _usersRepository.AddAsync(user);
         }
-        
+
     }
 }

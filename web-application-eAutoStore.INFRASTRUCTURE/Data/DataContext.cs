@@ -31,34 +31,86 @@ namespace web_application_eAutoStore.Data
             modelBuilder.Entity<Dialog>()
                 .HasMany(m => m.Messages)
                 .WithOne(d => d.Dialog)
-                .HasForeignKey(di => di.DialogId);
+                .HasForeignKey(di => di.DialogId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            modelBuilder.Entity<Message>()
-                .HasOne(u => u.Receiver)
-                .WithMany(si => si.ReceivedMessages)
-                .HasForeignKey(i=>i.Id);
+            modelBuilder.Entity<User>()
+                .HasMany(m => m.SentMessages)
+                .WithOne(d => d.Sender)
+                .HasForeignKey(di => di.SenderId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            modelBuilder.Entity<Message>()
-                .HasOne(u => u.Sender)
-                .WithMany(si => si.SentMessages)
-                .HasForeignKey(i => i.Id);
+            modelBuilder.Entity<User>()
+                .HasMany(m => m.ReceivedMessages)
+                .WithOne(d => d.Receiver)
+                .HasForeignKey(di => di.ReceiverId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            modelBuilder.Entity<FavoriteVehicle>()
-                .HasOne(u => u.User)
-                .WithMany(fv => fv.FavoriteVehicles)
-                .HasForeignKey(i => i.Id);
+            modelBuilder.Entity<User>()
+                .HasMany(m => m.FavoriteVehicles)
+                .WithOne(d => d.User)
+                .HasForeignKey(di => di.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<User>()
+                .HasMany(m => m.Vehicles)
+                .WithOne(d => d.User)
+                .HasForeignKey(di => di.OwnerId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Vehicle>()
-                .HasMany(fv => fv.FavoriteVehicles)
-                .WithOne(v => v.Vehicle)
-                .HasForeignKey(v => v.VehicleId);
+                .HasMany(m => m.FavoriteVehicles)
+                .WithOne(d => d.Vehicle)
+                .HasForeignKey(di => di.VehicleId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            modelBuilder.Entity<Vehicle>()
-                .HasOne(u => u.User)
-                .WithMany(v => v.Vehicles)
-                .HasForeignKey(i => i.Id);
+            modelBuilder.Entity<Dialog>(builder =>
+            {
+                builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();
+                builder.Property(x => x.User1Id).IsRequired();
+                builder.Property(x => x.User2Id).IsRequired();
+            });
 
-            //TODO create validation
+            modelBuilder.Entity<FavoriteVehicle>(builder =>
+            {
+                builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();
+                builder.Property(x => x.UserId).IsRequired();
+                builder.Property(x => x.VehicleId).IsRequired();
+            });
+
+            modelBuilder.Entity<Message>(builder =>
+            {
+                builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();
+                builder.Property(x => x.Text).IsRequired();
+                builder.Property(x => x.SenderId).IsRequired();
+                builder.Property(x => x.ReceiverId).IsRequired();
+                builder.Property(x => x.MessageTime).IsRequired();
+                builder.Property(x => x.DialogId).IsRequired();
+            });
+
+            modelBuilder.Entity<User>(builder =>
+            {
+                builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();
+                builder.Property(x => x.Name).IsRequired();
+                builder.Property(x => x.Surname).IsRequired(false);
+                builder.Property(x => x.HashedPassword).IsRequired();
+                builder.Property(x => x.Email).IsRequired();
+            });
+
+            modelBuilder.Entity<Vehicle>(builder =>
+            {
+                builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();
+                builder.Property(x => x.Brand).IsRequired();
+                builder.Property(x => x.Model).IsRequired();
+                builder.Property(x => x.Type).IsRequired(false);
+                builder.Property(x => x.Price).IsRequired();
+                builder.Property(x => x.OwnerId).IsRequired();
+                builder.Property(x => x.Quality).IsRequired(false);
+                builder.Property(x => x.Transmission).IsRequired(false);
+                builder.Property(x => x.Year).IsRequired(false);
+                builder.Property(x => x.EngineCapacity).IsRequired(false);
+                builder.Property(x => x.EnginePower).IsRequired(false);
+            });
         }
     }
 }
