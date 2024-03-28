@@ -4,6 +4,7 @@ using web_application_eAutoStore.APPLICATION.Services;
 using web_application_eAutoStore.Data;
 using web_application_eAutoStore.Interfaces.Repositories;
 using web_application_eAutoStore.Interfaces.Services;
+using web_application_eAutoStore.MyExtensions;
 using web_application_eAutoStore.Repositories;
 using web_application_eAutoStore.Services;
 
@@ -24,10 +25,13 @@ namespace web_application_eAutoStore
 			builder.Services.AddTransient<IJwtProvider, JwtProvider>();
 
 			builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection(nameof(JwtOptions)));
+			builder.Services.AddUserAuthentication(builder.Configuration);
+
             builder.Services.AddDbContext<DataContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+
 
             var app = builder.Build();
 

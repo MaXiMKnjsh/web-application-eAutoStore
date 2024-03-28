@@ -1,11 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using web_application_eAutoStore.Interfaces.Services;
 
 namespace web_application_eAutoStore.Controllers
 {
-	public class UserController : Controller
-	{
+    public class UserController : Controller
+    {
         private readonly IUsersService _usersService;
         public UserController(IUsersService usersService)
         {
@@ -15,7 +17,7 @@ namespace web_application_eAutoStore.Controllers
         public IActionResult Register() => View();
 
         [HttpPost]
-        public async Task<IActionResult> ProcessRegisterForm([FromForm]RegisterUserRequest request)
+        public async Task<IActionResult> ProcessRegisterForm([FromForm] RegisterUserRequest request)
         {
             if (!ModelState.IsValid)
                 return RedirectToAction("Register");
@@ -36,7 +38,7 @@ namespace web_application_eAutoStore.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ProcessLoginForm([FromForm]LoginUserRequest request)
+        public async Task<IActionResult> ProcessLoginForm([FromForm] LoginUserRequest request)
         {
             if (!ModelState.IsValid)
                 return RedirectToAction("Login");
@@ -44,15 +46,16 @@ namespace web_application_eAutoStore.Controllers
             bool isUserExist = await _usersService.IsExistAsync(request.Email);
 
             if (!isUserExist)
-                return RedirectToAction("Login");
+                return StatusCode(403);
 
-            bool isSuccessLogin = await _usersService.LoginAsync(request.Email, request.Password);
+            var token = await _usersService.LoginAsync(request.Email, request.Password);
 
-            if (!isSuccessLogin)
-                return RedirectToAction("Login");
-            //return StatusCode(500);
+            if (token == null)
+                return StatusCode(401);
 
-            return RedirectToAction("Index","Home");
+            HttpContext.Response.Cookies.Append("token", token);
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }
