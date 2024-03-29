@@ -1,4 +1,5 @@
-﻿using web_application_eAutoStore.Enumerations;
+﻿using web_application_eAutoStore.DOMAIN.Models;
+using web_application_eAutoStore.Enumerations;
 
 namespace web_application_eAutoStore.Models
 {
@@ -11,6 +12,7 @@ namespace web_application_eAutoStore.Models
         public string Email { get; set; }
         public UserRole Role { get; set; }
         // navigation fields
+        public ICollection<RefreshToken> RefreshTokens { get; set; }
         public ICollection<Message> SentMessages { get; set; }
         public ICollection<Message> ReceivedMessages {  get; set; }
         public ICollection<FavoriteVehicle> FavoriteVehicles { get; set; }

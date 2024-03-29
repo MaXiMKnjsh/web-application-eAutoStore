@@ -22,6 +22,33 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("web_application_eAutoStore.DOMAIN.Models.RefreshToken", b =>
+                {
+                    b.Property<Guid>("Guid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasDefaultValueSql("NEWID()");
+
+                    b.Property<string>("AssociatedDeviceName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ExpiringAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("GeneratedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Guid");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("RefreshTokens");
+                });
+
             modelBuilder.Entity("web_application_eAutoStore.Models.Dialog", b =>
                 {
                     b.Property<int>("Id")
@@ -177,6 +204,17 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.ToTable("Vehicles");
                 });
 
+            modelBuilder.Entity("web_application_eAutoStore.DOMAIN.Models.RefreshToken", b =>
+                {
+                    b.HasOne("web_application_eAutoStore.Models.User", "User")
+                        .WithMany("RefreshTokens")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("web_application_eAutoStore.Models.FavoriteVehicle", b =>
                 {
                     b.HasOne("web_application_eAutoStore.Models.User", "User")
@@ -244,6 +282,8 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.Navigation("FavoriteVehicles");
 
                     b.Navigation("ReceivedMessages");
+
+                    b.Navigation("RefreshTokens");
 
                     b.Navigation("SentMessages");
 

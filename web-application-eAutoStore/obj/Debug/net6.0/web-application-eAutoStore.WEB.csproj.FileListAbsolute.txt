@@ -483,3 +483,5 @@ D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\web-application-eAu
 D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\AutoMapper.dll
+D:\mainAUTOSTORE\web-application-eAutoStore\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

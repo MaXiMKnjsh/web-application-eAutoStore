@@ -11,17 +11,17 @@ namespace web_application_eAutoStore.MyExtensions
     {
         public static void AddUserAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
-            var jwtOptions = configuration.GetSection(nameof(JwtOptions)).Get<JwtOptions>();
+            var jwtOptions = configuration.GetSection(nameof(TokensOptions)).Get<TokensOptions>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
                 {
                     options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
                     {
-                        ValidateIssuer=false,
-                        ValidateAudience=false,
                         ValidateLifetime=true,
                         ValidateIssuerSigningKey=true,
+                        ValidateAudience=false,
+                        ValidateIssuer=false,
                         IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.SecretKey))
                     };
 
@@ -29,7 +29,7 @@ namespace web_application_eAutoStore.MyExtensions
                     {
                         OnMessageReceived = context =>
                         {
-                            context.Token = context.Request.Cookies["token"];
+                            context.Token = context.Request.Cookies["jwt"];
 
                             return Task.CompletedTask;
                         }

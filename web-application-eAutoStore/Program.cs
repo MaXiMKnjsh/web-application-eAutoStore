@@ -1,7 +1,10 @@
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
+using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
 using web_application_eAutoStore.APPLICATION.Services;
 using web_application_eAutoStore.Data;
+using web_application_eAutoStore.INFRASTRUCTURE.Repositories;
 using web_application_eAutoStore.Interfaces.Repositories;
 using web_application_eAutoStore.Interfaces.Services;
 using web_application_eAutoStore.MyExtensions;
@@ -22,9 +25,12 @@ namespace web_application_eAutoStore
             builder.Services.AddTransient<IUsersService, UsersService>();
 			builder.Services.AddTransient<IUsersRepository, UsersRepository>();
 			builder.Services.AddTransient<IPasswordHasher, PasswordHasher>();
-			builder.Services.AddTransient<IJwtProvider, JwtProvider>();
+			builder.Services.AddTransient<ITokensService, TokensService>();
+			builder.Services.AddTransient<IRefreshTokenRepository, RefreshTokenRepository>();
 
-			builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection(nameof(JwtOptions)));
+			builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
+			builder.Services.Configure<TokensOptions>(builder.Configuration.GetSection(nameof(TokensOptions)));
 			builder.Services.AddUserAuthentication(builder.Configuration);
 
             builder.Services.AddDbContext<DataContext>(options =>
@@ -45,7 +51,7 @@ namespace web_application_eAutoStore
 
 			app.UseHttpsRedirection();
 
-			app.UseStaticFiles(); // connectiong wwwroot
+			app.UseStaticFiles(); // connecting wwwroot
 
 			app.UseRouting();
 

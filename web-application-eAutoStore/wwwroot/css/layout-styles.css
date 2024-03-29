@@ -7,12 +7,11 @@
 
 body, header, footer {
     margin: 0 auto;
-    width: 75%;
+    max-width: 1428px;
 }
 
 body {
     height: 100%;
-    width: 75%;
 }
 
 html {

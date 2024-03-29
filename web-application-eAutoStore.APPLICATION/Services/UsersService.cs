@@ -11,28 +11,27 @@ namespace web_application_eAutoStore.Services
     {
         private readonly IPasswordHasher _passwordHasher;
         private readonly IUsersRepository _usersRepository;
-        private readonly IJwtProvider _jwtProvider;
-        public UsersService(IUsersRepository usersRepository, IPasswordHasher passwordHasher, IJwtProvider jwtProvider)
+        public UsersService(IUsersRepository usersRepository, IPasswordHasher passwordHasher)
         {
             _usersRepository = usersRepository;
             _passwordHasher = passwordHasher;
-            _jwtProvider= jwtProvider;
+        }
+
+        public async Task<User> GetUserByEmailAsync(string email)
+        {
+            var user = await _usersRepository.GetByEmailAsync(email);
+            return user;
         }
 
         public async Task<bool> IsExistAsync(string email) => await _usersRepository.IsExistAsync(email);
 
-        public async Task<string?> LoginAsync(string email, string password)
+        public async Task<bool> LoginAsync(string email, string password)
         {
             var user = await _usersRepository.GetByEmailAsync(email);
 
             var result = _passwordHasher.Verify(password, user.HashedPassword);
 
-            if (!result)
-                return null;
-
-            var token = _jwtProvider.GenerateToken(user);
-
-            return token;
+            return result;
         }
 
         public async Task<bool> RegisterAsync(string name, string email, string password)
@@ -49,6 +48,7 @@ namespace web_application_eAutoStore.Services
 
             return await _usersRepository.AddAsync(user);
         }
+        
 
     }
 }

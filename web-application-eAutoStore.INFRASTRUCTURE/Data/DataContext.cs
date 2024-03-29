@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using web_application_eAutoStore.DOMAIN.Models;
 using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Data
@@ -11,6 +12,7 @@ namespace web_application_eAutoStore.Data
         public DbSet<Message> Messages { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Vehicle> Vehicles { get; set; }
+        public DbSet<RefreshToken> RefreshTokens {  get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Dialog>()
@@ -27,6 +29,15 @@ namespace web_application_eAutoStore.Data
 
             modelBuilder.Entity<Vehicle>()
                 .HasKey(d => d.Id);
+
+            modelBuilder.Entity<RefreshToken>()
+                .HasKey(d => d.Guid);
+
+            modelBuilder.Entity<User>()
+                .HasMany(m => m.RefreshTokens)
+                .WithOne(d => d.User)
+                .HasForeignKey(di => di.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Dialog>()
                 .HasMany(m => m.Messages)
@@ -69,6 +80,15 @@ namespace web_application_eAutoStore.Data
                 builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();
                 builder.Property(x => x.User1Id).IsRequired();
                 builder.Property(x => x.User2Id).IsRequired();
+            });
+
+            modelBuilder.Entity<RefreshToken>(builder =>
+            {
+                builder.Property(x => x.Guid).IsRequired().HasDefaultValueSql("NEWID()");
+                builder.Property(x => x.UserId).IsRequired();
+                builder.Property(x => x.ExpiringAt).IsRequired();
+                builder.Property(x => x.GeneratedAt).IsRequired();
+                builder.Property(x => x.AssociatedDeviceName).IsRequired();
             });
 
             modelBuilder.Entity<FavoriteVehicle>(builder =>

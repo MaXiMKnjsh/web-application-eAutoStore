@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Interfaces.Services
 {
@@ -6,6 +7,7 @@ namespace web_application_eAutoStore.Interfaces.Services
     {
         Task<bool> RegisterAsync(string name, string email, string password);
         Task<bool> IsExistAsync(string email);
-        Task<string?> LoginAsync(string email, string password);
+        Task<bool> LoginAsync(string email, string password);
+        Task<User> GetUserByEmailAsync(string email);
     }
 }
