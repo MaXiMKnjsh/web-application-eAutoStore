@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -30,7 +32,13 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
             return refreshToken.Guid;
         }
 
-        public async Task<bool> SaveAsync()
+		public async Task<RefreshToken?> GetTokenModelAsync(string refreshToken)
+		{
+			var result = await _dataContext.RefreshTokens.FirstOrDefaultAsync(x => x.Guid.ToString() == refreshToken);
+            return result;
+		}
+
+		public async Task<bool> SaveAsync()
         {
             int savedCount = await _dataContext.SaveChangesAsync();
             return savedCount > 0 ? true : false;

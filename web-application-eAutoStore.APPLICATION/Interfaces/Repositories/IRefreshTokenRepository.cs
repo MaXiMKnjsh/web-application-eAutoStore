@@ -12,5 +12,7 @@ namespace web_application_eAutoStore.APPLICATION.Interfaces.Repositories
     {
         Task<Guid> AddAsync(RefreshToken refreshToken);
         Task<bool> SaveAsync();
-    }
+        Task<RefreshToken?> GetTokenModelAsync(string refreshToken);
+
+	}
 }

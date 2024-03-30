@@ -23,7 +23,13 @@ namespace web_application_eAutoStore.Services
             return user;
         }
 
-        public async Task<bool> IsExistAsync(string email) => await _usersRepository.IsExistAsync(email);
+		public async Task<User> GetUserByRefreshToken(string refreshToken)
+		{
+            var user = await _usersRepository.GetUserByRefreshToken(refreshToken);
+            return user;
+		}
+
+		public async Task<bool> IsExistAsync(string email) => await _usersRepository.IsExistAsync(email);
 
         public async Task<bool> LoginAsync(string email, string password)
         {

@@ -10,7 +10,8 @@ namespace web_application_eAutoStore.APPLICATION.Interfaces.Auth
     public interface ITokensService
     {
         Task<Guid> GenerateRefreshTokenAsync(User user, string ipAddres);
-        Task<string> GenerateJWTokenAsync(User user);
-    }
+        string GenerateJWToken(User user);
+        Task<bool> IsRefreshTokenValid(string refreshToken);
+	}
     
 }

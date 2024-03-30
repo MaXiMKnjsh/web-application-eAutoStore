@@ -25,7 +25,7 @@ namespace web_application_eAutoStore.APPLICATION.Services
             _refreshTokenRepository = refreshTokenRepository;
         }
 
-        public async Task<string> GenerateJWTokenAsync(User user)
+        public string GenerateJWToken(User user)
         {
             Claim[] claims = {
                 new Claim("userId", user.Id.ToString()),
@@ -61,5 +61,18 @@ namespace web_application_eAutoStore.APPLICATION.Services
 
             return guid;
         }
-    }
+
+		public async Task<bool> IsRefreshTokenValid(string refreshToken)
+		{
+			var refreshTokenModel = await _refreshTokenRepository.GetTokenModelAsync(refreshToken);
+
+            if (refreshTokenModel == null)
+                return false;
+
+            if (refreshTokenModel.ExpiringAt.ToUniversalTime() > DateTime.UtcNow)
+                return false;
+
+			return true;
+		}
+	}
 }

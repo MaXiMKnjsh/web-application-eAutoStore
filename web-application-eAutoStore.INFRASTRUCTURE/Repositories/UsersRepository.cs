@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel;
 using web_application_eAutoStore.Data;
 using web_application_eAutoStore.Interfaces.Repositories;
 using web_application_eAutoStore.Models;
@@ -23,7 +24,13 @@ namespace web_application_eAutoStore.Repositories
             return await _dataContext.Users.FirstOrDefaultAsync(x=>x.Email==email);
         }
 
-        public async Task<bool> IsExistAsync(string email)
+		public async Task<User> GetUserByRefreshToken(string refreshToken)
+		{
+            var refreshTokenModel = await _dataContext.RefreshTokens.FirstOrDefaultAsync(x=>x.Guid.ToString()==refreshToken);
+            return await _dataContext.Users.FirstOrDefaultAsync(x=>x.Id==refreshTokenModel.UserId);
+		}
+
+		public async Task<bool> IsExistAsync(string email)
         {
             var user = await _dataContext.Users.FirstOrDefaultAsync(x => x.Email == email);
             return user != null ? true : false;

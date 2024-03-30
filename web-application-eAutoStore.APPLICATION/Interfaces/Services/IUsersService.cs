@@ -9,5 +9,6 @@ namespace web_application_eAutoStore.Interfaces.Services
         Task<bool> IsExistAsync(string email);
         Task<bool> LoginAsync(string email, string password);
         Task<User> GetUserByEmailAsync(string email);
+        Task<User> GetUserByRefreshToken(string refreshToken);
     }
 }

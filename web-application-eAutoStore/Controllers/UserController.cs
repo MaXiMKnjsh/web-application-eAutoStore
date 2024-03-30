@@ -62,7 +62,7 @@ namespace web_application_eAutoStore.Controllers
 
             var user = await _usersService.GetUserByEmailAsync(request.Email);
 
-            var jwt = await _tokensService.GenerateJWTokenAsync(user);
+            var jwt = _tokensService.GenerateJWToken(user);
             var rt = await _tokensService.GenerateRefreshTokenAsync(user, HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString());
 
             // todo fix created and expiring times 
