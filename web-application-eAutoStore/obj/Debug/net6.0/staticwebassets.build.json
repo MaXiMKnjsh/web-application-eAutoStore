@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lveCIZ7sgTv+GBTz2sK9pC6TH68mwb6bL54FTkW0LHU=",
+  "Hash": "dl2kyKPvWxyFH++sGXK5HuxhQ55Fp0OCSfFfjeL22qY=",
   "Source": "web-application-eAutoStore.WEB",
   "BasePath": "_content/web-application-eAutoStore.WEB",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\card-styles.css"
+    },
+    {
+      "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\filtersblock-styles.css",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "css/filtersblock-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\filtersblock-styles.css"
     },
     {
       "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\home-styles.css",

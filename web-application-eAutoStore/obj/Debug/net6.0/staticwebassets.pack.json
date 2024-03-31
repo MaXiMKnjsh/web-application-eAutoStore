@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\card-styles.css"
     },
     {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\filtersblock-styles.css",
+      "PackagePath": "staticwebassets\\css\\filtersblock-styles.css"
+    },
+    {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\home-styles.css",
       "PackagePath": "staticwebassets\\css\\home-styles.css"
     },

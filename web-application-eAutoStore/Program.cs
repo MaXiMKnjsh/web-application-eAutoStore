@@ -26,6 +26,8 @@ namespace web_application_eAutoStore
 			builder.Services.AddTransient<IUsersRepository, UsersRepository>();
 			builder.Services.AddTransient<IPasswordHasher, PasswordHasher>();
 			builder.Services.AddTransient<ITokensService, TokensService>();
+			builder.Services.AddTransient<IVehiclesService, VehiclesService>();
+			builder.Services.AddTransient<IVehiclesRepository, VehiclesRepository>();
 			builder.Services.AddTransient<IRefreshTokenRepository, RefreshTokenRepository>();
 
 			builder.Services.AddAutoMapper(typeof(Program).Assembly);

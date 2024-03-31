@@ -12,6 +12,7 @@
 
 const interval = 20 * 60 * 1000; // 20 mins in millisecs
 
+setInterval(checkTokens, interval);
 async function checkTokens() {
     const jwtToken = getCookieValue('jwt');
 
@@ -22,14 +23,13 @@ async function checkTokens() {
         var url = "/Token/UpdateToken";
         const response = await fetch(url, { method: 'POST' });
         if (response.ok)
-            console.log("Tokens are updated!");
+            console.log("Tokens are updated");
         else
-            console.log("Token's aren't updated!");
+            console.log("Token's aren't updated");
     }
-    else console.log("Tokens don't need to be updated!");
+    else console.log("Tokens don't need to be updated");
 };
 
-setInterval(checkTokens, interval);
 function getCookieValue(key) {
     const cookieArray = document.cookie.split(';');
     for (let i = 0; i < cookieArray.length; i++) {
@@ -42,8 +42,8 @@ function getCookieValue(key) {
 }
 
 function isTokenExpired(token) {
-    const expiration = getTokenExpiration(token); // Получить время истечения токена
-    const currentTimestamp = Math.floor(Date.now() / 1000); // Текущее время в секундах
+    const expiration = getTokenExpiration(token); // time of token expiring
+    const currentTimestamp = Math.floor(Date.now() / 1000); // current time in secs
 
     const deadline = 20 * 60 * 1000; // 20 mins 
 
@@ -51,12 +51,12 @@ function isTokenExpired(token) {
 }
 
 function getTokenExpiration(token) {
-    const decodedToken = decodeJWT(token); // Раскодировать JWT токен
+    const decodedToken = decodeJWT(token); // decode jwt
     if (!decodedToken) {
         return null;
     }
 
-    // Проверить наличие поля "exp" (время истечения) в токене
+    // check the field exp
     if (!decodedToken.exp) {
         return null;
     }
@@ -68,10 +68,10 @@ function decodeJWT(token) {
     try {
         const tokenParts = token.split('.');
         const base64Payload = tokenParts[1];
-        const payload = atob(base64Payload); // Декодировать Base64 строку
+        const payload = atob(base64Payload); // decode base64 line
         return JSON.parse(payload);
     } catch (error) {
-        console.error('Ошибка декодирования JWT токена:', error);
+        console.error('Decoding error:', error);
         return null;
     }
 }

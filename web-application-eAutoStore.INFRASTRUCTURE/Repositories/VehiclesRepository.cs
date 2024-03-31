@@ -1,0 +1,81 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
+using web_application_eAutoStore.Data;
+using web_application_eAutoStore.DOMAIN.DTOs.Users;
+using web_application_eAutoStore.DOMAIN.Models;
+using web_application_eAutoStore.Models;
+
+namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
+{
+	public class VehiclesRepository : IVehiclesRepository
+	{
+		private readonly DataContext _dataContext;
+		public VehiclesRepository(DataContext dataContext)
+		{
+			_dataContext = dataContext;
+		}
+
+		public async Task<IEnumerable<Vehicle>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters)
+		{
+			IQueryable<Vehicle>? vehicles = null;
+
+			if (vehicleFilters.Model != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.Model == vehicleFilters.Model);
+
+			if (vehicleFilters.Brand != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.Brand == vehicleFilters.Brand);
+
+			if (vehicleFilters.Type != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.Type == vehicleFilters.Type);
+
+			if (vehicleFilters.Quality != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.Quality == vehicleFilters.Quality);
+
+			if (vehicleFilters.Quality != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.Quality == vehicleFilters.Quality);
+
+			if (vehicleFilters.PriceFrom != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.Price >= vehicleFilters.PriceFrom);
+			if (vehicleFilters.PriceTo != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.Price <= vehicleFilters.PriceTo);
+
+			if (vehicleFilters.Transmission != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.Transmission == vehicleFilters.Transmission);
+
+			if (vehicleFilters.EngineCapacityFrom != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.EngineCapacity >= vehicleFilters.EngineCapacityFrom);
+			if (vehicleFilters.EngineCapacityTo != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.EngineCapacity <= vehicleFilters.EngineCapacityTo);
+
+			if (vehicleFilters.EnginePowerFrom != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.EnginePower >= vehicleFilters.EnginePowerFrom);
+			if (vehicleFilters.EnginePowerTo != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.EnginePower <= vehicleFilters.EnginePowerTo);
+
+			if (vehicleFilters.YearFrom != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.Year >= vehicleFilters.YearFrom);
+			if (vehicleFilters.YearTo != null)
+				vehicles = _dataContext.Vehicles.Where(x => x.Year <= vehicleFilters.YearTo);
+
+			const int portionSize = 12;
+
+			if (vehicles == null)
+				return null;
+
+			if (vehicleFilters.Portion <= 0)
+				vehicleFilters.Portion = 1;
+
+			vehicles = vehicles.Skip((vehicleFilters.Portion - 1) * portionSize).Take(portionSize);
+
+			return await vehicles.ToListAsync();
+		}
+	}
+}

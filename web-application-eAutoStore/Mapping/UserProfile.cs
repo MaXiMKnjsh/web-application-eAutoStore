@@ -13,7 +13,7 @@ namespace web_application_eAutoStore.APPLICATION.Mapping
     {
         public UserProfile()
         {
-            CreateMap<LoginUserRequest,User>();
+            CreateMap<VehicleFiltersRequest,User>();
         }
     }
 }
