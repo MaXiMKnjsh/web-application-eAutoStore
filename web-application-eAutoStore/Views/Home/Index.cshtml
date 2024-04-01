@@ -1,0 +1,28 @@
+﻿@{
+	ViewData["Title"] = "MegaWheels";
+}
+
+<link rel="stylesheet" href="~/css/home-styles.css" type="text/css" asp-append-version="true" />
+
+<div class="page-container">
+	<a href="https://t.me/maximknjsh">
+		<img class="advertisement-block" src="~/images/telegram-ad.png" alt="Image" />
+	</a>
+	<a href="https://github.com/MaXiMKnjsh">
+		<img class="advertisement-block" src="~/images/github-ad.png" alt="Image" />
+	</a>
+	<div class="latest-cars-block">
+		<div class="latest-additions">
+			@for (int i = 0; i < 12; i++)
+			{
+				@await Html.PartialAsync("~/Views/Shared/Partials/Card.cshtml")
+			}
+			<div class="button-more-container">
+				<a class="button-more" asp-controller="Vehicles">&#9660;</a>
+			</div>
+		</div>
+
+		@await Html.PartialAsync("~/Views/Shared/Partials/FiltersBlock.cshtml")
+
+	</div>
+</div>

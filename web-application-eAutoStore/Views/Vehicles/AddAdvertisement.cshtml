@@ -1,0 +1,139 @@
+﻿<link rel="stylesheet" href="~/css/addadvertisement-styles.css" asp-append-version="true" />
+
+<div class="full-block">
+	<div class="add-vehicle-block">
+		<h2>Fill in the blanks:</h2>
+		<form action="post">
+			<div class="vehicle-info-block">
+				<label for="brand">Brand: </label>
+				<div>
+					<input class="input-box"
+						   type="text"
+						   name="brand"
+						   id="brand"
+						   placeholder="Name" 
+						   required/>
+				</div>
+			</div>
+			<div class="vehicle-info-block">
+				<label for="model">Model: </label>
+				<div>
+					<input class="input-box"
+						   type="text"
+						   name="model"
+						   id="model"
+						   placeholder="Name" 
+						   required/>
+				</div>
+			</div>
+			<div class="vehicle-info-block">
+				<label for="type">Car type:</label>
+				<div>
+					<select class="input-box select-input-box" id="type" name="type">
+						<option value="0">Passenger</option>
+						<option value="1">Motorcycles</option>
+						<option value="2">Trucks</option>
+						<option value="3">Special</option>
+						<option value="5">Buses</option>
+						<option value="5">Other</option>
+					</select>
+				</div>
+			</div>
+			<div class="vehicle-info-block">
+				<label for="price">Price($): </label>
+				<div>
+					<input class="input-box"
+						   type="number"
+						   name="price"
+						   id="price"
+						   placeholder="Value" 
+						   min="0"
+						   step="100"
+						   required/>
+				</div>
+			</div>
+			<div class="vehicle-info-block">
+				<span>Status:</span>
+				<div>
+					<input type="radio" name="quality" value="0" id="status-new" checked />
+					<label for="status-new">New</label>
+					<input type="radio" name="quality" value="1" id="status-used" />
+					<label for="status-used">Used</label>
+					<input type="radio" name="quality" value="2" id="status-repairable" />
+					<label for="status-repairable">Repairable</label>
+				</div>
+			</div>
+			<div class="vehicle-info-block">
+				<span>Transmission box:</span>
+				<div>
+					<input type="radio"
+						   name="transmission"
+						   value="0"
+						   id="status-manual"
+						   checked />
+					<label for="status">Manual </label>
+					<input type="radio"
+						   name="transmission"
+						   value="1"
+						   id="status-automatic" />
+					<label for="status-automatic">Automatic </label>
+					<input type="radio" name="transmission" value="2" id="status-robot" />
+					<label for="status-robot">Robot </label>
+				</div>
+				<div class="vehicle-info-block">
+					<label for="year">Production year: </label>
+					<div>
+						<input class="input-box"
+							   type="number"
+							   name="year"
+							   id="year"
+							   placeholder="Year" 
+							   min="0"
+							   />
+					</div>
+				</div>
+				<div class="vehicle-info-block">
+					<label for="enginecapacity">Engine capacity: </label>
+					<div>
+						<input class="input-box"
+							   type="number"
+							   name="enginecapacity"
+							   id="enginecapacity"
+							   placeholder="Capacity" 
+							   min="0"
+							   />
+					</div>
+				</div>
+				<div class="vehicle-info-block">
+					<label for="enginepower">Engine power: </label>
+					<div>
+						<input class="input-box"
+							   type="number"
+							   name="enginepower"
+							   id="enginepower"
+							   placeholder="Power" 
+							   min="0"
+							   />
+					</div>
+				</div>
+				<div class="vehicle-info-block">
+					<label for="photo">Photo: </label>
+					<div>
+						<input class="input-box-file"
+							   type="file"
+							   name="photo"
+							   id="photo"
+							   accept=".jpg"
+							   placeholder="Choose a file" />
+					</div>
+				</div>
+				<div class="buttons-block">
+					<input class="btn" type="reset" value="CLEAR">
+					<input class="btn" type="submit" value="SEARCH">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="preview-block">
+	</div>
+</div>

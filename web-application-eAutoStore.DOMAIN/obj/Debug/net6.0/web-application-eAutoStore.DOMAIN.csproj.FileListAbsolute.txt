@@ -1,0 +1,22 @@
+D:\New folder\web-application-eAutoStore.DOMAIN\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.deps.json
+D:\New folder\web-application-eAutoStore.DOMAIN\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.dll
+D:\New folder\web-application-eAutoStore.DOMAIN\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb
+D:\New folder\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.AssemblyInfoInputs.cache
+D:\New folder\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.AssemblyInfo.cs
+D:\New folder\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.csproj.CoreCompileInputs.cache
+D:\New folder\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.dll
+D:\New folder\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\refint\web-application-eAutoStore.DOMAIN.dll
+D:\New folder\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb
+D:\New folder\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\ref\web-application-eAutoStore.DOMAIN.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.deps.json
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.AssemblyInfoInputs.cache
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.AssemblyInfo.cs
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.csproj.CoreCompileInputs.cache
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\refint\web-application-eAutoStore.DOMAIN.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\ref\web-application-eAutoStore.DOMAIN.dll

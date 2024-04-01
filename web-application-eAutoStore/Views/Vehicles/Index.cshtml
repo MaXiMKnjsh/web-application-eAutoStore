@@ -1,0 +1,42 @@
+﻿@using web_application_eAutoStore.Models
+@{
+	ViewData["Title"] = "MegaWheels";
+	var vehicles = ViewBag.Vehicles as IEnumerable<Vehicle>;
+	var totalQuantity = (int)ViewBag.TotalQuantity;
+	var portion = (int)ViewBag.Portion;
+	var pagesQuantity = /* totalQuantity / portion + 1; */ 10;
+}
+
+<link rel="stylesheet" href="~/css/vehicles-styles.css" type="text/css" asp-append-version="true" />
+
+<div class="main-block">
+	<div class="page-container">
+		<div class="add-block">
+			<a asp-controller="Vehicles" asp-action="AddAdvertisement">CLICK</a>
+		</div>
+		<div class="vehicles-block">
+			@for (int i = 0; i < 12; i++)
+			{
+				@await Html.PartialAsync("~/Views/Shared/Partials/Card.cshtml")
+			}
+			<div class="pages-block">
+				<a href="#">
+					&#9668;
+				</a>
+				<span id="current-page">
+					1
+				</span>
+				<span>/</span>
+				<span id="total-page">
+					@pagesQuantity
+				</span>
+				<a href="#">
+					&#9658;
+				</a>
+			</div>
+		</div>
+
+		@await Html.PartialAsync("~/Views/Shared/Partials/FiltersBlock.cshtml")
+
+	</div>
+</div>

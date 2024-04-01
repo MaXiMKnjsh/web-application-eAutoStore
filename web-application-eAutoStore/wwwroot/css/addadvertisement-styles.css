@@ -1,0 +1,59 @@
+﻿.preview-block{
+    width: 700px;
+    height: 400px;
+    background-color:red;
+}
+
+.full-block{
+    display:flex;
+    flex-direction:row;
+}
+
+.add-vehicle-block {
+    width: 700px;
+    background: linear-gradient(to bottom, #328f00 1%,#f7f7f7 1%);
+    border-radius: 10px;
+    padding:10px;
+}
+
+.input-box-file{
+    font-size: 15px;
+}
+
+.input-box {
+    border: 1px solid gray;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    height: 30px;
+    background: transparent;
+    border-radius: 30px;
+    border-color: gray;
+    padding: 10px 30px 10px 10px;
+    color: black;
+    margin-bottom:5px;
+}
+
+.select-input-box{
+    padding:0 0 0 10px;
+}
+
+.buttons-block{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 10px;
+    width: 48%;
+    font-size: 15px;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(69, 129, 69);
+}
