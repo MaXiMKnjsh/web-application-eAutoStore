@@ -62,7 +62,7 @@ namespace web_application_eAutoStore
 
 			app.MapControllerRoute(
 				name: "default",
-				pattern: "{controller=Home}/{action=Index}/{id?}");
+				pattern: "{controller=Vehicles}/{action=AddAdvertisement}/{id?}");
 
             app.Run();
 		}

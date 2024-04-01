@@ -40,12 +40,12 @@
     cursor: pointer;
 }
 
-.card-buttons {
-    position: relative;
-}
 
 .card-btn:hover {
     background-color: rgb(9, 182, 9);
+}
+.card-buttons {
+    position: relative;
 }
 
 .card > img {

@@ -1,6 +1,7 @@
 ﻿.filters {
     background-color: rgb(247, 247, 247);
-    width: 29%;
+    max-width: 29%;
+    min-width:240px;
     display: inline-flex;
     position: sticky;
     float: right;

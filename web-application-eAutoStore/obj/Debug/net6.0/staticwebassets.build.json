@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dl2kyKPvWxyFH++sGXK5HuxhQ55Fp0OCSfFfjeL22qY=",
+  "Hash": "0fvDH3v1CzV8W9OWtMVpTQHFimkPJ3mHx9o9se1Nwvk=",
   "Source": "web-application-eAutoStore.WEB",
   "BasePath": "_content/web-application-eAutoStore.WEB",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\web-application-eAutoStore.WEB.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\addadvertisement-styles.css",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "css/addadvertisement-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\addadvertisement-styles.css"
     },
     {
       "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\card-styles.css",
@@ -186,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\support-styles.css"
+    },
+    {
+      "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\vehicles-styles.css",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "css/vehicles-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\vehicles-styles.css"
     },
     {
       "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\favicon.ico",
