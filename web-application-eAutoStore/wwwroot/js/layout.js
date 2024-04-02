@@ -1,12 +1,12 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("settings-button").addEventListener("click", function () {
-        document.getElementById("modal").classList.add("show");
+        document.getElementById("modal-settings").classList.add("show-settings");
     });
     document.getElementById("close-button-main").addEventListener("click", function () {
-        document.getElementById("modal").classList.remove("show");
+        document.getElementById("modal-settings").classList.remove("show-settings");
     });
     document.getElementById("close-button").addEventListener("click", function () {
-        document.getElementById("modal").classList.remove("show");
+        document.getElementById("modal-settings").classList.remove("show-settings");
     });
 });
 

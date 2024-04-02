@@ -1,19 +1,17 @@
-﻿.preview-block{
-    width: 700px;
-    height: 400px;
-    background-color:red;
-}
+﻿
 
 .full-block{
     display:flex;
     flex-direction:row;
+    justify-content: center;
 }
 
 .add-vehicle-block {
     width: 700px;
-    background: linear-gradient(to bottom, #328f00 1%,#f7f7f7 1%);
+    background: linear-gradient(to bottom, #328f00 5px,#f7f7f7 5px);
     border-radius: 10px;
     padding:10px;
+    margin:5px;
 }
 
 .input-box-file{

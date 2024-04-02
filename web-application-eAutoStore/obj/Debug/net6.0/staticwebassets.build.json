@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0fvDH3v1CzV8W9OWtMVpTQHFimkPJ3mHx9o9se1Nwvk=",
+  "Hash": "RdA7eU1PotxNepU8OFvqKeqTqLsQGsa792Ci1O8S9LU=",
   "Source": "web-application-eAutoStore.WEB",
   "BasePath": "_content/web-application-eAutoStore.WEB",
   "Mode": "Default",
@@ -169,12 +169,12 @@
       "OriginalItemSpec": "wwwroot\\css\\login-register-styles.css"
     },
     {
-      "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\settingsmodal-styles.css",
+      "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\settings-styles.css",
       "SourceId": "web-application-eAutoStore.WEB",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\",
       "BasePath": "_content/web-application-eAutoStore.WEB",
-      "RelativePath": "css/settingsmodal-styles.css",
+      "RelativePath": "css/settings-styles.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,7 +185,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\settingsmodal-styles.css"
+      "OriginalItemSpec": "wwwroot\\css\\settings-styles.css"
     },
     {
       "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\support-styles.css",
@@ -205,6 +205,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\support-styles.css"
+    },
+    {
+      "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\vehiclepreview-styles.css",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "css/vehiclepreview-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\vehiclepreview-styles.css"
+    },
+    {
+      "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\vehiclereview-styles.css",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "css/vehiclereview-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\vehiclereview-styles.css"
     },
     {
       "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\vehicles-styles.css",

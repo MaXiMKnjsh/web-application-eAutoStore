@@ -44,6 +44,9 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 			if (vehicleFilters.Brand != null)
 				vehicles = _dataContext.Vehicles.Where(x => x.Brand == vehicleFilters.Brand);
 
+			if (vehicleFilters.Mileage != null)
+				vehicles = _dataContext.Vehicles.Where(x=>x.Mileage == vehicleFilters.Mileage);
+
 			if (vehicleFilters.Type != null)
 				vehicles = _dataContext.Vehicles.Where(x => x.Type == vehicleFilters.Type);
 

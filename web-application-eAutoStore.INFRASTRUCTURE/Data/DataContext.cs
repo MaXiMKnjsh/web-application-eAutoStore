@@ -125,12 +125,14 @@ namespace web_application_eAutoStore.Data
                 builder.Property(x => x.Type).IsRequired(false);
                 builder.Property(x => x.Price).IsRequired();
                 builder.Property(x => x.OwnerId).IsRequired();
-                builder.Property(x => x.Quality).IsRequired(false);
+				builder.Property(x => x.Mileage).IsRequired();
+				builder.Property(x => x.Quality).IsRequired(false);
                 builder.Property(x => x.Transmission).IsRequired(false);
                 builder.Property(x => x.Year).IsRequired(false);
                 builder.Property(x => x.EngineCapacity).IsRequired(false);
                 builder.Property(x => x.EnginePower).IsRequired(false);
-            });
+				builder.Property(x => x.Photo).IsRequired(false);
+			});
         }
     }
 }

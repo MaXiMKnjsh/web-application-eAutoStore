@@ -1,1 +1,33 @@
-﻿
+﻿<link rel="stylesheet" href="~/css/vehiclepreview-styles.css" asp-append-version="true" />
+
+<div class="modal-carreview" id="modal-carreview">
+	<div class="modal-box">
+		<div class="modal-header">
+			<h5>Review</h5>
+			<button class="close-modal-btn" id="close-button-main">&#10006</button>
+		</div>
+		<div class="modal-body">
+			<div id="photo-block">
+				<img class="vehicle-image" src="~/images/defaultcar.jpg" alt="Image of vehicle" />
+			</div>
+			<div id="compulsory-fields-block">
+				<div class="property-block">
+					<label for="email">Owner's email: </label>
+					<div>
+						<input type="text" value="missing" disabled>
+					</div>
+				</div>
+			</div>
+			<div id="uncompulsory-fields-block">
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn gray" id="close-button">
+				Close
+			</button>
+			<button class="btn">
+				Save
+			</button>
+		</div>
+	</div>
+</div>

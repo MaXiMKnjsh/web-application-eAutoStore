@@ -11,8 +11,8 @@
 						   type="text"
 						   name="brand"
 						   id="brand"
-						   placeholder="Name" 
-						   required/>
+						   placeholder="Name"
+						   required />
 				</div>
 			</div>
 			<div class="vehicle-info-block">
@@ -22,8 +22,20 @@
 						   type="text"
 						   name="model"
 						   id="model"
-						   placeholder="Name" 
-						   required/>
+						   placeholder="Name"
+						   required />
+				</div>
+			</div>
+			<div class="vehicle-info-block">
+				<label for="mileage">Mileage: </label>
+				<div>
+					<input class="input-box"
+						   type="number"
+						   name="mileage"
+						   id="mileage"
+						   placeholder="Count"
+						   min="0"
+						   step="100" />
 				</div>
 			</div>
 			<div class="vehicle-info-block">
@@ -46,10 +58,10 @@
 						   type="number"
 						   name="price"
 						   id="price"
-						   placeholder="Value" 
+						   placeholder="Value"
 						   min="0"
 						   step="100"
-						   required/>
+						   required />
 				</div>
 			</div>
 			<div class="vehicle-info-block">
@@ -87,9 +99,8 @@
 							   type="number"
 							   name="year"
 							   id="year"
-							   placeholder="Year" 
-							   min="0"
-							   />
+							   placeholder="Year"
+							   min="0" />
 					</div>
 				</div>
 				<div class="vehicle-info-block">
@@ -99,9 +110,8 @@
 							   type="number"
 							   name="enginecapacity"
 							   id="enginecapacity"
-							   placeholder="Capacity" 
-							   min="0"
-							   />
+							   placeholder="Capacity"
+							   min="0" />
 					</div>
 				</div>
 				<div class="vehicle-info-block">
@@ -111,9 +121,8 @@
 							   type="number"
 							   name="enginepower"
 							   id="enginepower"
-							   placeholder="Power" 
-							   min="0"
-							   />
+							   placeholder="Power"
+							   min="0" />
 					</div>
 				</div>
 				<div class="vehicle-info-block">
@@ -134,6 +143,8 @@
 			</div>
 		</form>
 	</div>
-	<div class="preview-block">
+	<div class="tentative-preview-block">
+		@await Html.PartialAsync("~/Views/Shared/Partials/VehiclePreview.cshtml")
 	</div>
+
 </div>

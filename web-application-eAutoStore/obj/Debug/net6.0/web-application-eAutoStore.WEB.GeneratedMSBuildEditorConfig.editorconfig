@@ -30,8 +30,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXEZpbHRlcnNCbG9jay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mainAUTOSTORE/web-application-eAutoStore/Views/Shared/Partials/SettingsModal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXFNldHRpbmdzTW9kYWwuY3NodG1s
+[D:/mainAUTOSTORE/web-application-eAutoStore/Views/Shared/Partials/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXFNldHRpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/mainAUTOSTORE/web-application-eAutoStore/Views/Shared/Partials/VehiclePreview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXFZlaGljbGVQcmV2aWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/mainAUTOSTORE/web-application-eAutoStore/Views/Shared/Partials/VehicleReview.cshtml]

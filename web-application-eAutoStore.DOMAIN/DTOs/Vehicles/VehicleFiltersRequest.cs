@@ -12,17 +12,14 @@ namespace web_application_eAutoStore.DOMAIN.DTOs.Users
     {
 		public int Portion { get; set; } = 1;
 		public string? Brand { get; set; }
-		
+		public int? Mileage {  get; set; }
 		public string? Model { get; set; }
-		
 		public CarType? Type { get; set; }
+		public CarQuality? Quality { get; set; }
+		public CarTransmission? Transmission { get; set; }
 		
 		public int? PriceFrom { get; set; }
 		public int? PriceTo { get; set; }
-		
-		public CarQuality? Quality { get; set; }
-		
-		public CarTransmission? Transmission { get; set; }
 		
 		public int? YearFrom { get; set; }
 		public int? YearTo {  get; set; }

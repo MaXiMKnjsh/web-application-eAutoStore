@@ -29,12 +29,20 @@
       "PackagePath": "staticwebassets\\css\\login-register-styles.css"
     },
     {
-      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\settingsmodal-styles.css",
-      "PackagePath": "staticwebassets\\css\\settingsmodal-styles.css"
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\settings-styles.css",
+      "PackagePath": "staticwebassets\\css\\settings-styles.css"
     },
     {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\support-styles.css",
       "PackagePath": "staticwebassets\\css\\support-styles.css"
+    },
+    {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\vehiclepreview-styles.css",
+      "PackagePath": "staticwebassets\\css\\vehiclepreview-styles.css"
+    },
+    {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\vehiclereview-styles.css",
+      "PackagePath": "staticwebassets\\css\\vehiclereview-styles.css"
     },
     {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\vehicles-styles.css",

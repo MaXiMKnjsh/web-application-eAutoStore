@@ -175,6 +175,9 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.Property<int?>("EnginePower")
                         .HasColumnType("int");
 
+                    b.Property<int>("Mileage")
+                        .HasColumnType("int");
+
                     b.Property<string>("Model")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

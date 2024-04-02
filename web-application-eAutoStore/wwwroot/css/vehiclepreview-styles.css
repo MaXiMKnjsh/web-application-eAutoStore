@@ -1,0 +1,55 @@
+﻿.preview-block{
+    width:100%;
+    margin:5px;
+}
+.preview-block .modal-body {
+    word-wrap: break-word;
+}
+
+    .preview-block .modal-box {
+        background-color: white;
+        border-radius: 10px;
+        background: linear-gradient(to bottom, #328f00 5px,#f7f7f7 5px);
+        padding: 30px 20px 20px 20px;
+        max-width: 500px;
+        min-width: 300px;
+    }
+
+
+.preview-block .modal-header {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    width: 100%;
+}
+
+    .preview-block .modal-header > h5 {
+        font-size: 25px;
+        position: absolute;
+        left: 10px;
+    }
+
+
+.preview-block .modal-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.preview-block .vehicle-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.preview-block .property-block input {
+    border: 1px solid gray;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    height: 30px;
+    background: transparent;
+    border-radius: 30px;
+    border-color: gray;
+    padding: 10px 30px 10px 10px;
+    color: black;
+}

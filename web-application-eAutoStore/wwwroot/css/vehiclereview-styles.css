@@ -1,0 +1,99 @@
+﻿.modal-carreview {
+    background-color: rgba(40,40,40,0.4);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100000;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+}
+
+    .modal-carreview .modal-body {
+        word-wrap: break-word;
+    }
+
+    .modal-carreview .modal-box {
+        background-color: white;
+        margin: 30px 15px;
+        border-radius: 10px;
+        background: linear-gradient(to bottom, #328f00 1%,#f7f7f7 1%);
+        padding: 30px 20px 20px 20px;
+        max-width: 500px;
+        min-width: 300px;
+    }
+
+    .modal-carreview .close-modal-btn {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+        position: absolute;
+        right: 10px;
+    }
+
+    .modal-carreview .modal-header {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        width: 100%;
+    }
+
+        .modal-carreview .modal-header > h5 {
+            font-size: 25px;
+            position: absolute;
+            left: 10px;
+        }
+
+    .modal-carreview .btn {
+        margin-top: 10px;
+        width: 48%;
+        font-size: 15px;
+        border-radius: 30px;
+        background-color: green;
+        color: white;
+        height: 35px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .modal-carreview .gray {
+        background-color: rgb(150, 150, 150);
+    }
+
+    .modal-carreview .btn:hover {
+        background-color: rgb(69, 129, 69);
+    }
+
+    .modal-carreview .gray:hover {
+        background-color: rgb(176, 176, 176);
+    }
+
+    .modal-carreview .modal-footer {
+        display: flex;
+        justify-content: space-around;
+        width:100%;
+    }
+
+    .modal-carreview .close-modal-btn:hover {
+        color: rgb(69, 129, 69);
+    }
+    .modal-carreview .vehicle-image{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .modal-carreview .property-block input {
+        border: 1px solid gray;
+        outline: none;
+        width: 100%;
+        font-size: 15px;
+        height: 30px;
+        background: transparent;
+        border-radius: 30px;
+        border-color: gray;
+        padding: 10px 30px 10px 10px;
+        color: black;
+    }
