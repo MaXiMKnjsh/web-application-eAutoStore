@@ -30,7 +30,6 @@ namespace web_application_eAutoStore.Controllers
 			if (!isRtValid)
 				return Unauthorized();
 
-			// generate new jwt and refresh
 			var user = await _usersService.GetUserByRefreshToken(refreshToken);
 
 			var jwt = _tokensService.GenerateJWToken(user);

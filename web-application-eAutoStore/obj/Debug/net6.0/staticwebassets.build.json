@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RdA7eU1PotxNepU8OFvqKeqTqLsQGsa792Ci1O8S9LU=",
+  "Hash": "NrZ0qu1S4Rdk3Cb+Ga7sVZqLLXapIiCZioReON+kV70=",
   "Source": "web-application-eAutoStore.WEB",
   "BasePath": "_content/web-application-eAutoStore.WEB",
   "Mode": "Default",
@@ -414,6 +414,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\register.js"
+    },
+    {
+      "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\vehicle-review.js",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "js/vehicle-review.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vehicle-review.js"
     },
     {
       "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

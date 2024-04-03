@@ -10,8 +10,11 @@
     overflow-y: auto;
     left: 0;
     top: 0;
+    display: none;
 }
-
+.show-carreview {
+    display: flex;
+}
     .modal-carreview .modal-body {
         word-wrap: break-word;
     }
@@ -97,3 +100,10 @@
         padding: 10px 30px 10px 10px;
         color: black;
     }
+.modal-carreview .compulsory-fields-block, .modal-carreview .uncompulsory-fields-block {
+    flex:1;
+    margin:5px;
+}
+.modal-carreview .fields-blocks{
+    display:flex;
+}

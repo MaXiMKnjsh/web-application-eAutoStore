@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
 using web_application_eAutoStore.Data;
 using web_application_eAutoStore.DOMAIN.DTOs.Users;
+using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.DOMAIN.Models;
 using web_application_eAutoStore.Models;
 
@@ -96,6 +97,25 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 			vehicles = vehicles.Skip((vehicleFilters.Portion - 1) * portionSize).Take(portionSize);
 
 			return await vehicles.ToListAsync();
+		}
+
+		public async Task<Vehicle?> GetVehicleAsync(int vehicleId)
+		{
+			var vehicle = await _dataContext.Vehicles.FirstOrDefaultAsync(x=>x.Id==vehicleId);
+			return vehicle;
+		}
+
+		public async Task<string?> GetOwnerEmailAsync(int vehicleId)
+		{
+			var vehicle = await _dataContext.Vehicles.FirstOrDefaultAsync(x=>x.Id == vehicleId);
+			
+			if (vehicle == null) return null;
+
+			var owner = await _dataContext.Users.FirstOrDefaultAsync(x=>x.Id==vehicle.OwnerId);
+
+			if (owner == null) return null;
+
+			return owner.Email;
 		}
 	}
 }

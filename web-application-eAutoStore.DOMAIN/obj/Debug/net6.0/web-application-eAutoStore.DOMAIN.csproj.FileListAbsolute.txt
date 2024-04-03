@@ -20,3 +20,4 @@ D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-applicat
 D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\refint\web-application-eAutoStore.DOMAIN.dll
 D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb
 D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\ref\web-application-eAutoStore.DOMAIN.dll
+D:\mainAUTOSTORE\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.csproj.AssemblyReference.cache

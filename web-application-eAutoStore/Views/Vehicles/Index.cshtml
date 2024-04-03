@@ -1,7 +1,9 @@
-﻿@using web_application_eAutoStore.Models
+﻿@using web_application_eAutoStore.DOMAIN.DTOs.Users
+@using web_application_eAutoStore.DOMAIN.DTOs.Vehicles
+@using web_application_eAutoStore.Models
 @{
 	ViewData["Title"] = "MegaWheels";
-	var vehicles = ViewBag.Vehicles as IEnumerable<Vehicle>;
+	var vehicles = ViewBag.VehiclesDtos as IEnumerable<VehicleDto>;
 	var totalQuantity = (int)ViewBag.TotalQuantity;
 	var portion = (int)ViewBag.Portion;
 	var pagesQuantity = /* totalQuantity / portion + 1; */ 10;

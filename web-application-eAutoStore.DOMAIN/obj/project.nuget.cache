@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "bF7eW7PJwPvZOrS5BX1evY38u/dcIUMXIyV3EwJ4GlZ+4A0JYA9kcmLN0N2Rgl7ZzY4pRjlFB1RAvbqSzqTQRA==",
+  "dgSpecHash": "1S7obFEWlsiQnPjcp+2DwO2VdhazxOiqreICdw85caD4FZAdDn7+eOx4Q9exEVhjsf04+GWIHR6oK0rD00KZ1A==",
   "success": true,
   "projectFilePath": "D:\\mainAUTOSTORE\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

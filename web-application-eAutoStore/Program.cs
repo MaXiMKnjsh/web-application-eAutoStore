@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
 using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
@@ -40,8 +41,12 @@ namespace web_application_eAutoStore
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
+			builder.Services.Configure<RazorViewEngineOptions>(options =>
+			{
+				options.ViewLocationFormats.Add("/Views/Shared/Partials/{0}.cshtml");
+			});
 
-            var app = builder.Build();
+			var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
 			if (!app.Environment.IsDevelopment())

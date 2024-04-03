@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using web_application_eAutoStore.Enumerations;
 
-namespace web_application_eAutoStore.DOMAIN.DTOs.Users
+namespace web_application_eAutoStore.DOMAIN.DTOs.Vehicles
 {
     public class VehicleFiltersRequest
     {

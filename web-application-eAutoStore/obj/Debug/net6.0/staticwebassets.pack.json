@@ -81,6 +81,10 @@
       "PackagePath": "staticwebassets\\js\\register.js"
     },
     {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\vehicle-review.js",
+      "PackagePath": "staticwebassets\\js\\vehicle-review.js"
+    },
+    {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

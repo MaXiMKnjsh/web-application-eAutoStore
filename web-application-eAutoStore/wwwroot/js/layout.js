@@ -8,6 +8,36 @@
     document.getElementById("close-button").addEventListener("click", function () {
         document.getElementById("modal-settings").classList.remove("show-settings");
     });
+
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(function (card) {
+        const buttonSave = card.querySelector(".more-vehicle-btn");
+        buttonSave.addEventListener("click",async function () {
+
+            const vehicleId = card.getAttribute("data-id");
+            const url = "/Vehicles/GetVehicleDetailsPartial?vehicleId="+vehicleId;
+
+            const response = await fetch(url, { method: 'GET' });
+
+            if (response.ok) {
+                document.getElementById("modal-carreview").classList.add("show-carreview");
+
+                var targetDiv = document.getElementById("vehicle-review-body");
+
+                targetDiv.innerHTML = await response.text();
+            }
+            else {
+                console.log("Server response is negative");
+            }
+
+        });
+    });
+    document.getElementById("close-carreview").addEventListener("click", function () {
+        document.getElementById("modal-carreview").classList.remove("show-carreview");
+    });
+    document.getElementById("close-carreview-2").addEventListener("click", function () {
+        document.getElementById("modal-carreview").classList.remove("show-carreview");
+    });
 });
 
 const interval = 20 * 60 * 1000; // 20 mins in millisecs
@@ -20,7 +50,7 @@ async function checkTokens() {
         return null;
 
     if (isTokenExpired(jwtToken)) {
-        var url = "/Token/UpdateToken";
+        const url = "/Token/UpdateToken";
         const response = await fetch(url, { method: 'POST' });
         if (response.ok)
             console.log("Tokens are updated");
