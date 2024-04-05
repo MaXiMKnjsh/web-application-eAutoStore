@@ -16,5 +16,7 @@ namespace web_application_eAutoStore.APPLICATION.Interfaces.Repositories
 		Task<int> GetQuantityAsync(VehicleFiltersRequest vehicleFilters);
         Task<Vehicle?> GetVehicleAsync(int vehicleId);
         Task<string?> GetOwnerEmailAsync(int vehicleId);
+        Task<bool> AddVehicleAsync(Vehicle newVehicle);
+        Task<bool> SaveAsync();
 	}
 }

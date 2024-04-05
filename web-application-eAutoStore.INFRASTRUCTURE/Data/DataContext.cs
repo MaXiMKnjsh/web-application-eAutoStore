@@ -131,7 +131,7 @@ namespace web_application_eAutoStore.Data
                 builder.Property(x => x.Year).IsRequired(false);
                 builder.Property(x => x.EngineCapacity).IsRequired(false);
                 builder.Property(x => x.EnginePower).IsRequired(false);
-				builder.Property(x => x.Photo).IsRequired(false);
+				builder.Property(x => x.ImagePath).IsRequired(false);
 			});
         }
     }

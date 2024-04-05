@@ -175,6 +175,9 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.Property<int?>("EnginePower")
                         .HasColumnType("int");
 
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Mileage")
                         .HasColumnType("int");
 
@@ -184,9 +187,6 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
 
                     b.Property<int>("OwnerId")
                         .HasColumnType("int");
-
-                    b.Property<byte[]>("Photo")
-                        .HasColumnType("varbinary(max)");
 
                     b.Property<int>("Price")
                         .HasColumnType("int");

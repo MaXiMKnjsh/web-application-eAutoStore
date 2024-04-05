@@ -22,6 +22,6 @@ namespace web_application_eAutoStore.DOMAIN.DTOs.Vehicles
 		public int? Year { get; set; }
 		public float? EngineCapacity { get; set; }
 		public int? EnginePower { get; set; }
-		public byte[]? Photo { get; set; }
+		public string? ImagePath { get; set; }
 	}
 }

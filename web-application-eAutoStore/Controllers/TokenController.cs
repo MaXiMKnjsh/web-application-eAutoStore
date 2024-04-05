@@ -19,10 +19,9 @@ namespace web_application_eAutoStore.Controllers
 		[HttpPost]
 		public async Task<IActionResult> UpdateToken()
 		{
-			var isContaintJwt=HttpContext.Request.Cookies.TryGetValue("jwt", out string? jwToken);
-			var isContaintRt = HttpContext.Request.Cookies.TryGetValue("rt", out string? refreshToken);
+			var result = _tokensService.GetTokensFromCookie(out string? jwtToken,out string? refreshToken);
 
-			if (!isContaintJwt || !isContaintRt)
+			if (!result)
 				return Unauthorized();
 
             var isRtValid = await _tokensService.IsRefreshTokenValid(refreshToken);
@@ -31,12 +30,10 @@ namespace web_application_eAutoStore.Controllers
 				return Unauthorized();
 
 			var user = await _usersService.GetUserByRefreshToken(refreshToken);
-
 			var jwt = _tokensService.GenerateJWToken(user);
-			var rt = await _tokensService.GenerateRefreshTokenAsync(user, HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString());
+			var rt = (await _tokensService.GenerateRefreshTokenAsync(user, HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString())).ToString();
 
-			HttpContext.Response.Cookies.Append("jwt", jwt);
-			HttpContext.Response.Cookies.Append("rt", rt.ToString());
+			_tokensService.AddTokensToCookie(jwt,rt);
 
 			return Ok();
 		}

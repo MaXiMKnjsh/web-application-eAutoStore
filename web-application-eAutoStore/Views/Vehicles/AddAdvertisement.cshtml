@@ -3,7 +3,7 @@
 <div class="full-block">
 	<div class="add-vehicle-block">
 		<h2>Fill in the blanks:</h2>
-		<form action="post">
+		<form method="post" asp-controller="Vehicles" asp-action="AddNewAdvertisement" enctype="multipart/form-data">
 			<div class="vehicle-info-block">
 				<label for="brand">Brand: </label>
 				<div>
@@ -126,12 +126,12 @@
 					</div>
 				</div>
 				<div class="vehicle-info-block">
-					<label for="photo">Photo: </label>
+					<label for="image">Image: </label>
 					<div>
 						<input class="input-box-file"
 							   type="file"
-							   name="photo"
-							   id="photo"
+							   name="image"
+							   id="image"
 							   accept=".jpg"
 							   placeholder="Choose a file" />
 					</div>

@@ -117,5 +117,16 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 
 			return owner.Email;
 		}
+		public async Task<bool> SaveAsync()
+		{
+			int savedCount = await _dataContext.SaveChangesAsync();
+			return savedCount > 0 ? true : false;
+		}
+
+		public async Task<bool> AddVehicleAsync(Vehicle newVehicle)
+		{
+			await _dataContext.Vehicles.AddAsync(newVehicle);
+			return await SaveAsync();
+		}
 	}
 }

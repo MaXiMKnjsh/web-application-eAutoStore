@@ -15,6 +15,7 @@ namespace web_application_eAutoStore.APPLICATION.Mapping
         public VehicleProfile()
         {
             CreateMap<Vehicle,VehicleDto>();
+            CreateMap<VehicleAddRequest,Vehicle>();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -19,13 +20,28 @@ namespace web_application_eAutoStore.APPLICATION.Services
     {
         private readonly TokensOptions _tokensOptions;
         private readonly IRefreshTokenRepository _refreshTokenRepository;
-        public TokensService(IOptions<TokensOptions> options, IRefreshTokenRepository refreshTokenRepository)
+		private readonly IHttpContextAccessor _httpContextAccessor;
+
+		public TokensService(IOptions<TokensOptions> options, 
+            IRefreshTokenRepository refreshTokenRepository,
+			IHttpContextAccessor httpContextAccessor)
         {
             _tokensOptions = options.Value;
             _refreshTokenRepository = refreshTokenRepository;
+			_httpContextAccessor = httpContextAccessor;
+
         }
 
-        public string GenerateJWToken(User user)
+		public void AddTokensToCookie(string jwt, string rt)
+		{
+			var jwtCookieOptions = new CookieOptions { Expires = DateTime.UtcNow.AddHours(_tokensOptions.ExpiresJwtHours) };
+			var rtCookieOptions = new CookieOptions { Expires = DateTime.UtcNow.AddHours(_tokensOptions.ExpiresRtHours) };
+
+			_httpContextAccessor.HttpContext.Response.Cookies.Append("jwt", jwt, jwtCookieOptions);
+			_httpContextAccessor.HttpContext.Response.Cookies.Append("rt", rt, rtCookieOptions);
+		}
+
+		public string GenerateJWToken(User user)
         {
             Claim[] claims = {
                 new Claim("userId", user.Id.ToString()),
@@ -61,6 +77,38 @@ namespace web_application_eAutoStore.APPLICATION.Services
 
             return guid;
         }
+
+		public bool GetTokensFromCookie(out string? jwt, out string? rt)
+		{
+			var isContaintJwt = _httpContextAccessor.HttpContext.Request.Cookies.TryGetValue("jwt", out string? jwToken);
+			var isContaintRt = _httpContextAccessor.HttpContext.Request.Cookies.TryGetValue("rt", out string? refreshToken);
+
+            jwt = jwToken;
+            rt = refreshToken;
+
+            if (!isContaintJwt || !isContaintRt)
+                return false;
+
+            return true;
+        }
+
+		public int? GetUserId()
+		{
+            string? jwtToken = null;
+			var isContaintJwt = _httpContextAccessor?.HttpContext?.Request.Cookies.TryGetValue("jwt", out jwtToken);
+
+			if (isContaintJwt != true)
+                return null;
+
+			var tokenHandler = new JwtSecurityTokenHandler();
+			var token = tokenHandler.ReadJwtToken(jwtToken);
+			bool result = int.TryParse(token.Claims.FirstOrDefault(claim => claim.Type == "userId")?.Value, out int userId);
+
+            if (result == false)
+                return null;
+
+            return userId;
+		}
 
 		public async Task<bool> IsRefreshTokenValid(string refreshToken)
 		{

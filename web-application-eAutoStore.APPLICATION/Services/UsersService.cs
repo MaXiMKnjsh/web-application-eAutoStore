@@ -2,8 +2,8 @@
 using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
 using web_application_eAutoStore.Enumerations;
 using web_application_eAutoStore.Interfaces.Repositories;
-using web_application_eAutoStore.Interfaces.Services;
 using web_application_eAutoStore.Models;
+using web_application_eAutoStore.Interfaces.Services;
 
 namespace web_application_eAutoStore.Services
 {
@@ -11,6 +11,7 @@ namespace web_application_eAutoStore.Services
     {
         private readonly IPasswordHasher _passwordHasher;
         private readonly IUsersRepository _usersRepository;
+
         public UsersService(IUsersRepository usersRepository, IPasswordHasher passwordHasher)
         {
             _usersRepository = usersRepository;

@@ -11,5 +11,7 @@ namespace web_application_eAutoStore.Interfaces.Services
 		Task<int> GetQuantityAsync(VehicleFiltersRequest vehicleFilters);
 		Task<VehicleDto?> GetVehicleAsync(int vehicleId);
 		Task<string?> GetOwnerEmailAsync(int vehicleId);
+		Task<bool> AddVehicleAsync(VehicleAddRequest vehicleAddRequest, string? imagePath, int ownerId);
+		Task<string> SaveImageAsync(IFormFile image);
 	}
 }

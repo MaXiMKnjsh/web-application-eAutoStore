@@ -16,7 +16,7 @@ namespace web_application_eAutoStore.Models
         public int? Year { get; set; }
         public float? EngineCapacity {  get; set; }
         public int? EnginePower { get; set; }
-		public byte[]? Photo { get; set; }
+		public string? ImagePath { get; set; }
         // navigation fields
         public ICollection<FavoriteVehicle> FavoriteVehicles { get; set; }
         public User User {  get; set; }

@@ -12,6 +12,9 @@ namespace web_application_eAutoStore.APPLICATION.Interfaces.Auth
         Task<Guid> GenerateRefreshTokenAsync(User user, string ipAddres);
         string GenerateJWToken(User user);
         Task<bool> IsRefreshTokenValid(string refreshToken);
+        int? GetUserId();
+        void AddTokensToCookie(string jwt, string rt);
+        bool GetTokensFromCookie(out string? jwt,out string? rt);
 	}
     
 }

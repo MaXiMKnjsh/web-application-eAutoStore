@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
@@ -12,16 +13,19 @@ using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Services
 {
-    public class VehiclesService : IVehiclesService
+	public class VehiclesService : IVehiclesService
 	{
 		private readonly IVehiclesRepository _vehiclesRepository;
 		private readonly IMapper _mapper;
+		private readonly IWebHostEnvironment _appEnvironment;
+		private const string adsImagesPath = "/adsImages/";
 
-		public VehiclesService(IVehiclesRepository vehiclesRepository, IMapper mapper)
-        {
+		public VehiclesService(IVehiclesRepository vehiclesRepository, IMapper mapper, IWebHostEnvironment appEnvironment)
+		{
 			_mapper = mapper;
 			_vehiclesRepository = vehiclesRepository;
-        }
+			_appEnvironment = appEnvironment;
+		}
 
 		public async Task<string?> GetOwnerEmailAsync(int vehicleId)
 		{
@@ -47,13 +51,35 @@ namespace web_application_eAutoStore.Services
 			return vehicleDto;
 		}
 
-		public async Task<IEnumerable<VehicleDto>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters) 
-        {
+		public async Task<IEnumerable<VehicleDto>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters)
+		{
 			var vehicles = await _vehiclesRepository.GetWithFiltersAsync(vehicleFilters);
 
-			var vehiclesDtos = _mapper.Map<IEnumerable<VehicleDto>>(vehicles); 
+			var vehiclesDtos = _mapper.Map<IEnumerable<VehicleDto>>(vehicles);
 
 			return vehiclesDtos;
+		}
+
+		public async Task<bool> AddVehicleAsync(VehicleAddRequest vehicleAddRequest, string? imagePath, int ownerId)
+		{
+			var newVehicle = _mapper.Map<Vehicle>(vehicleAddRequest);
+
+			newVehicle.ImagePath = imagePath;
+			newVehicle.OwnerId = ownerId;
+
+			return await _vehiclesRepository.AddVehicleAsync(newVehicle);
+		}
+		public async Task<string> SaveImageAsync(IFormFile image)
+		{
+			string imageName = Guid.NewGuid().ToString() +".jpg";
+			string fullPath = _appEnvironment.WebRootPath + adsImagesPath + imageName;
+
+			using (var fileStream = new FileStream(fullPath, FileMode.Create))
+			{
+				await image.CopyToAsync(fileStream);
+			}
+
+			return imageName;
 		}
 	}
 }

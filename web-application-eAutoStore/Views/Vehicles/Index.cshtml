@@ -7,15 +7,21 @@
 	var totalQuantity = (int)ViewBag.TotalQuantity;
 	var portion = (int)ViewBag.Portion;
 	var pagesQuantity = /* totalQuantity / portion + 1; */ 10;
+	// todo
 }
 
 <link rel="stylesheet" href="~/css/vehicles-styles.css" type="text/css" asp-append-version="true" />
 
 <div class="main-block">
 	<div class="page-container">
-		<div class="add-block">
-			<a asp-controller="Vehicles" asp-action="AddAdvertisement">CLICK</a>
-		</div>
+		@if (User.Identity.IsAuthenticated)
+		{
+			<div class="add-block">
+				<a asp-controller="Vehicles" asp-action="AddAdvertisement">
+					<img src="~/images/add-ad.png" alt="Image" />
+				</a>
+			</div>
+		}
 		<div class="vehicles-block">
 			@for (int i = 0; i < 12; i++)
 			{

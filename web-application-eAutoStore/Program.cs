@@ -1,6 +1,8 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
 using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
 using web_application_eAutoStore.APPLICATION.Services;
@@ -30,6 +32,9 @@ namespace web_application_eAutoStore
 			builder.Services.AddTransient<IVehiclesService, VehiclesService>();
 			builder.Services.AddTransient<IVehiclesRepository, VehiclesRepository>();
 			builder.Services.AddTransient<IRefreshTokenRepository, RefreshTokenRepository>();
+			builder.Services.AddTransient<IImageService,ImageService>();
+
+			builder.Services.AddHttpContextAccessor();
 
 			builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
@@ -67,7 +72,7 @@ namespace web_application_eAutoStore
 
 			app.MapControllerRoute(
 				name: "default",
-				pattern: "{controller=Vehicles}/{action=AddAdvertisement}/{id?}");
+				pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
 		}
