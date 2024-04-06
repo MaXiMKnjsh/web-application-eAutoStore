@@ -24,6 +24,18 @@ namespace web_application_eAutoStore.Repositories
             return await _dataContext.Users.FirstOrDefaultAsync(x=>x.Email==email);
         }
 
+		public async Task<IEnumerable<Vehicle>?> GetUserAdvertisementsAsync(int id)
+		{
+			var vehicles = _dataContext.Vehicles.Where(x=>x.Id==id);
+            return await vehicles.ToListAsync();
+		}
+
+		public async Task<User?> GetUserByIdAsync(int id)
+		{
+            var user = await _dataContext.Users.FirstOrDefaultAsync(x=>x.Id==id);
+            return user;
+		}
+
 		public async Task<User> GetUserByRefreshToken(string refreshToken)
 		{
             var refreshTokenModel = await _dataContext.RefreshTokens.FirstOrDefaultAsync(x=>x.Guid.ToString()==refreshToken);

@@ -15,6 +15,7 @@ namespace web_application_eAutoStore.APPLICATION.Mapping
         public UserProfile()
         {
             CreateMap<VehicleFiltersRequest,User>();
+            CreateMap<User, UserDto>();
         }
     }
 }

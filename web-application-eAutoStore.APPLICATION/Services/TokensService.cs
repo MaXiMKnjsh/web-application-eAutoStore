@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
 using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
+using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using web_application_eAutoStore.DOMAIN.Models;
 using web_application_eAutoStore.Interfaces.Repositories;
 using web_application_eAutoStore.Models;
@@ -41,7 +42,7 @@ namespace web_application_eAutoStore.APPLICATION.Services
 			_httpContextAccessor.HttpContext.Response.Cookies.Append("rt", rt, rtCookieOptions);
 		}
 
-		public string GenerateJWToken(User user)
+		public string GenerateJWToken(UserDto user)
         {
             Claim[] claims = {
                 new Claim("userId", user.Id.ToString()),
@@ -63,7 +64,7 @@ namespace web_application_eAutoStore.APPLICATION.Services
             return tokenValue;
         }
 
-        public async Task<Guid> GenerateRefreshTokenAsync(User user, string ipAddres)
+        public async Task<Guid> GenerateRefreshTokenAsync(UserDto user, string ipAddres)
         {
             var refreshToken = new RefreshToken()
             {

@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
+using web_application_eAutoStore.DOMAIN.DTOs.Users;
+using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Interfaces.Services
@@ -8,7 +10,9 @@ namespace web_application_eAutoStore.Interfaces.Services
 		Task<bool> RegisterAsync(string name, string email, string password);
 		Task<bool> IsExistAsync(string email);
 		Task<bool> LoginAsync(string email, string password);
-		Task<User> GetUserByEmailAsync(string email);
-		Task<User> GetUserByRefreshToken(string refreshToken);
+		Task<UserDto> GetUserByEmailAsync(string email);
+		Task<UserDto> GetUserByRefreshTokenAsync(string refreshToken);
+		Task<IEnumerable<VehicleDto>>? GetUserAdvertisementsAsync(int id);
+		Task<UserDto> GetUserByIdAsync(int id);
 	}
 }

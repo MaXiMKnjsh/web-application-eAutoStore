@@ -1,0 +1,49 @@
+﻿.personal-info, .personal-advertisements {
+    width: 50%;
+}
+
+.profile-block{
+    display: flex;
+    flex-direction: row;
+}
+.personal-info {
+    background: linear-gradient(to bottom, #328f00 5px,#f7f7f7 5px);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+.input-box {
+    border: 1px solid gray;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    height: 30px;
+    background: transparent;
+    border-radius: 30px;
+    border-color: gray;
+    padding: 10px 30px 10px 10px;
+    color: black;
+    margin-bottom: 5px;
+}
+.btn {
+    margin-top: 10px;
+    width: 48%;
+    font-size: 15px;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: rgb(69, 129, 69);
+    }
+.buttons-block {
+    text-align: center;
+}
+
+label{
+    padding-right: 10px;
+}

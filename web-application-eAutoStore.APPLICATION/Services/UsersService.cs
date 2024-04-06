@@ -4,6 +4,9 @@ using web_application_eAutoStore.Enumerations;
 using web_application_eAutoStore.Interfaces.Repositories;
 using web_application_eAutoStore.Models;
 using web_application_eAutoStore.Interfaces.Services;
+using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+using web_application_eAutoStore.DOMAIN.DTOs.Users;
+using AutoMapper;
 
 namespace web_application_eAutoStore.Services
 {
@@ -11,23 +14,43 @@ namespace web_application_eAutoStore.Services
     {
         private readonly IPasswordHasher _passwordHasher;
         private readonly IUsersRepository _usersRepository;
+        private readonly IMapper _mapper;
 
-        public UsersService(IUsersRepository usersRepository, IPasswordHasher passwordHasher)
+        public UsersService(IUsersRepository usersRepository, 
+            IPasswordHasher passwordHasher,
+            IMapper mapper)
         {
             _usersRepository = usersRepository;
             _passwordHasher = passwordHasher;
+            _mapper = mapper;
         }
 
-        public async Task<User> GetUserByEmailAsync(string email)
+		public async Task<IEnumerable<VehicleDto>>? GetUserAdvertisementsAsync(int id)
+		{
+            var vehicles = await _usersRepository.GetUserAdvertisementsAsync(id);
+            var vehiclesDtos = _mapper.Map<IEnumerable<VehicleDto>>(vehicles);
+            return vehiclesDtos;
+		}
+
+		public async Task<UserDto> GetUserByEmailAsync(string email)
         {
             var user = await _usersRepository.GetByEmailAsync(email);
-            return user;
+            var userDto = _mapper.Map<UserDto>(user);
+            return userDto;
         }
 
-		public async Task<User> GetUserByRefreshToken(string refreshToken)
+		public async Task<UserDto> GetUserByIdAsync(int id)
+		{
+            var user = await _usersRepository.GetUserByIdAsync(id);
+            var userDto = _mapper.Map<UserDto>(user);
+            return userDto;
+		}
+
+		public async Task<UserDto> GetUserByRefreshTokenAsync(string refreshToken)
 		{
             var user = await _usersRepository.GetUserByRefreshToken(refreshToken);
-            return user;
+            var userDto = _mapper.Map<UserDto>(user);
+            return userDto;
 		}
 
 		public async Task<bool> IsExistAsync(string email) => await _usersRepository.IsExistAsync(email);

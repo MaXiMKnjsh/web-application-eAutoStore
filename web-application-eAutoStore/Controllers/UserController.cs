@@ -25,8 +25,26 @@ namespace web_application_eAutoStore.Controllers
         public IActionResult Login() => View();
         public IActionResult Register() => View();
 
+        //[Authorize]
+        public async Task<IActionResult> Profile()
+        {
+            //var userId = _tokensService.GetUserId();
+            var userId = 2;
+
+            if (userId == null)
+                return Unauthorized();
+
+            var userInfo = await _usersService.GetUserByIdAsync((int)userId);
+            var userAdvertisements = await _usersService.GetUserAdvertisementsAsync((int)userId);
+
+            ViewBag.UserInfo = userInfo;
+            ViewBag.UserAdvertisements = userAdvertisements;
+
+            return View();
+        }
+
         [HttpPost]
-        public async Task<IActionResult> ProcessRegisterForm([FromForm] RegisterUserRequest request)
+        public async Task<IActionResult> ProcessRegisterForm([FromForm]RegisterUserRequest request)
         {
             if (!ModelState.IsValid)
                 return BadRequest();
@@ -43,12 +61,9 @@ namespace web_application_eAutoStore.Controllers
 
             return RedirectToAction("Login");
         }
-        public IActionResult Profile()
-        {
-            return View();
-        }
+
         [HttpPost]
-        public async Task<IActionResult> ProcessLoginForm([FromForm] LoginUserRequest request)
+        public async Task<IActionResult> ProcessLoginForm([FromForm]LoginUserRequest request)
         {
             if (!ModelState.IsValid)
                 return RedirectToAction("Login");
@@ -67,8 +82,6 @@ namespace web_application_eAutoStore.Controllers
 
             var jwt = _tokensService.GenerateJWToken(user);
             var rt = await _tokensService.GenerateRefreshTokenAsync(user, HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString());
-
-            // todo fix created and expiring times 
 
             HttpContext.Response.Cookies.Append("jwt", jwt);
             HttpContext.Response.Cookies.Append("rt", rt.ToString());

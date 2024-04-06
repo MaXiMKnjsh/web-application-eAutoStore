@@ -29,7 +29,7 @@ namespace web_application_eAutoStore.Controllers
 			if (!isRtValid)
 				return Unauthorized();
 
-			var user = await _usersService.GetUserByRefreshToken(refreshToken);
+			var user = await _usersService.GetUserByRefreshTokenAsync(refreshToken);
 			var jwt = _tokensService.GenerateJWToken(user);
 			var rt = (await _tokensService.GenerateRefreshTokenAsync(user, HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString())).ToString();
 

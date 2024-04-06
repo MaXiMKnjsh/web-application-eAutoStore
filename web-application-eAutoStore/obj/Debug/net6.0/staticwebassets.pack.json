@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\css\\login-register-styles.css"
     },
     {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\profile-styles.css",
+      "PackagePath": "staticwebassets\\css\\profile-styles.css"
+    },
+    {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\settings-styles.css",
       "PackagePath": "staticwebassets\\css\\settings-styles.css"
     },
