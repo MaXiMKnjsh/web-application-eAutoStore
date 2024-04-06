@@ -51,9 +51,9 @@ namespace web_application_eAutoStore.Services
 			return vehicleDto;
 		}
 
-		public async Task<IEnumerable<VehicleDto>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters)
+		public async Task<IEnumerable<VehicleDto>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters, int portionSize)
 		{
-			var vehicles = await _vehiclesRepository.GetWithFiltersAsync(vehicleFilters);
+			var vehicles = await _vehiclesRepository.GetWithFiltersAsync(vehicleFilters, portionSize);
 
 			var vehiclesDtos = _mapper.Map<IEnumerable<VehicleDto>>(vehicles);
 

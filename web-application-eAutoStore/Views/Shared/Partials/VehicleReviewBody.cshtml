@@ -2,117 +2,125 @@
 
 @{
 	var vehicleDto = ViewBag.VehicleDto as VehicleDto;
-	var ownerEmail = (string)ViewBag.OwnerEmail;
+	var ownerEmail = ViewBag.OwnerEmail as String;
+	var imageName = ViewBag.ImageName as String;
 }
 
 <div id="photo-block">
-	<img class="vehicle-image" src="~/images/defaultcar.jpg" alt="Image of vehicle" />
+	@if (imageName == null)
+	{
+		<img class="vehicle-image" src="~/images/defaultcar.jpg" alt="Image of vehicle" />
+	}
+	else
+	{
+		<img class="vehicle-image" src="~/adsImages/@imageName" alt="Image of vehicle" />
+	}
 </div>
 <div class="fields-blocks">
 
 	<div id="compulsory-fields-block" class="compulsory-fields-block">
-	@if (ownerEmail != null)
-	{
-		<div class="property-block">
-			<label>Owner's email: </label>
-			<div>
-				<input type="text" value="@ownerEmail" disabled>
+		@if (ownerEmail != null)
+		{
+			<div class="property-block">
+				<label>Owner's email: </label>
+				<div>
+					<input type="text" value="@ownerEmail" disabled>
+				</div>
 			</div>
-		</div>
-	}
-	@if (vehicleDto?.Model != null)
-	{
-		<div class="property-block">
-			<label>Model: </label>
-			<div>
-				<input type="text" value="@vehicleDto.Model" disabled>
+		}
+		@if (vehicleDto?.Brand != null)
+		{
+			<div class="property-block">
+				<label>Brand: </label>
+				<div>
+					<input type="text" value="@vehicleDto.Brand" disabled>
+				</div>
 			</div>
-		</div>
-	}
-	@if (vehicleDto?.Mileage != null)
-	{
-		<div class="property-block">
-			<label>Mileage: </label>
-			<div>
-				<input type="text" value="@vehicleDto.Mileage" disabled>
+		}
+		@if (vehicleDto?.Model != null)
+		{
+			<div class="property-block">
+				<label>Model: </label>
+				<div>
+					<input type="text" value="@vehicleDto.Model" disabled>
+				</div>
 			</div>
-		</div>
-	}
-	@if (vehicleDto?.Price != null)
-	{
-		<div class="property-block">
-			<label>Price: </label>
-			<div>
-				<input type="text" value="@vehicleDto.Price" disabled>
+		}
+		@if (vehicleDto?.Mileage != null)
+		{
+			<div class="property-block">
+				<label>Mileage: </label>
+				<div>
+					<input type="text" value="@vehicleDto.Mileage kms" disabled>
+				</div>
 			</div>
-		</div>
-	}
-	@if (vehicleDto?.Brand != null)
-	{
-		<div class="property-block">
-			<label>Brand: </label>
-			<div>
-				<input type="text" value="@vehicleDto.Brand" disabled>
+		}
+		@if (vehicleDto?.Price != null)
+		{
+			<div class="property-block">
+				<label>Price: </label>
+				<div>
+					<input type="text" value="@vehicleDto.Price $" disabled>
+				</div>
 			</div>
-		</div>
-	}
-</div>
+		}
+	</div>
 
 	<div id="uncompulsory-fields-block" class="uncompulsory-fields-block">
-	@if (vehicleDto?.Quality != null)
-	{
-		<div class="property-block">
-			<label>Quality: </label>
-			<div>
-				<input type="text" value="@vehicleDto.Quality" disabled>
+		@if (vehicleDto?.Quality != null)
+		{
+			<div class="property-block">
+				<label>Quality: </label>
+				<div>
+					<input type="text" value="@vehicleDto.Quality" disabled>
+				</div>
 			</div>
-		</div>
-	}
-	@if (vehicleDto?.Transmission != null)
-	{
-		<div class="property-block">
-			<label>Transmission: </label>
-			<div>
-				<input type="text" value="@vehicleDto.Transmission" disabled>
+		}
+		@if (vehicleDto?.Transmission != null)
+		{
+			<div class="property-block">
+				<label>Transmission: </label>
+				<div>
+					<input type="text" value="@vehicleDto.Transmission" disabled>
+				</div>
 			</div>
-		</div>
-	}
-	@if (vehicleDto?.Year != null)
-	{
-		<div class="property-block">
-			<label>Year: </label>
-			<div>
-				<input type="text" value="@vehicleDto.Year" disabled>
+		}
+		@if (vehicleDto?.Year != null)
+		{
+			<div class="property-block">
+				<label>Year: </label>
+				<div>
+					<input type="text" value="@vehicleDto.Year" disabled>
+				</div>
 			</div>
-		</div>
-	}
-	@if (vehicleDto?.EngineCapacity != null)
-	{
-		<div class="property-block">
-			<label>Engine capacity: </label>
-			<div>
-				<input type="text" value="@vehicleDto.EngineCapacity" disabled>
+		}
+		@if (vehicleDto?.EngineCapacity != null)
+		{
+			<div class="property-block">
+				<label>Engine capacity: </label>
+				<div>
+					<input type="text" value="@vehicleDto.EngineCapacity liters" disabled>
+				</div>
 			</div>
-		</div>
-	}
-	@if (vehicleDto?.EnginePower != null)
-	{
-		<div class="property-block">
-			<label>Engine power: </label>
-			<div>
-				<input type="text" value="@vehicleDto.EnginePower" disabled>
+		}
+		@if (vehicleDto?.EnginePower != null)
+		{
+			<div class="property-block">
+				<label>Engine power: </label>
+				<div>
+					<input type="text" value="@vehicleDto.EnginePower hps" disabled>
+				</div>
 			</div>
-		</div>
-	}
-	@if (vehicleDto?.Type != null)
-	{
-		<div class="property-block">
-			<label>Car type: </label>
-			<div>
-				<input type="text" value="@vehicleDto.Type" disabled>
+		}
+		@if (vehicleDto?.Type != null)
+		{
+			<div class="property-block">
+				<label>Car type: </label>
+				<div>
+					<input type="text" value="@vehicleDto.Type" disabled>
+				</div>
 			</div>
-		</div>
-	}
-</div>
+		}
+	</div>
 
 </div>

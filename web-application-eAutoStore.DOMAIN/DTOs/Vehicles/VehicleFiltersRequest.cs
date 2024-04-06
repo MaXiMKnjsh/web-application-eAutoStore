@@ -17,7 +17,8 @@ namespace web_application_eAutoStore.DOMAIN.DTOs.Vehicles
 		public CarType? Type { get; set; }
 		public CarQuality? Quality { get; set; }
 		public CarTransmission? Transmission { get; set; }
-		
+		public string? SearchLineRequest { get; set; }
+
 		public int? PriceFrom { get; set; }
 		public int? PriceTo { get; set; }
 		

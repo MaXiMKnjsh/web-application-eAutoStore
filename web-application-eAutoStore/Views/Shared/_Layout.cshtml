@@ -20,16 +20,17 @@
 				<img class="logo" src="~/images/logo.png" alt="Image" />
 			</a>
 
-			<form class="search-form" method="get" asp-controller="Vehicles">
+			<form class="search-form" method="get" asp-controller="Vehicles" asp-action="Index">
 				<input type="text"
 					   class="search-line"
+					   name="searchlinerequest"
 					   placeholder="Search on Megawheels" />
 				<input class="search-button" type="submit" value="FIND" />
 			</form>
 			<div class="additional">
 				@if (User.Identity.IsAuthenticated)
 				{
-					<a class="image-button" asp-controller="User" asp-action="Login">
+					<a class="image-button" asp-controller="User" asp-action="Profile">
 						<box-icon name='user'></box-icon>
 						<span>Profile</span>
 					</a>
@@ -44,7 +45,7 @@
 						<span>Settings</span>
 					</a>
 
-					<a class="image-button" asp-controller="User" asp-action="Logout">
+					<a class="image-button" onclick="ClearCookiesFromTokens()">
 						<box-icon name='exit'></box-icon>
 						<span>Logout</span>
 					</a>

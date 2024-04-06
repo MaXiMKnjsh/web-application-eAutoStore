@@ -43,7 +43,10 @@ namespace web_application_eAutoStore.Controllers
 
             return RedirectToAction("Login");
         }
-
+        public IActionResult Profile()
+        {
+            return View();
+        }
         [HttpPost]
         public async Task<IActionResult> ProcessLoginForm([FromForm] LoginUserRequest request)
         {
@@ -71,16 +74,6 @@ namespace web_application_eAutoStore.Controllers
             HttpContext.Response.Cookies.Append("rt", rt.ToString());
 
             return RedirectToAction("Index", "Home");
-        }
-
-        [HttpDelete]
-        [Authorize]
-        public async Task<IActionResult> Logout()
-        {
-			Response.Cookies.Delete("jwt");
-			Response.Cookies.Delete("rt");
-
-			return RedirectToAction("Index", "Home");
         }
     }
 }

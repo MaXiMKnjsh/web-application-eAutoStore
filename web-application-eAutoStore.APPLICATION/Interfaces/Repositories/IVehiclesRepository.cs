@@ -13,7 +13,7 @@ namespace web_application_eAutoStore.APPLICATION.Interfaces.Repositories
 {
     public interface IVehiclesRepository
     {
-        Task<IEnumerable<Vehicle>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters);
+        Task<IEnumerable<Vehicle>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters, int portionSize);
 		Task<int> GetQuantityAsync(VehicleFiltersRequest vehicleFilters);
         Task<Vehicle?> GetVehicleAsync(int vehicleId);
         Task<string?> GetOwnerEmailAsync(int vehicleId);

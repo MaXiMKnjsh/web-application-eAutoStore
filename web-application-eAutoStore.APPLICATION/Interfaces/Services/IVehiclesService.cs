@@ -7,7 +7,7 @@ namespace web_application_eAutoStore.Interfaces.Services
 {
     public interface IVehiclesService
     {
-		Task<IEnumerable<VehicleDto>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters);
+		Task<IEnumerable<VehicleDto>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters, int portionSize);
 		Task<int> GetQuantityAsync(VehicleFiltersRequest vehicleFilters);
 		Task<VehicleDto?> GetVehicleAsync(int vehicleId);
 		Task<string?> GetOwnerEmailAsync(int vehicleId);

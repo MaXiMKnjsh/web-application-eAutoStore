@@ -10,7 +10,6 @@
     border-radius: 10px;
     background: linear-gradient(to bottom, #328f00 1%,#f7f7f7 1%);
 }
-
     .filters > form > h1 {
         text-align: center;
         font-weight: 600;
@@ -64,4 +63,7 @@
 
 .btn:hover {
     background-color: rgb(69, 129, 69);
+}
+.select-input-box {
+    padding: 0 0 0 10px;
 }

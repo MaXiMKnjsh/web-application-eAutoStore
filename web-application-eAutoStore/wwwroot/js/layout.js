@@ -12,10 +12,10 @@
     const cards = document.querySelectorAll(".card");
     cards.forEach(function (card) {
         const buttonSave = card.querySelector(".more-vehicle-btn");
-        buttonSave.addEventListener("click",async function () {
+        buttonSave.addEventListener("click", async function () {
 
             const vehicleId = card.getAttribute("data-id");
-            const url = "/Vehicles/GetVehicleDetailsPartial?vehicleId="+vehicleId;
+            const url = "/Vehicles/GetVehicleDetailsPartial?vehicleId=" + vehicleId;
 
             const response = await fetch(url, { method: 'GET' });
 
@@ -39,6 +39,15 @@
         document.getElementById("modal-carreview").classList.remove("show-carreview");
     });
 });
+
+function ClearCookiesFromTokens() {
+    clearCookie("jwt");
+    clearCookie("rt");
+    location.reload();
+}
+function clearCookie(name) {
+    document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+}
 
 const interval = 20 * 60 * 1000; // 20 mins in millisecs
 

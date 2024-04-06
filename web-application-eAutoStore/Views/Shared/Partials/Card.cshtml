@@ -17,34 +17,32 @@
 		<div><span>@Model.Price</span><span>$</span></div>
 	</div>
 	<div class="card-descr">
-		<span>
-			@Model.Brand @Model.Model, @Model.Mileage kilometers
-			@if (Model.Type != null)
-			{
-				@: ,@Model.Type
-			}
-			@if (Model.Quality != null)
-			{
-				@: ,@Model.Quality
-			}
-			@if (Model.Transmission != null)
-			{
-				@: ,@Model.Transmission
-			}
-			@if (Model.Year != null)
-			{
-				@: ,@Model.Year production year
-			}
-			@if (Model.EngineCapacity != null)
-			{
-				@: ,@Model.EngineCapacity liters
-			}
-			@if (Model.EnginePower != null)
-			{
-				@: ,@Model.EnginePower  horsepower
-			}
-			.
-		</span>
+		@Model.Brand @Model.Model, @Model.Mileage kms
+		@if (Model.Type != null)
+		{
+			@: ,@Model.Type.ToString().ToLower() type
+		}
+		@if (Model.Quality != null)
+		{
+			@: ,@Model.Quality.ToString().ToLower()
+		}
+		@if (Model.Transmission != null)
+		{
+			@: ,@Model.Transmission.ToString().ToLower()
+		}
+		@if (Model.Year != null)
+		{
+			@: ,@Model.Year production year
+		}
+		@if (Model.EngineCapacity != null)
+		{
+			@: ,@Model.EngineCapacity liters
+		}
+		@if (Model.EnginePower != null)
+		{
+			@: ,@Model.EnginePower  horsepower
+		}
+		.
 	</div>
 	<div class="card-buttons">
 		<button class="card-btn more-vehicle-btn">More</button>

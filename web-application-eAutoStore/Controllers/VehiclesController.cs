@@ -13,7 +13,7 @@ namespace web_application_eAutoStore.Controllers
 	{
 		private readonly IVehiclesService _vehiclesService;
 		private readonly ITokensService _tokensService;
-
+		private const int portionSize = 12;
 		public VehiclesController(IVehiclesService vehiclesService,
 			ITokensService tokensService)
 		{
@@ -25,13 +25,14 @@ namespace web_application_eAutoStore.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Index([FromQuery] VehicleFiltersRequest vehicleFilters)
 		{
-			var vehiclesDtos = await _vehiclesService.GetWithFiltersAsync(vehicleFilters);
+			var vehiclesDtos = await _vehiclesService.GetWithFiltersAsync(vehicleFilters, portionSize);
 
 			var totalQuantity = await _vehiclesService.GetQuantityAsync(vehicleFilters);
 
 			ViewBag.TotalQuantity = totalQuantity;
 			ViewBag.VehiclesDtos = vehiclesDtos;
 			ViewBag.Portion = vehicleFilters.Portion;
+			ViewBag.PortionSize = portionSize;
 
 			return View();
 		}
@@ -47,6 +48,7 @@ namespace web_application_eAutoStore.Controllers
 
 			ViewBag.VehicleDto = vehicleDto;
 			ViewBag.OwnerEmail = ownerEmail;
+			ViewBag.ImageName = vehicleDto.ImagePath;
 
 			return PartialView("VehicleReviewBody");
 		}

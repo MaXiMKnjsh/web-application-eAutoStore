@@ -6,7 +6,8 @@
 	var vehicles = ViewBag.VehiclesDtos as IEnumerable<VehicleDto>;
 	var totalQuantity = (int)ViewBag.TotalQuantity;
 	var portion = (int)ViewBag.Portion;
-	var pagesQuantity = totalQuantity / portion + 1;
+	var portionSize = (int)ViewBag.PortionSize;
+	var pagesQuantity = Math.Ceiling((float)totalQuantity / portionSize);
 }
 
 <link rel="stylesheet" href="~/css/vehicles-styles.css" type="text/css" asp-append-version="true" />

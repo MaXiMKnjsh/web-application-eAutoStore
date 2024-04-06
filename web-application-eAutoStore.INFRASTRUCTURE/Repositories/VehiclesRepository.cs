@@ -39,11 +39,21 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 		{
 			IQueryable<Vehicle>? vehicles = null;
 
+			if (vehicleFilters.SearchLineRequest != null)
+			{
+				var partsOfRequset = vehicleFilters.SearchLineRequest.Split(new char[]{ ' '});
+				foreach (var i in partsOfRequset)
+				{
+					vehicles = _dataContext.Vehicles.Where(x => x.Model.ToLower().Contains(i.ToLower()));
+					vehicles = _dataContext.Vehicles.Where(x => x.Brand.ToLower().Contains(i.ToLower()));
+				}
+			}
+
 			if (vehicleFilters.Model != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Model == vehicleFilters.Model);
+				vehicles = _dataContext.Vehicles.Where(x => string.Equals(x.Model.ToLower(),vehicleFilters.Model.ToLower()));
 
 			if (vehicleFilters.Brand != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Brand == vehicleFilters.Brand);
+				vehicles = _dataContext.Vehicles.Where(x => string.Equals(x.Brand.ToLower(),vehicleFilters.Brand.ToLower()));
 
 			if (vehicleFilters.Mileage != null)
 				vehicles = _dataContext.Vehicles.Where(x => x.Mileage == vehicleFilters.Mileage);
@@ -82,11 +92,9 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 
 			return vehicles;
 		}
-		public async Task<IEnumerable<Vehicle>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters)
+		public async Task<IEnumerable<Vehicle>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters, int portionSize)
 		{
 			var vehicles = ApplyFilters(vehicleFilters);
-
-			const int portionSize = 12;
 
 			if (vehicles == null)
 				return null;
