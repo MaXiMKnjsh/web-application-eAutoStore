@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,5 +19,6 @@ namespace web_application_eAutoStore.APPLICATION.Interfaces.Repositories
         Task<string?> GetOwnerEmailAsync(int vehicleId);
         Task<bool> AddVehicleAsync(Vehicle newVehicle);
         Task<bool> SaveAsync();
+        Task<IEnumerable<Vehicle>> GetNewVehiclesAsync(int count);
 	}
 }

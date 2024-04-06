@@ -77,6 +77,9 @@ namespace web_application_eAutoStore.Controllers
         [Authorize]
         public async Task<IActionResult> Logout()
         {
+			Response.Cookies.Delete("jwt");
+			Response.Cookies.Delete("rt");
+
 			return RedirectToAction("Index", "Home");
         }
     }

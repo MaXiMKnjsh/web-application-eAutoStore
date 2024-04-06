@@ -6,8 +6,7 @@
 	var vehicles = ViewBag.VehiclesDtos as IEnumerable<VehicleDto>;
 	var totalQuantity = (int)ViewBag.TotalQuantity;
 	var portion = (int)ViewBag.Portion;
-	var pagesQuantity = /* totalQuantity / portion + 1; */ 10;
-	// todo
+	var pagesQuantity = totalQuantity / portion + 1;
 }
 
 <link rel="stylesheet" href="~/css/vehicles-styles.css" type="text/css" asp-append-version="true" />
@@ -23,9 +22,12 @@
 			</div>
 		}
 		<div class="vehicles-block">
-			@for (int i = 0; i < 12; i++)
+			@if (vehicles != null)
 			{
-				@await Html.PartialAsync("~/Views/Shared/Partials/Card.cshtml")
+				@foreach (var vehicle in vehicles)
+				{
+					@await Html.PartialAsync("~/Views/Shared/Partials/Card.cshtml", vehicle)
+				}
 			}
 			<div class="pages-block">
 				<a href="#">

@@ -81,5 +81,17 @@ namespace web_application_eAutoStore.Services
 
 			return imageName;
 		}
+
+		public async Task<IEnumerable<VehicleDto>?> GetNewVehiclesAsync(int count)
+		{
+			var vehicles = await _vehiclesRepository.GetNewVehiclesAsync(count);
+
+			if (vehicles == null)
+				return null;
+
+			var vehiclesDtos = _mapper.Map<IEnumerable<VehicleDto>>(vehicles);
+
+			return vehiclesDtos;
+		}
 	}
 }

@@ -1,5 +1,7 @@
-﻿@{
+﻿@using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+@{
 	ViewData["Title"] = "MegaWheels";
+	var vehicles = ViewBag.Vehicles as IEnumerable<VehicleDto>;
 }
 
 <link rel="stylesheet" href="~/css/home-styles.css" type="text/css" asp-append-version="true" />
@@ -13,9 +15,12 @@
 	</a>
 	<div class="latest-cars-block">
 		<div class="latest-additions">
-			@for (int i = 0; i < 12; i++)
+			@if (vehicles != null)
 			{
-				@await Html.PartialAsync("~/Views/Shared/Partials/Card.cshtml")
+				@foreach (var vehicle in vehicles)
+				{
+					@await Html.PartialAsync("~/Views/Shared/Partials/Card.cshtml", vehicle);
+				}
 			}
 			<div class="button-more-container">
 				<a class="button-more" asp-controller="Vehicles">&#9660;</a>

@@ -12,15 +12,12 @@ namespace web_application_eAutoStore.Controllers
 	public class VehiclesController : Controller
 	{
 		private readonly IVehiclesService _vehiclesService;
-		private readonly IImageService _imageService;
 		private readonly ITokensService _tokensService;
 
 		public VehiclesController(IVehiclesService vehiclesService,
-			IImageService imageService,
 			ITokensService tokensService)
 		{
 			_vehiclesService = vehiclesService;
-			_imageService = imageService;
 			_tokensService = tokensService;
 		}
 		public IActionResult AddAdvertisement() => View();

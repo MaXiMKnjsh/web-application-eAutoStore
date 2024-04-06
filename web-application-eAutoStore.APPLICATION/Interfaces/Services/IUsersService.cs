@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Components.Web;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Interfaces.Services
 {
-    public interface IImageService
+    public interface IUsersService
     {
-		Task<string?> SaveImageAsync(IFormFile image);
-		Task<string> GetImagePathAsync(int id);
+		Task<bool> RegisterAsync(string name, string email, string password);
+		Task<bool> IsExistAsync(string email);
+		Task<bool> LoginAsync(string email, string password);
+		Task<User> GetUserByEmailAsync(string email);
+		Task<User> GetUserByRefreshToken(string refreshToken);
 	}
 }

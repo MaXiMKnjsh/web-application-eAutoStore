@@ -46,7 +46,7 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 				vehicles = _dataContext.Vehicles.Where(x => x.Brand == vehicleFilters.Brand);
 
 			if (vehicleFilters.Mileage != null)
-				vehicles = _dataContext.Vehicles.Where(x=>x.Mileage == vehicleFilters.Mileage);
+				vehicles = _dataContext.Vehicles.Where(x => x.Mileage == vehicleFilters.Mileage);
 
 			if (vehicleFilters.Type != null)
 				vehicles = _dataContext.Vehicles.Where(x => x.Type == vehicleFilters.Type);
@@ -101,17 +101,17 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 
 		public async Task<Vehicle?> GetVehicleAsync(int vehicleId)
 		{
-			var vehicle = await _dataContext.Vehicles.FirstOrDefaultAsync(x=>x.Id==vehicleId);
+			var vehicle = await _dataContext.Vehicles.FirstOrDefaultAsync(x => x.Id == vehicleId);
 			return vehicle;
 		}
 
 		public async Task<string?> GetOwnerEmailAsync(int vehicleId)
 		{
-			var vehicle = await _dataContext.Vehicles.FirstOrDefaultAsync(x=>x.Id == vehicleId);
-			
+			var vehicle = await _dataContext.Vehicles.FirstOrDefaultAsync(x => x.Id == vehicleId);
+
 			if (vehicle == null) return null;
 
-			var owner = await _dataContext.Users.FirstOrDefaultAsync(x=>x.Id==vehicle.OwnerId);
+			var owner = await _dataContext.Users.FirstOrDefaultAsync(x => x.Id == vehicle.OwnerId);
 
 			if (owner == null) return null;
 
@@ -127,6 +127,12 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 		{
 			await _dataContext.Vehicles.AddAsync(newVehicle);
 			return await SaveAsync();
+		}
+
+		public async Task<IEnumerable<Vehicle>> GetNewVehiclesAsync(int count)
+		{
+			var vehicles = _dataContext.Vehicles.OrderByDescending(x => x.Id).Take(count);
+			return await vehicles.ToListAsync();
 		}
 	}
 }

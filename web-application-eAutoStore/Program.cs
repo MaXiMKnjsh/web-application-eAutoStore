@@ -32,7 +32,6 @@ namespace web_application_eAutoStore
 			builder.Services.AddTransient<IVehiclesService, VehiclesService>();
 			builder.Services.AddTransient<IVehiclesRepository, VehiclesRepository>();
 			builder.Services.AddTransient<IRefreshTokenRepository, RefreshTokenRepository>();
-			builder.Services.AddTransient<IImageService,ImageService>();
 
 			builder.Services.AddHttpContextAccessor();
 

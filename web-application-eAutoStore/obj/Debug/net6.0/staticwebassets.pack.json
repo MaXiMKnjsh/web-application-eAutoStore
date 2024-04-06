@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\web-application-eAutoStore.WEB.bundle.scp.css"
     },
     {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\adsImages\\5186c79b-6f22-421b-82da-191e401f8bf4.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\5186c79b-6f22-421b-82da-191e401f8bf4.jpg"
+    },
+    {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\adsImages\\d65e553b-d1a7-48a2-88e6-56c385b78a60.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\d65e553b-d1a7-48a2-88e6-56c385b78a60.jpg"
+    },
+    {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\adsImages\\d765e2e9-eaf7-4551-a40d-fa02521d7334.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\d765e2e9-eaf7-4551-a40d-fa02521d7334.jpg"
+    },
+    {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\addadvertisement-styles.css",
       "PackagePath": "staticwebassets\\css\\addadvertisement-styles.css"
     },

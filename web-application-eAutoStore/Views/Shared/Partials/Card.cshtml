@@ -1,18 +1,53 @@
-﻿<link rel="stylesheet" href="~/css/card-styles.css" type="text/css" asp-append-version="true" />
+﻿@using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 
-<div class="card" data-id="1">
-    <img src="~/images/defaultcar.jpg" alt="Image" />
-    <div class="card-price">
-        <div><span>25 000 000</span><span>$</span></div>
-    </div>
-    <div class="card-descr">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-        delectus facilis cupiditate perspiciatis provident aliquam dolor,
-        eaque similique animi repellat optio deserunt laboriosam aut
-        repudiandae minima, ea modi harum dolorum?
-    </div>
-    <div class="card-buttons">
-        <button class="card-btn more-vehicle-btn">More</button>
-        <button class="card-btn">Save</button>
-    </div>
+@model VehicleDto
+
+<link rel="stylesheet" href="~/css/card-styles.css" type="text/css" asp-append-version="true" />
+
+<div class="card" data-id="@Model.Id">
+	@if (Model.ImagePath != null)
+	{
+		<img src="~/adsImages/@Model.ImagePath" alt="Image" />
+	}
+	else
+	{
+		<img src="~/images/defaultcar.jpg" alt="Image" />
+	}
+	<div class="card-price">
+		<div><span>@Model.Price</span><span>$</span></div>
+	</div>
+	<div class="card-descr">
+		<span>
+			@Model.Brand @Model.Model, @Model.Mileage kilometers
+			@if (Model.Type != null)
+			{
+				@: ,@Model.Type
+			}
+			@if (Model.Quality != null)
+			{
+				@: ,@Model.Quality
+			}
+			@if (Model.Transmission != null)
+			{
+				@: ,@Model.Transmission
+			}
+			@if (Model.Year != null)
+			{
+				@: ,@Model.Year production year
+			}
+			@if (Model.EngineCapacity != null)
+			{
+				@: ,@Model.EngineCapacity liters
+			}
+			@if (Model.EnginePower != null)
+			{
+				@: ,@Model.EnginePower  horsepower
+			}
+			.
+		</span>
+	</div>
+	<div class="card-buttons">
+		<button class="card-btn more-vehicle-btn">More</button>
+		<button class="card-btn">Save</button>
+	</div>
 </div>

@@ -13,5 +13,6 @@ namespace web_application_eAutoStore.Interfaces.Services
 		Task<string?> GetOwnerEmailAsync(int vehicleId);
 		Task<bool> AddVehicleAsync(VehicleAddRequest vehicleAddRequest, string? imagePath, int ownerId);
 		Task<string> SaveImageAsync(IFormFile image);
+		Task<IEnumerable<VehicleDto>?> GetNewVehiclesAsync(int count);
 	}
 }
