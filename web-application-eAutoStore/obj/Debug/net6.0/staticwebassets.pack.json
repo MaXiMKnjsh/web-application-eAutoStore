@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\addadvertisement-styles.css"
     },
     {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\card-inline-styles.css",
+      "PackagePath": "staticwebassets\\css\\card-inline-styles.css"
+    },
+    {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\card-styles.css",
       "PackagePath": "staticwebassets\\css\\card-styles.css"
     },
@@ -91,6 +95,10 @@
     {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\images\\telegram-ad.png",
       "PackagePath": "staticwebassets\\images\\telegram-ad.png"
+    },
+    {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\card.js",
+      "PackagePath": "staticwebassets\\js\\card.js"
     },
     {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\layout.js",

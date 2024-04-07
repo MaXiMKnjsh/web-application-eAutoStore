@@ -1,0 +1,36 @@
+﻿.card-inline {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 100px 0 20px;
+    margin: 4px;
+    background-color: rgb(195, 247, 195);
+    border-radius: 30px;
+}
+.ci-btns {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ci-btns > .btn{
+    width: 80px;
+}
+.ci-name {
+    background-color: green;
+    border-radius: 30px;
+    padding: 5px 10px;
+    color: white;
+    margin:0 10px;
+}
+.ci-image{
+    height:100%;
+}
+.ci-image > img {
+    height: 100%;
+    object-fit: cover;
+    padding: 5px 0;
+    border-radius:10px;
+}

@@ -12,7 +12,8 @@ namespace web_application_eAutoStore.Interfaces.Services
 		Task<bool> LoginAsync(string email, string password);
 		Task<UserDto> GetUserByEmailAsync(string email);
 		Task<UserDto> GetUserByRefreshTokenAsync(string refreshToken);
-		Task<IEnumerable<VehicleDto>>? GetUserAdvertisementsAsync(int id);
+		Task<IEnumerable<VehicleDto>?> GetUserAdvertisementsAsync(int id);
 		Task<UserDto> GetUserByIdAsync(int id);
+		Task<IEnumerable<VehicleDto>?> GetAdsByIdAsync(IEnumerable<int> vehsIds);
 	}
 }

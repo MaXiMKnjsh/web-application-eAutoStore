@@ -4,90 +4,110 @@
 @{
 	var userInfo = ViewBag.UserInfo as UserDto;
 	var userAdvertisements = ViewBag.UserAdvertisements as IEnumerable<VehicleDto>;
+	var favVehicles = ViewBag.FavoriteVehicles as IEnumerable<VehicleDto>;
 }
 
 <link rel="stylesheet" href="~/css/profile-styles.css" asp-append-version="true" />
 
 <div class="profile-block">
-	<div class="personal-info">
-		<h3>Account information:</h3>
-		<form method="post" asp-controller="Vehicles" asp-action="AddNewAdvertisement" enctype="multipart/form-data">
-			<div class="personal-info-block">
-				<label for="email">Email: </label>
-				<div>
-					<input class="input-box"
-						   type="email"
-						   name="email"
-						   id="email"
-						   placeholder="Email"
-						   disabled
-						   value="@userInfo.Email" />
+	<div class="first-subblock">
+		<div class="personal-info">
+			<h3>Account information:</h3>
+			<form method="post" asp-controller="Vehicles" asp-action="AddNewAdvertisement" enctype="multipart/form-data">
+				<div class="personal-info-block">
+					<label for="email">Email: </label>
+					<div>
+						<input class="input-box"
+							   type="email"
+							   name="email"
+							   id="email"
+							   placeholder="Email"
+							   disabled
+							   value="@userInfo.Email" />
+					</div>
 				</div>
-			</div>
-			<div class="personal-info-block">
-				<label for="name">Name: </label>
-				<div>
-					<input class="input-box"
-						   type="text"
-						   name="name"
-						   id="name"
-						   placeholder="Name"
-						   required
-						   value="@userInfo.Name" />
+				<div class="personal-info-block">
+					<label for="name">Name: </label>
+					<div>
+						<input class="input-box"
+							   type="text"
+							   name="name"
+							   id="name"
+							   placeholder="Name"
+							   required
+							   value="@userInfo.Name" />
+					</div>
 				</div>
-			</div>
-			<div class="personal-info-block">
-				<label for="surname">Surname: </label>
-				<div>
-					<input class="input-box"
-						   type="text"
-						   name="surname"
-						   id="surname"
-						   placeholder="Surname"
-						   value="@userInfo?.Surname" />
+				<div class="personal-info-block">
+					<label for="surname">Surname: </label>
+					<div>
+						<input class="input-box"
+							   type="text"
+							   name="surname"
+							   id="surname"
+							   placeholder="Surname"
+							   value="@userInfo?.Surname" />
+					</div>
 				</div>
-			</div>
-			<div class="personal-info-block">
-				<label for="role">Role: </label>
-				<div>
-					<input class="input-box"
-						   type="text"
-						   name="role"
-						   id="role"
-						   placeholder="Email"
-						   disabled
-						   value="@userInfo.Role" />
+				<div class="personal-info-block">
+					<label for="role">Role: </label>
+					<div>
+						<input class="input-box"
+							   type="text"
+							   name="role"
+							   id="role"
+							   placeholder="Email"
+							   disabled
+							   value="@userInfo.Role" />
+					</div>
 				</div>
-			</div>
-			<div class="personal-info-block">
-				<label for="password">Password: </label>
-				<div>
-					<input class="input-box"
-						   type="password"
-						   name="password"
-						   id="password"
-						   placeholder="New password"
-						   />
+				<div class="personal-info-block">
+					<label for="password">Password: </label>
+					<div>
+						<input class="input-box"
+							   type="password"
+							   name="password"
+							   id="password"
+							   placeholder="New password" />
+					</div>
 				</div>
-			</div>
-			<div class="personal-info-block">
-				<label for="repeatPassword">Repeat password: </label>
-				<div>
-					<input class="input-box"
-						   type="password"
-						   name="repeatPassword"
-						   id="repeatPassword"
-						   placeholder="Repeat new password"
-						   />
+				<div class="personal-info-block">
+					<label for="repeatPassword">Repeat password: </label>
+					<div>
+						<input class="input-box"
+							   type="password"
+							   name="repeatPassword"
+							   id="repeatPassword"
+							   placeholder="Repeat new password" />
+					</div>
 				</div>
-			</div>
-			<div class="buttons-block">
-				<input class="btn" type="submit" value="SAVE">
-			</div>
-		</form>
+				<div class="buttons-block">
+					<input class="btn" type="submit" value="SAVE">
+				</div>
+			</form>
+		</div>
+		<div class="personal-advertisements">
+			<h3>Personal advertisements:</h3>
+			@if (userAdvertisements != null)
+			{
+				@foreach (var vehicle in userAdvertisements)
+				{
+					@await Html.PartialAsync("~/Views/Shared/Partials/Card-inline.cshtml", vehicle)
+					;
+				}
+			}
+		</div>
 	</div>
-	<div class="personal-advertisements">
-		<h3>Personal advertisements:</h3>
-
+	<div class="second-subblock">
+		<div class="favorite-vehicles-block">
+			<h3>Favorite vehicles:</h3>
+			@if (favVehicles != null)
+			{
+				@foreach (var vehicle in favVehicles)
+				{
+					@await Html.PartialAsync("~/Views/Shared/Partials/Card.cshtml", vehicle);
+				}
+			}
+		</div>
 	</div>
 </div>

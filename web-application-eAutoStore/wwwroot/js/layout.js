@@ -40,7 +40,7 @@
     });
 });
 
-function ClearCookiesFromTokens() {
+function clearCookiesFromTokens() {
     clearCookie("jwt");
     clearCookie("rt");
     location.reload();

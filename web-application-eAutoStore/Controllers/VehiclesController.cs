@@ -4,6 +4,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.VisualStudio.Debugger.Contracts.HotReload;
 using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
 using web_application_eAutoStore.APPLICATION.Services;
+using web_application_eAutoStore.DOMAIN.DTOs.FavoriteVehicles;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.Interfaces.Services;
 
@@ -52,6 +53,7 @@ namespace web_application_eAutoStore.Controllers
 
 			return PartialView("VehicleReviewBody");
 		}
+		
 
 		[HttpPost]
 		[Authorize]

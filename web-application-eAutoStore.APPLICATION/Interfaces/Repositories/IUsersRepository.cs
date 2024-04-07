@@ -1,4 +1,5 @@
-﻿using web_application_eAutoStore.Models;
+﻿using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Interfaces.Repositories
 {
@@ -11,6 +12,7 @@ namespace web_application_eAutoStore.Interfaces.Repositories
         Task<User> GetUserByRefreshToken(string refreshToken);
         Task<User?> GetUserByIdAsync(int id);
         Task<IEnumerable<Vehicle>?> GetUserAdvertisementsAsync(int id);
+        Task<IEnumerable<Vehicle>?> GetAdsByIdAsync(IEnumerable<int> vehsIds);
 
 	}
 }

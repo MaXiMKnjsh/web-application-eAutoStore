@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace web_application_eAutoStore.DOMAIN.DTOs.Users
 {
-    public class LoginUserRequest
+    public class FavoriteVehicleAddRequest
     {
         [Required]
         [EmailAddress]

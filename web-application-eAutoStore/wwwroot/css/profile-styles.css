@@ -1,17 +1,19 @@
-﻿.personal-info, .personal-advertisements {
+﻿.personal-info, .personal-advertisements, .favorite-vehicles-block {
     width: 50%;
-}
-
-.profile-block{
-    display: flex;
-    flex-direction: row;
-}
-.personal-info {
+    height: 455px;
     background: linear-gradient(to bottom, #328f00 5px,#f7f7f7 5px);
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
 }
+    .favorite-vehicles-block{
+        width:100%;
+    }
+    .first-subblock {
+        display: flex;
+        flex-direction: row;
+    }
+
 .input-box {
     border: 1px solid gray;
     outline: none;
@@ -26,7 +28,6 @@
     margin-bottom: 5px;
 }
 .btn {
-    margin-top: 10px;
     width: 48%;
     font-size: 15px;
     border-radius: 30px;
@@ -42,6 +43,7 @@
     }
 .buttons-block {
     text-align: center;
+    margin-top: 10px;
 }
 
 label{

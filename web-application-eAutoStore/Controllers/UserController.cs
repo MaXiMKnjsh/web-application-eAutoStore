@@ -14,13 +14,18 @@ namespace web_application_eAutoStore.Controllers
     {
         private readonly IUsersService _usersService;
         private readonly ITokensService _tokensService;
+        private readonly IFavoriteVehiclesService _favoriteVehiclesService;
         private readonly IMapper _mapper;
 
-        public UserController(IUsersService usersService, ITokensService tokensService, IMapper mapper)
+        public UserController(IUsersService usersService, 
+            ITokensService tokensService, 
+            IMapper mapper,
+            IFavoriteVehiclesService favoriteVehiclesService)
         {
             _usersService = usersService;
             _mapper = mapper;
             _tokensService = tokensService;
+            _favoriteVehiclesService = favoriteVehiclesService;
         }
         public IActionResult Login() => View();
         public IActionResult Register() => View();
@@ -34,16 +39,33 @@ namespace web_application_eAutoStore.Controllers
             if (userId == null)
                 return Unauthorized();
 
-            var userInfo = await _usersService.GetUserByIdAsync((int)userId);
             var userAdvertisements = await _usersService.GetUserAdvertisementsAsync((int)userId);
+            var userInfo = await _usersService.GetUserByIdAsync((int)userId);
+            var userFavVehiclesInfo = await _favoriteVehiclesService.GetFavoriteVehiclesAsync((int)userId);
+
+            var favVehsIds = userFavVehiclesInfo?.Select(x => x.VehicleId).ToList() ?? null;
+
+            var useFavVehicles = await _usersService.GetAdsByIdAsync(favVehsIds);
 
             ViewBag.UserInfo = userInfo;
             ViewBag.UserAdvertisements = userAdvertisements;
+            ViewBag.FavoriteVehicles = useFavVehicles;
 
-            return View();
+
+			return View();
         }
+        [HttpGet]
+        [Authorize]
+        public IActionResult GetUserId()
+        {
+            var userId = _tokensService.GetUserId();
 
-        [HttpPost]
+            if (userId == null)
+                return Unauthorized();
+
+            return Ok((int)userId);
+        }
+		[HttpPost]
         public async Task<IActionResult> ProcessRegisterForm([FromForm]RegisterUserRequest request)
         {
             if (!ModelState.IsValid)
@@ -63,7 +85,7 @@ namespace web_application_eAutoStore.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ProcessLoginForm([FromForm]LoginUserRequest request)
+        public async Task<IActionResult> ProcessLoginForm([FromForm]FavoriteVehicleAddRequest request)
         {
             if (!ModelState.IsValid)
                 return RedirectToAction("Login");

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "++e0hY13Dzw6DRhmlffSUBJUHUWsniFbxd2H2eCH3nE=",
+  "Hash": "8Fa1PvbN1PAYtz9fncqv4JFpagKbKnHt27SxlnvxgYs=",
   "Source": "web-application-eAutoStore.WEB",
   "BasePath": "_content/web-application-eAutoStore.WEB",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\addadvertisement-styles.css"
+    },
+    {
+      "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\card-inline-styles.css",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "css/card-inline-styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\card-inline-styles.css"
     },
     {
       "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\css\\card-styles.css",
@@ -471,6 +490,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\telegram-ad.png"
+    },
+    {
+      "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\card.js",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "js/card.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\card.js"
     },
     {
       "Identity": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\layout.js",

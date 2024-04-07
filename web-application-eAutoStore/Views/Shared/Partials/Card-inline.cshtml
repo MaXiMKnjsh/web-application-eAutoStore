@@ -1,0 +1,20 @@
+﻿@using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+
+@model VehicleDto
+
+<link rel="stylesheet" href="~/css/card-inline-styles.css" type="text/css" asp-append-version="true" />
+
+<div class="card-inline" data-id="@Model.Id">
+	<div class="ci-image">
+		<img src="~/adsImages/@Model.ImagePath" alt="vehicle image"/>
+	</div>
+	<div class="ci-name">
+		@Model.Brand @Model.Model
+	</div>
+	<div class="ci-descr">
+		@Model.Price$, @Model.Mileage kms, @Model.Type.ToString().ToLower() type...
+	</div>
+	<div class="ci-btns">
+		<button class="btn">DELETE</button>
+	</div>
+</div>

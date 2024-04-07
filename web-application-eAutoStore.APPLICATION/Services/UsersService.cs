@@ -25,7 +25,14 @@ namespace web_application_eAutoStore.Services
             _mapper = mapper;
         }
 
-		public async Task<IEnumerable<VehicleDto>>? GetUserAdvertisementsAsync(int id)
+		public async Task<IEnumerable<VehicleDto>?> GetAdsByIdAsync(IEnumerable<int> vehsIds)
+		{
+            var vehicles = await _usersRepository.GetAdsByIdAsync(vehsIds);
+            var vehiclesDtos = _mapper.Map<IEnumerable<VehicleDto>>(vehicles);
+            return vehiclesDtos;
+		}
+
+		public async Task<IEnumerable<VehicleDto>?> GetUserAdvertisementsAsync(int id)
 		{
             var vehicles = await _usersRepository.GetUserAdvertisementsAsync(id);
             var vehiclesDtos = _mapper.Map<IEnumerable<VehicleDto>>(vehicles);
