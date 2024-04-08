@@ -30,16 +30,15 @@ namespace web_application_eAutoStore.Controllers
         public IActionResult Login() => View();
         public IActionResult Register() => View();
 
-        //[Authorize]
+        [Authorize]
         public async Task<IActionResult> Profile()
         {
-            //var userId = _tokensService.GetUserId();
-            var userId = 2;
+            var userId = _tokensService.GetUserId();
 
             if (userId == null)
-                return Unauthorized();
+				RedirectToAction("Login");
 
-            var userAdvertisements = await _usersService.GetUserAdvertisementsAsync((int)userId);
+			var userAdvertisements = await _usersService.GetUserAdvertisementsAsync((int)userId);
             var userInfo = await _usersService.GetUserByIdAsync((int)userId);
             var userFavVehiclesInfo = await _favoriteVehiclesService.GetFavoriteVehiclesAsync((int)userId);
 
@@ -51,11 +50,28 @@ namespace web_application_eAutoStore.Controllers
             ViewBag.UserAdvertisements = userAdvertisements;
             ViewBag.FavoriteVehicles = useFavVehicles;
 
-
 			return View();
         }
-        [HttpGet]
+
         [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> UpdatePersonalInfo([FromForm]UpdateUserRequest updateUserRequest)
+        {
+            var userId = _tokensService.GetUserId();
+
+            if (userId == null)
+				RedirectToAction("Login");
+
+			var result = await _usersService.UpdateUserInfoAsync(updateUserRequest, (int)userId);
+
+            if (result == false)
+				RedirectToAction("Profile");
+
+			return RedirectToAction("Profile");
+        }
+
+        [Authorize]
+		[HttpGet]
         public IActionResult GetUserId()
         {
             var userId = _tokensService.GetUserId();
@@ -65,23 +81,24 @@ namespace web_application_eAutoStore.Controllers
 
             return Ok((int)userId);
         }
+
 		[HttpPost]
         public async Task<IActionResult> ProcessRegisterForm([FromForm]RegisterUserRequest request)
         {
             if (!ModelState.IsValid)
-                return BadRequest();
+				return RedirectToAction("Register");
 
-            bool isUserExist = await _usersService.IsExistAsync(request.Email);
+			bool isUserExist = await _usersService.IsExistAsync(request.Email);
 
             if (isUserExist)
-                return Conflict();
+				return RedirectToAction("Register");
 
-            bool isSuccessRegistration = await _usersService.RegisterAsync(request.Name, request.Email, request.Password);
+			bool isSuccessRegistration = await _usersService.RegisterAsync(request.Name, request.Email, request.Password);
 
             if (!isSuccessRegistration)
-                return StatusCode(500);
+                return RedirectToAction("Register");
 
-            return RedirectToAction("Login");
+			return RedirectToAction("Login");
         }
 
         [HttpPost]
@@ -93,14 +110,14 @@ namespace web_application_eAutoStore.Controllers
             bool isUserExist = await _usersService.IsExistAsync(request.Email);
 
             if (!isUserExist)
-                return StatusCode(403);
+                return RedirectToAction("Login");
 
-            var result = await _usersService.LoginAsync(request.Email, request.Password);
+			var result = await _usersService.LoginAsync(request.Email, request.Password);
 
             if (!result)
-                return StatusCode(500);
+                return RedirectToAction("Login");
 
-            var user = await _usersService.GetUserByEmailAsync(request.Email);
+			var user = await _usersService.GetUserByEmailAsync(request.Email);
 
             var jwt = _tokensService.GenerateJWToken(user);
             var rt = await _tokensService.GenerateRefreshTokenAsync(user, HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString());

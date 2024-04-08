@@ -8,6 +8,7 @@ using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using AutoMapper;
 using web_application_eAutoStore.DOMAIN.DTOs.FavoriteVehicles;
+using System.Reflection.Metadata.Ecma335;
 
 namespace web_application_eAutoStore.Services
 {
@@ -22,11 +23,23 @@ namespace web_application_eAutoStore.Services
 			_mapper = mapper;
 		}
 
+		public async Task<bool> DeleteFavoriteVehicleAsync(int vehicleId, int userId)
+		{
+			var result = await _favoriteVehiclesRepository.DeleteFavoriteVehicleAsync(vehicleId,userId);
+			return result;
+		}
+
 		public async Task<IEnumerable<FavVehicleDto>?> GetFavoriteVehiclesAsync(int userId)
 		{
 			var favVehicles = await _favoriteVehiclesRepository.GetFavoriteVehiclesAsync(userId);
 			var favVehiclesDtos = _mapper.Map<IEnumerable<FavVehicleDto>>(favVehicles);
 			return favVehiclesDtos;
+		}
+
+		public async Task<bool> IsAlreadySavedAsync(int userId, int favoriteVehicleId)
+		{
+			var result = await _favoriteVehiclesRepository.IsAlreadySavedAsync(userId, favoriteVehicleId);
+				return result;
 		}
 
 		public async Task<bool> SaveFavoriteVehicleAsync(int userId, int favoriteVehicleId)

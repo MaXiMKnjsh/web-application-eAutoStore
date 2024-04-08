@@ -1,4 +1,5 @@
-﻿using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+﻿using web_application_eAutoStore.DOMAIN.DTOs.Users;
+using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Interfaces.Repositories
@@ -13,6 +14,6 @@ namespace web_application_eAutoStore.Interfaces.Repositories
         Task<User?> GetUserByIdAsync(int id);
         Task<IEnumerable<Vehicle>?> GetUserAdvertisementsAsync(int id);
         Task<IEnumerable<Vehicle>?> GetAdsByIdAsync(IEnumerable<int> vehsIds);
-
+        Task<bool> UpdateUserInfoAsync(UpdateUserRequest updateUserRequest, int userId, string? hashedPassword);
 	}
 }

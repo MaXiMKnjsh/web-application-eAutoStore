@@ -13,77 +13,84 @@
 	<div class="first-subblock">
 		<div class="personal-info">
 			<h3>Account information:</h3>
-			<form method="post" asp-controller="Vehicles" asp-action="AddNewAdvertisement" enctype="multipart/form-data">
-				<div class="personal-info-block">
-					<label for="email">Email: </label>
-					<div>
-						<input class="input-box"
-							   type="email"
-							   name="email"
-							   id="email"
-							   placeholder="Email"
-							   disabled
-							   value="@userInfo.Email" />
+			<form method="post" asp-controller="User" asp-action="UpdatePersonalInfo">
+				@if (userInfo != null)
+				{
+					<div class="personal-info-block">
+						<label for="email">Email: </label>
+						<div>
+							<input class="input-box"
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email"
+							disabled
+							value="@userInfo.Email" 
+							/>
+						</div>
 					</div>
-				</div>
-				<div class="personal-info-block">
-					<label for="name">Name: </label>
-					<div>
-						<input class="input-box"
-							   type="text"
-							   name="name"
-							   id="name"
-							   placeholder="Name"
-							   required
-							   value="@userInfo.Name" />
+					<div class="personal-info-block">
+						<label for="name">Name: </label>
+						<div>
+							<input class="input-box"
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Name"
+							value="@userInfo.Name"
+								   maxlength="20"/>
+						</div>
 					</div>
-				</div>
-				<div class="personal-info-block">
-					<label for="surname">Surname: </label>
-					<div>
-						<input class="input-box"
-							   type="text"
-							   name="surname"
-							   id="surname"
-							   placeholder="Surname"
-							   value="@userInfo?.Surname" />
+					<div class="personal-info-block">
+						<label for="surname">Surname: </label>
+						<div>
+							<input class="input-box"
+							type="text"
+							name="surname"
+							id="surname"
+							placeholder="Surname"
+							value="@userInfo?.Surname"
+								   maxlength="20"/>
+						</div>
 					</div>
-				</div>
-				<div class="personal-info-block">
-					<label for="role">Role: </label>
-					<div>
-						<input class="input-box"
-							   type="text"
-							   name="role"
-							   id="role"
-							   placeholder="Email"
-							   disabled
-							   value="@userInfo.Role" />
+					<div class="personal-info-block">
+						<label for="role">Role: </label>
+						<div>
+							<input class="input-box"
+							type="text"
+							name="role"
+							id="role"
+							placeholder="Email"
+							disabled
+							value="@userInfo.Role" />
+						</div>
 					</div>
-				</div>
-				<div class="personal-info-block">
-					<label for="password">Password: </label>
-					<div>
-						<input class="input-box"
-							   type="password"
-							   name="password"
-							   id="password"
-							   placeholder="New password" />
+					<div class="personal-info-block">
+						<label for="password">Password: </label>
+						<div>
+							<input class="input-box"
+							type="password"
+							name="password"
+							id="password"
+							placeholder="New password"
+								   maxlength="20"/>
+						</div>
 					</div>
-				</div>
-				<div class="personal-info-block">
-					<label for="repeatPassword">Repeat password: </label>
-					<div>
-						<input class="input-box"
-							   type="password"
-							   name="repeatPassword"
-							   id="repeatPassword"
-							   placeholder="Repeat new password" />
+					<div class="personal-info-block">
+						<label for="repeatpassword">Repeat password: </label>
+						<div>
+							<input class="input-box"
+							type="password"
+							name="repeatpassword"
+							id="repeatpassword"
+							placeholder="Repeat new password"
+								   maxlength="20" />
+						</div>
 					</div>
-				</div>
-				<div class="buttons-block">
-					<input class="btn" type="submit" value="SAVE">
-				</div>
+					<div class="buttons-block">
+						<input class="btn" type="submit" value="SAVE">
+					</div>
+				}
 			</form>
 		</div>
 		<div class="personal-advertisements">
@@ -92,8 +99,7 @@
 			{
 				@foreach (var vehicle in userAdvertisements)
 				{
-					@await Html.PartialAsync("~/Views/Shared/Partials/Card-inline.cshtml", vehicle)
-					;
+					@await Html.PartialAsync("~/Views/Shared/Partials/Card-inline.cshtml", vehicle);
 				}
 			}
 		</div>
@@ -111,3 +117,5 @@
 		</div>
 	</div>
 </div>
+
+<script src="~/js/profile.js" defer></script>

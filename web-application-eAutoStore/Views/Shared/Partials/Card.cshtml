@@ -46,7 +46,11 @@
 	</div>
 	<div class="card-buttons">
 		<button class="card-btn more-vehicle-btn">More</button>
-		<button class="card-btn" onclick="SaveCard(this)">Save</button>
+		@if (User.Identity.IsAuthenticated)
+		{
+			<button class="card-btn save-vehicle-btn" onclick="SaveCard(this)">Save</button>
+		}
+		<button class="card-btn del-vehicle-btn" onclick="DeleteCard(this)">Delete</button>
 	</div>
 </div>
 

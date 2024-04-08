@@ -97,12 +97,24 @@
       "PackagePath": "staticwebassets\\images\\telegram-ad.png"
     },
     {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\card-verification.js",
+      "PackagePath": "staticwebassets\\js\\card-verification.js"
+    },
+    {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\card.js",
       "PackagePath": "staticwebassets\\js\\card.js"
     },
     {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\inline-card.js",
+      "PackagePath": "staticwebassets\\js\\inline-card.js"
+    },
+    {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\layout.js",
       "PackagePath": "staticwebassets\\js\\layout.js"
+    },
+    {
+      "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\profile.js",
+      "PackagePath": "staticwebassets\\js\\profile.js"
     },
     {
       "Id": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\wwwroot\\js\\register.js",

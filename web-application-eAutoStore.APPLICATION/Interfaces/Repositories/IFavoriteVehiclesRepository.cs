@@ -6,5 +6,7 @@ namespace web_application_eAutoStore.Interfaces.Repositories
     {
         Task<bool> SaveFavoriteVehicleAsync(int userId, int favoriteVehicleId);
         Task<IEnumerable<FavoriteVehicle>> GetFavoriteVehiclesAsync(int userId);
+        Task<bool> IsAlreadySavedAsync(int userId, int favoriteVehicleId);
+        Task<bool> DeleteFavoriteVehicleAsync(int vehicleId, int userId);
 	}
 }

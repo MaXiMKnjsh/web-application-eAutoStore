@@ -1,13 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
 using web_application_eAutoStore.Data;
+using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.Interfaces.Repositories;
 using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Repositories
 {
-	public class UsersRepository : IUsersRepository
+	public class UsersRepository : IUsersRepository	
 	{
 		private readonly DataContext _dataContext;
 		public UsersRepository(DataContext dataContext)
@@ -59,6 +60,25 @@ namespace web_application_eAutoStore.Repositories
 		{
 			int savedCount = await _dataContext.SaveChangesAsync();
 			return savedCount > 0 ? true : false;
+		}
+
+		public async Task<bool> UpdateUserInfoAsync(UpdateUserRequest updateUserRequest, int userId, string? hashedPassword)
+		{
+			var user = _dataContext.Users.FirstOrDefault(x=>x.Id==userId);
+
+			if (user==null)
+				return false;
+
+			if (updateUserRequest.Name!=null)
+				user.Name= updateUserRequest.Name;
+
+			if (updateUserRequest.Surname != null)
+				user.Surname= updateUserRequest.Surname;
+
+			if (hashedPassword!=null)
+				user.HashedPassword = hashedPassword;
+
+			return await SaveAsync();
 		}
 	}
 }

@@ -31,3 +31,9 @@
 
 	</div>
 </div>
+
+@if(User.Identity.IsAuthenticated)
+{
+	@* script connection *@
+	<script src="~/js/card-verification.js"></script>
+}

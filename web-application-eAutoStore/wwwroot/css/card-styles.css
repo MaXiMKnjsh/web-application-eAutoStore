@@ -11,15 +11,19 @@
 .card-price {
     text-align: center;
 }
+.del-vehicle-btn{
+    display:none;
+    text-align:center;
+}
 
-    .card-price > div {
-        font-size: 18px;
-        color: azure;
-        display: inline-flex;
-        padding: 0 10px;
-        background-color: rgb(11, 138, 11);
-        border-radius: 10px;
-    }
+.card-price > div {
+    font-size: 18px;
+    color: azure;
+    display: inline-flex;
+    padding: 0 10px;
+    background-color: rgb(11, 138, 11);
+    border-radius: 10px;
+}
 
 .card-descr {
     font-size:15px;
@@ -31,13 +35,14 @@
     background-color: rgb(79, 245, 79);
     border: none;
     outline: none;
-    width: 100px;
+    flex:1;
     color: rgb(21, 21, 21);
     font-size: 15px;
     font-weight: 400;
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
     cursor: pointer;
+    margin: 0 2px;
 }
 
 
@@ -46,6 +51,7 @@
 }
 .card-buttons {
     position: relative;
+    display: flex;
 }
 
 .card > img {
@@ -57,4 +63,7 @@
 
 .more-vehicle-btn {
     background-color: rgb(143, 201, 174);
+}
+.btn-delete-hover {
+    background-color: rgb(235, 127, 127) !important;
 }

@@ -6,13 +6,19 @@
     padding: 10px;
     margin: 5px;
 }
-    .favorite-vehicles-block{
-        width:100%;
-    }
-    .first-subblock {
-        display: flex;
-        flex-direction: row;
-    }
+
+.favorite-vehicles-block {
+    width: 100%;
+    height:auto;
+    display:flex;
+    position: relative;
+    padding-top:40px;
+}
+
+.first-subblock {
+    display: flex;
+    flex-direction: row;
+}
 
 .input-box {
     border: 1px solid gray;
@@ -27,6 +33,7 @@
     color: black;
     margin-bottom: 5px;
 }
+
 .btn {
     width: 48%;
     font-size: 15px;
@@ -41,11 +48,21 @@
     .btn:hover {
         background-color: rgb(69, 129, 69);
     }
+
 .buttons-block {
     text-align: center;
     margin-top: 10px;
 }
 
-label{
+label {
     padding-right: 10px;
+}
+
+.favorite-vehicles-block > h3{
+    position:absolute;
+    top: 10px;
+    left:10px;
+}
+.save-vehicle-btn{
+    display:none;
 }
