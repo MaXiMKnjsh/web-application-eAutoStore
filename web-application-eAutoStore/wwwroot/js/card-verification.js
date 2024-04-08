@@ -10,11 +10,8 @@ function verificationCards(favoriteVehicles) {
         const isVerificated = favoriteVehicles.some(vehicle => vehicle.vehicleId === dataId);
 
         if (isVerificated) {
-            const cardSaveBtn = card.querySelector('.save-vehicle-btn');
-            cardSaveBtn.style.backgroundColor = 'rgb(66, 245, 149)';
-            cardSaveBtn.innerHTML = "&#10003;";
-            
-            const cardMoreBtn=card.querySelector('.more-vehicle-btn').style.flex='4';
+            card.querySelector('.save-vehicle-btn').classList.add('btn-hidden');
+            card.querySelector('.btn-saved').classList.remove('btn-hidden');
         };
     });
 }

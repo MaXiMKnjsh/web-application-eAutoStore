@@ -49,7 +49,7 @@ namespace web_application_eAutoStore.Controllers
 
 		[HttpDelete]
 		[Authorize]
-		public async Task<IActionResult> DeleteFavoriteVehicle(int vehicleId)
+		public async Task<IActionResult> DeleteFavoriteVehicle([FromQuery]int vehicleId)
 		{
 			var userId = _tokensService.GetUserId();
 
@@ -61,7 +61,7 @@ namespace web_application_eAutoStore.Controllers
 			if (isExist == false)
 				return BadRequest();
 
-			var result = await _favoriteVehiclesService.DeleteFavoriteVehicleAsync((int)userId,vehicleId);
+			var result = await _favoriteVehiclesService.DeleteFavoriteVehicleAsync(vehicleId,(int)userId);
 
 			if (result == false)
 				return StatusCode(500);

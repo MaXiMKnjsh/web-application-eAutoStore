@@ -11,10 +11,6 @@
 .card-price {
     text-align: center;
 }
-.del-vehicle-btn{
-    display:none;
-    text-align:center;
-}
 
 .card-price > div {
     font-size: 18px;
@@ -44,7 +40,9 @@
     cursor: pointer;
     margin: 0 2px;
 }
-
+.save-vehicle-btn, .more-vehicle-btn, .del-vehicle-btn {
+    flex: 4;
+}
 
 .card-btn:hover {
     background-color: rgb(9, 182, 9);
@@ -64,6 +62,22 @@
 .more-vehicle-btn {
     background-color: rgb(143, 201, 174);
 }
+.del-vehicle-btn {
+    background-color: rgb(255, 84, 84);
+}
 .btn-delete-hover {
     background-color: rgb(235, 127, 127) !important;
 }
+.btn-saved {
+    cursor: auto;
+    background-color: rgb(66, 245, 149);
+}
+    .btn-hidden {
+        display: none;
+    }
+.del-vehicle-btn:hover {
+    background-color: rgb(196, 110, 110);
+}
+    .btn-saved:hover{
+        background-color:none;
+    }
