@@ -142,5 +142,25 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 			var vehicles = _dataContext.Vehicles.OrderByDescending(x => x.Id).Take(count);
 			return await vehicles.ToListAsync();
 		}
+
+		public async Task<bool> IsAlreadySavedAsync(int vehicleId)
+		{
+			var vehicle = await _dataContext.Vehicles.FirstOrDefaultAsync(x => x.Id == vehicleId);
+
+			if (vehicle != null)
+				return true;
+
+			return false;
+		}
+
+		public async Task<bool> DeleteVehicleAsync(int vehicleId)
+		{
+			var vehicleToDelete = await _dataContext.Vehicles.FirstOrDefaultAsync(x => x.Id == vehicleId);
+
+			if (vehicleToDelete != null)
+				_dataContext.Vehicles.Remove(vehicleToDelete);
+
+			return await SaveAsync();
+		}
 	}
 }

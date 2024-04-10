@@ -18,12 +18,21 @@
 .ci-btns > .btn{
     width: 80px;
 }
+.personal-advertisements{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 .ci-name {
     background-color: green;
     border-radius: 30px;
     padding: 5px 10px;
     color: white;
     margin:0 10px;
+    overflow:hidden;
+    height:35px;
+}
+.ci-descr{
+    overflow: hidden;
 }
 .ci-image{
     height:100%;

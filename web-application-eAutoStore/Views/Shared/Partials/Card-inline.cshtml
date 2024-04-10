@@ -6,13 +6,20 @@
 
 <div class="card-inline" data-id="@Model.Id">
 	<div class="ci-image">
-		<img src="~/adsImages/@Model.ImagePath" alt="vehicle image"/>
+		@if (Model.ImagePath != null)
+		{
+			<img src="~/adsImages/@Model.ImagePath" alt="vehicle image"/>
+		}
+		else
+		{
+			<img src="~/images/defaultcar.jpg" alt="vehicle image" />
+		}
 	</div>
 	<div class="ci-name">
 		@Model.Brand @Model.Model
 	</div>
 	<div class="ci-descr">
-		@Model.Price$, @Model.Mileage kms, @Model.Type.ToString().ToLower() type...
+		@Model.Price$, @Model.Mileage kms, @Model.Brand.ToString().ToLower(), @Model.Model.ToString().ToLower()...
 	</div>
 	<div class="ci-btns">
 		<button class="btn" onclick="deleteAdvertisement(this)">DELETE</button>

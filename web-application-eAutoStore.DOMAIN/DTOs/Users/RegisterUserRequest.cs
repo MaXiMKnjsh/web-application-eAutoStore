@@ -8,7 +8,6 @@ namespace web_application_eAutoStore.DOMAIN.DTOs.Users
         [EmailAddress]
         public string Email { get; set; }
         [Required]
-        [MinLength(8)]
         [MaxLength(20)]
         public string Name { get; set; }
         [Required]

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+using web_application_eAutoStore.Interfaces.Repositories;
 using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Interfaces.Services
@@ -14,5 +15,7 @@ namespace web_application_eAutoStore.Interfaces.Services
 		Task<bool> AddVehicleAsync(VehicleAddRequest vehicleAddRequest, string? imagePath, int ownerId);
 		Task<string> SaveImageAsync(IFormFile image);
 		Task<IEnumerable<VehicleDto>?> GetNewVehiclesAsync(int count);
+		Task<bool> IsAlreadySavedAsync(int vehicleId);
+		Task<bool> DeleteVehicleAsync(int vehicleId);
 	}
 }

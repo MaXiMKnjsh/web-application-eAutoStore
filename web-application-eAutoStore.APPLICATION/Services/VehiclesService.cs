@@ -93,5 +93,17 @@ namespace web_application_eAutoStore.Services
 
 			return vehiclesDtos;
 		}
+
+		public async Task<bool> IsAlreadySavedAsync(int vehicleId)
+		{
+			var result = await _vehiclesRepository.IsAlreadySavedAsync( vehicleId);
+			return result;
+		}
+
+		public async Task<bool> DeleteVehicleAsync(int vehicleId)
+		{
+			var result = await _vehiclesRepository.DeleteVehicleAsync(vehicleId);
+			return result;
+		}
 	}
 }

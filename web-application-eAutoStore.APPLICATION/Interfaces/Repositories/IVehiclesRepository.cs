@@ -20,5 +20,7 @@ namespace web_application_eAutoStore.APPLICATION.Interfaces.Repositories
         Task<bool> AddVehicleAsync(Vehicle newVehicle);
         Task<bool> SaveAsync();
         Task<IEnumerable<Vehicle>> GetNewVehiclesAsync(int count);
+		Task<bool> IsAlreadySavedAsync(int vehicleId);
+        Task<bool> DeleteVehicleAsync(int vehicleId);
 	}
 }

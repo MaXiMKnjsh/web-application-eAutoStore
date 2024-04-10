@@ -1,4 +1,4 @@
-﻿async function SaveCard(button) {
+﻿async function saveCard(button) {
     const vehicleId = button.parentNode.parentNode.getAttribute("data-id");
     const userId = await getUserId();
     if (await saveToDB(userId, vehicleId)) {
@@ -46,7 +46,7 @@ async function saveToDB(userId, vehicleId) {
     return true;
 }
 
-async function DeleteCard(button) {
+async function deleteFavoriteCard(button) {
     const card = button.parentNode.parentNode;
     const vehicleId = card.getAttribute('data-id');
     const url = "/FavoriteVehicles/DeleteFavoriteVehicle?vehicleId="+vehicleId;

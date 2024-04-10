@@ -69,11 +69,11 @@
 			<nav>
 				<ul>
 					<li><a asp-controller="Vehicles" asp-action="Index" asp-route-type="passenger">Passenger cars</a></li>
-					<li><a href="@ViewBag.VehiclesURL?type=motorcycles">Motorcycles</a></li>
-					<li><a href="@ViewBag.VehiclesURL?type=trucks">Trucks</a></li>
-					<li><a href="@ViewBag.VehiclesURL?type=special">Special vehicles</a></li>
-					<li><a href="@ViewBag.VehiclesURL?type=buses">Buses</a></li>
-					<li><a href="@ViewBag.VehiclesURL?type=other">Other</a></li>
+					<li><a asp-controller="Vehicles" asp-action="Index" asp-route-type="motorcycles">Motorcycles</a></li>
+					<li><a asp-controller="Vehicles" asp-action="Index" asp-route-type="trucks">Trucks</a></li>
+					<li><a asp-controller="Vehicles" asp-action="Index" asp-route-type="special">Special vehicles</a></li>
+					<li><a asp-controller="Vehicles" asp-action="Index" asp-route-type="buses">Buses</a></li>
+					<li><a asp-controller="Vehicles" asp-action="Index" asp-route-type="other">Other</a></li>
 				</ul>
 			</nav>
 		</div>

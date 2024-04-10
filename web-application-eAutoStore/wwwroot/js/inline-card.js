@@ -1,21 +1,25 @@
 ﻿async function deleteAdvertisement(button) {
-    const vehicleId = button.parentNode.parentNode.getAttribute("data-id");
+    const card = button.parentNode.parentNode;
+    const vehicleId = card.getAttribute("data-id");
 
-    const url = "/FavoriteVehicles/DeleteFavoriteVehicle";
+    const url = "/Vehicles/DeleteVehicle?vehicleId="+ vehicleId;
 
     const data = {
         vehicleId: vehicleId
     };
+    try {
+        const response = await fetch(url, {
+            method: 'DELETE',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
 
-    const response = await fetch(url, {
-        method: 'DELETE',
-        body: JSON.stringify(data),
-        headers: {
-            'Content-Type': 'application/json'
+        if (!response.ok) {
+            console.log("Server response is negative");
         }
-    });
-
-    if (!response.ok) {
-        console.log("Server response is negative");
+        card.remove();
     }
+    catch { console.log("Something went wrong"); }
 }

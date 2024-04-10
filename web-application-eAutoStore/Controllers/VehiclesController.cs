@@ -7,6 +7,7 @@ using web_application_eAutoStore.APPLICATION.Services;
 using web_application_eAutoStore.DOMAIN.DTOs.FavoriteVehicles;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.Interfaces.Services;
+using web_application_eAutoStore.Services;
 
 namespace web_application_eAutoStore.Controllers
 {
@@ -22,6 +23,27 @@ namespace web_application_eAutoStore.Controllers
 			_tokensService = tokensService;
 		}
 		public IActionResult AddAdvertisement() => View();
+		[HttpDelete]
+		[Authorize]
+		public async Task<IActionResult> DeleteVehicle([FromQuery] int vehicleId)
+		{
+			var userId = _tokensService.GetUserId();
+			
+			if (userId == null)
+				return Unauthorized();
+
+			var isExist = await _vehiclesService.IsAlreadySavedAsync(vehicleId);
+
+			if (isExist == false)
+				return BadRequest();
+
+			var result = await _vehiclesService.DeleteVehicleAsync(vehicleId);
+
+			if (result == false)
+				return StatusCode(500);
+
+			return Ok();
+		}
 
 		[HttpGet]
 		public async Task<IActionResult> Index([FromQuery] VehicleFiltersRequest vehicleFilters)
@@ -78,7 +100,7 @@ namespace web_application_eAutoStore.Controllers
 			if (result == false)
 				return StatusCode(500);
 
-			return RedirectToPage("Index");
+			return RedirectToAction("Index","Home");
 		}
 	}
 }
