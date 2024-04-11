@@ -226,13 +226,13 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.HasOne("web_application_eAutoStore.Models.User", "User")
                         .WithMany("FavoriteVehicles")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("web_application_eAutoStore.Models.Vehicle", "Vehicle")
                         .WithMany("FavoriteVehicles")
                         .HasForeignKey("VehicleId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("User");

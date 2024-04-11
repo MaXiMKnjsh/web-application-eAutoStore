@@ -24,6 +24,16 @@ namespace web_application_eAutoStore.Repositories
 			return await SaveAsync();
 		}
 
+		public async Task<bool> DeleteFavoriteVehiclesAsync(int vehicleId)
+		{
+			var vehiclesToDelete = _dataContext.FavoriteVehicles.Where(x => x.VehicleId == vehicleId);
+
+			if (vehiclesToDelete != null)
+				_dataContext.FavoriteVehicles.RemoveRange(vehiclesToDelete);
+
+			return await SaveAsync();
+		}
+
 		public async Task<IEnumerable<FavoriteVehicle>> GetFavoriteVehiclesAsync(int userId)
 		{
 			var vehicles = _dataContext.FavoriteVehicles.Where(x => x.UserId == userId);
@@ -33,6 +43,16 @@ namespace web_application_eAutoStore.Repositories
 		public async Task<bool> IsAlreadySavedAsync(int userId, int favoriteVehicleId)
 		{
 			var favVehicle = await _dataContext.FavoriteVehicles.FirstOrDefaultAsync(x => x.UserId == userId && x.VehicleId == favoriteVehicleId);
+
+			if (favVehicle != null)
+				return true;
+
+			return false;
+		}
+
+		public async Task<bool> IsExist(int favoriteVehicelId)
+		{
+			var favVehicle = await _dataContext.FavoriteVehicles.FirstOrDefaultAsync(x=>x.VehicleId == favoriteVehicelId);
 
 			if (favVehicle != null)
 				return true;

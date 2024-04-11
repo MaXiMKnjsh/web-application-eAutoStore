@@ -9,6 +9,10 @@
         document.getElementById("modal-settings").classList.remove("show-settings");
     });
 
+    addListenerToCards();
+});
+
+function addListenerToCards() {
     const cards = document.querySelectorAll(".card");
     cards.forEach(function (card) {
         const buttonSave = card.querySelector(".more-vehicle-btn");
@@ -38,7 +42,7 @@
     document.getElementById("close-carreview-2").addEventListener("click", function () {
         document.getElementById("modal-carreview").classList.remove("show-carreview");
     });
-});
+}
 
 function clearCookiesFromTokens() {
     clearCookie("jwt");

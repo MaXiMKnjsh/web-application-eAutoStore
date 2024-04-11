@@ -61,7 +61,7 @@ namespace web_application_eAutoStore.Data
                 .HasMany(m => m.FavoriteVehicles)
                 .WithOne(d => d.User)
                 .HasForeignKey(di => di.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<User>()
                 .HasMany(m => m.Vehicles)
@@ -73,7 +73,7 @@ namespace web_application_eAutoStore.Data
                 .HasMany(m => m.FavoriteVehicles)
                 .WithOne(d => d.Vehicle)
                 .HasForeignKey(di => di.VehicleId)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Dialog>(builder =>
             {

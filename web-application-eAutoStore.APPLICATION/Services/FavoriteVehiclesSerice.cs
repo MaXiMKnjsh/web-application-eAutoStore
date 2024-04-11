@@ -29,6 +29,12 @@ namespace web_application_eAutoStore.Services
 			return result;
 		}
 
+		public async Task<bool> DeleteFavoriteVehiclesAsync(int favoriteVehicleId)
+		{
+			var result = await _favoriteVehiclesRepository.DeleteFavoriteVehiclesAsync(favoriteVehicleId);
+			return result;
+		}
+
 		public async Task<IEnumerable<FavVehicleDto>?> GetFavoriteVehiclesAsync(int userId)
 		{
 			var favVehicles = await _favoriteVehiclesRepository.GetFavoriteVehiclesAsync(userId);
@@ -39,6 +45,12 @@ namespace web_application_eAutoStore.Services
 		public async Task<bool> IsAlreadySavedAsync(int userId, int favoriteVehicleId)
 		{
 			var result = await _favoriteVehiclesRepository.IsAlreadySavedAsync(userId, favoriteVehicleId);
+				return result;
+		}
+
+		public async Task<bool> IsExist(int favoriteVehicleId)
+		{
+			var result = await _favoriteVehiclesRepository.IsExist(favoriteVehicleId);
 				return result;
 		}
 

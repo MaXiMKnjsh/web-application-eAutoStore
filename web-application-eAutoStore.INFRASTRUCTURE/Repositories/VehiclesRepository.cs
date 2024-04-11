@@ -37,58 +37,58 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 		}
 		private IQueryable<Vehicle>? ApplyFilters(VehicleFiltersRequest vehicleFilters)
 		{
-			IQueryable<Vehicle>? vehicles = null;
+			IQueryable<Vehicle>? vehicles = _dataContext.Vehicles;
 
 			if (vehicleFilters.SearchLineRequest != null)
 			{
 				var partsOfRequset = vehicleFilters.SearchLineRequest.Split(new char[]{ ' '});
 				foreach (var i in partsOfRequset)
 				{
-					vehicles = _dataContext.Vehicles.Where(x => x.Model.ToLower().Contains(i.ToLower()));
-					vehicles = _dataContext.Vehicles.Where(x => x.Brand.ToLower().Contains(i.ToLower()));
+					vehicles = vehicles.Where(x => x.Model.ToLower().Contains(i.ToLower()));
+					vehicles = vehicles.Where(x => x.Brand.ToLower().Contains(i.ToLower()));
 				}
 			}
 
 			if (vehicleFilters.Model != null)
-				vehicles = _dataContext.Vehicles.Where(x => string.Equals(x.Model.ToLower(),vehicleFilters.Model.ToLower()));
+				vehicles = vehicles.Where(x => string.Equals(x.Model.ToLower(),vehicleFilters.Model.ToLower()));
 
 			if (vehicleFilters.Brand != null)
-				vehicles = _dataContext.Vehicles.Where(x => string.Equals(x.Brand.ToLower(),vehicleFilters.Brand.ToLower()));
+				vehicles = vehicles.Where(x => string.Equals(x.Brand.ToLower(),vehicleFilters.Brand.ToLower()));
 
 			if (vehicleFilters.Mileage != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Mileage == vehicleFilters.Mileage);
+				vehicles = vehicles.Where(x => x.Mileage == vehicleFilters.Mileage);
 
 			if (vehicleFilters.Type != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Type == vehicleFilters.Type);
+				vehicles = vehicles.Where(x => x.Type == vehicleFilters.Type);
 
 			if (vehicleFilters.Quality != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Quality == vehicleFilters.Quality);
+				vehicles = vehicles.Where(x => x.Quality == vehicleFilters.Quality);
 
 			if (vehicleFilters.Quality != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Quality == vehicleFilters.Quality);
+				vehicles = vehicles.Where(x => x.Quality == vehicleFilters.Quality);
 
 			if (vehicleFilters.PriceFrom != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Price >= vehicleFilters.PriceFrom);
+				vehicles = vehicles.Where(x => x.Price >= vehicleFilters.PriceFrom);
 			if (vehicleFilters.PriceTo != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Price <= vehicleFilters.PriceTo);
+				vehicles = vehicles.Where(x => x.Price <= vehicleFilters.PriceTo);
 
 			if (vehicleFilters.Transmission != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Transmission == vehicleFilters.Transmission);
+				vehicles = vehicles.Where(x => x.Transmission == vehicleFilters.Transmission);
 
 			if (vehicleFilters.EngineCapacityFrom != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.EngineCapacity >= vehicleFilters.EngineCapacityFrom);
+				vehicles = vehicles.Where(x => x.EngineCapacity >= vehicleFilters.EngineCapacityFrom);
 			if (vehicleFilters.EngineCapacityTo != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.EngineCapacity <= vehicleFilters.EngineCapacityTo);
+				vehicles = vehicles.Where(x => x.EngineCapacity <= vehicleFilters.EngineCapacityTo);
 
 			if (vehicleFilters.EnginePowerFrom != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.EnginePower >= vehicleFilters.EnginePowerFrom);
+				vehicles = vehicles.Where(x => x.EnginePower >= vehicleFilters.EnginePowerFrom);
 			if (vehicleFilters.EnginePowerTo != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.EnginePower <= vehicleFilters.EnginePowerTo);
+				vehicles = vehicles.Where(x => x.EnginePower <= vehicleFilters.EnginePowerTo);
 
 			if (vehicleFilters.YearFrom != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Year >= vehicleFilters.YearFrom);
+				vehicles = vehicles.Where(x => x.Year >= vehicleFilters.YearFrom);
 			if (vehicleFilters.YearTo != null)
-				vehicles = _dataContext.Vehicles.Where(x => x.Year <= vehicleFilters.YearTo);
+				vehicles = vehicles.Where(x => x.Year <= vehicleFilters.YearTo);
 
 			return vehicles;
 		}

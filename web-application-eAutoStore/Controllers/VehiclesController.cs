@@ -15,11 +15,14 @@ namespace web_application_eAutoStore.Controllers
 	{
 		private readonly IVehiclesService _vehiclesService;
 		private readonly ITokensService _tokensService;
+		private readonly IFavoriteVehiclesService _favoriteVehiclesService;
 		private const int portionSize = 12;
 		public VehiclesController(IVehiclesService vehiclesService,
-			ITokensService tokensService)
+			ITokensService tokensService,
+			IFavoriteVehiclesService favoriteVehiclesService)
 		{
 			_vehiclesService = vehiclesService;
+			_favoriteVehiclesService = favoriteVehiclesService;
 			_tokensService = tokensService;
 		}
 		public IActionResult AddAdvertisement() => View();
@@ -36,6 +39,16 @@ namespace web_application_eAutoStore.Controllers
 
 			if (isExist == false)
 				return BadRequest();
+
+			//---
+			// in order to fix the multiple cascade deleting i decided that
+			// a manual removing it is suitable solution for my situation :)
+			var isExistInFavVehs = await _favoriteVehiclesService.IsExist(vehicleId);
+
+			if (isExistInFavVehs == true)
+				await _favoriteVehiclesService.DeleteFavoriteVehiclesAsync(vehicleId);
+
+			//---
 
 			var result = await _vehiclesService.DeleteVehicleAsync(vehicleId);
 
