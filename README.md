@@ -4,7 +4,7 @@
 <h2 align="center">🔥Keywords: ASP.Net Core Web MVC, JWT/RT tokens, MsSQL, EF, HTML, CSS</h2>
 <div align="center">
   <h3>The result of the decision:</h3>
-<img src="main.jpg" alt="where is the photo???">
+<img src="main.JPG" alt="where is the photo???">
   <img src="profile.jpg" alt="where is the photo???">
   <img src="review.jpg" alt="where is the photo???">
   <img src="vehicles.jpg" alt="where is the photo???">
