@@ -5,9 +5,9 @@
 <div align="center">
   <h3>The result of the decision:</h3>
 <img src="main.JPG" alt="where is the photo???">
-  <img src="profile.jpg" alt="where is the photo???">
-  <img src="review.jpg" alt="where is the photo???">
-  <img src="vehicles.jpg" alt="where is the photo???">
-  <img src="add-advertisement.jpg" alt="where is the photo???">
-  <img src="register.jpg" alt="where is the photo???">
+  <img src="profile.JPG" alt="where is the photo???">
+  <img src="review.JPG" alt="where is the photo???">
+  <img src="vehicles.JPG" alt="where is the photo???">
+  <img src="add-advertisement.JPG" alt="where is the photo???">
+  <img src="register.JPG" alt="where is the photo???">
 </div>
