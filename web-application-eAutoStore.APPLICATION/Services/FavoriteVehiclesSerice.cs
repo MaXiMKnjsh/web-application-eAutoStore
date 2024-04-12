@@ -25,7 +25,13 @@ namespace web_application_eAutoStore.Services
 
 		public async Task<bool> DeleteFavoriteVehicleAsync(int vehicleId, int userId)
 		{
-			var result = await _favoriteVehiclesRepository.DeleteFavoriteVehicleAsync(vehicleId,userId);
+			var favVehicleToDelete = new FavoriteVehicle()
+			{
+				VehicleId=vehicleId,
+				UserId=userId
+			};
+
+			var result = await _favoriteVehiclesRepository.DeleteFavoriteVehicleAsync(favVehicleToDelete);
 			return result;
 		}
 
@@ -44,7 +50,13 @@ namespace web_application_eAutoStore.Services
 
 		public async Task<bool> IsAlreadySavedAsync(int userId, int favoriteVehicleId)
 		{
-			var result = await _favoriteVehiclesRepository.IsAlreadySavedAsync(userId, favoriteVehicleId);
+			var favVehicleToCheck = new FavoriteVehicle()
+			{
+				VehicleId = favoriteVehicleId,
+				UserId = userId
+			};
+
+			var result = await _favoriteVehiclesRepository.IsAlreadySavedAsync(favVehicleToCheck);
 				return result;
 		}
 
@@ -56,7 +68,13 @@ namespace web_application_eAutoStore.Services
 
 		public async Task<bool> SaveFavoriteVehicleAsync(int userId, int favoriteVehicleId)
 		{
-			var result = await _favoriteVehiclesRepository.SaveFavoriteVehicleAsync(userId, favoriteVehicleId);
+			var favVehicleToSave = new FavoriteVehicle()
+			{
+				VehicleId = favoriteVehicleId,
+				UserId = userId
+			};
+
+			var result = await _favoriteVehiclesRepository.SaveFavoriteVehicleAsync(favVehicleToSave);
 			return result;
 		}
 	}

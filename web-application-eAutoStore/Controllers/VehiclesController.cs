@@ -1,13 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.VisualStudio.Debugger.Contracts.HotReload;
 using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
-using web_application_eAutoStore.APPLICATION.Services;
-using web_application_eAutoStore.DOMAIN.DTOs.FavoriteVehicles;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.Interfaces.Services;
-using web_application_eAutoStore.Services;
 
 namespace web_application_eAutoStore.Controllers
 {
@@ -26,37 +21,6 @@ namespace web_application_eAutoStore.Controllers
 			_tokensService = tokensService;
 		}
 		public IActionResult AddAdvertisement() => View();
-		[HttpDelete]
-		[Authorize]
-		public async Task<IActionResult> DeleteVehicle([FromQuery] int vehicleId)
-		{
-			var userId = _tokensService.GetUserId();
-			
-			if (userId == null)
-				return Unauthorized();
-
-			var isExist = await _vehiclesService.IsAlreadySavedAsync(vehicleId);
-
-			if (isExist == false)
-				return BadRequest();
-
-			//---
-			// in order to fix the multiple cascade deleting i decided that
-			// a manual removing it is suitable solution for my situation :)
-			var isExistInFavVehs = await _favoriteVehiclesService.IsExist(vehicleId);
-
-			if (isExistInFavVehs == true)
-				await _favoriteVehiclesService.DeleteFavoriteVehiclesAsync(vehicleId);
-
-			//---
-
-			var result = await _vehiclesService.DeleteVehicleAsync(vehicleId);
-
-			if (result == false)
-				return StatusCode(500);
-
-			return Ok();
-		}
 
 		[HttpGet]
 		public async Task<IActionResult> Index([FromQuery] VehicleFiltersRequest vehicleFilters)
@@ -114,6 +78,38 @@ namespace web_application_eAutoStore.Controllers
 				return StatusCode(500);
 
 			return RedirectToAction("Index","Home");
+		}
+
+		[HttpDelete]
+		[Authorize]
+		public async Task<IActionResult> DeleteVehicle([FromQuery] int vehicleId)
+		{
+			var userId = _tokensService.GetUserId();
+			
+			if (userId == null)
+				return Unauthorized();
+
+			var isExist = await _vehiclesService.IsAlreadySavedAsync(vehicleId);
+
+			if (isExist == false)
+				return BadRequest();
+
+			//---
+			// in order to fix the multiple cascade deleting i decided that
+			// a manual removing it is suitable solution for my situation :)
+			var isExistInFavVehs = await _favoriteVehiclesService.IsExist(vehicleId);
+
+			if (isExistInFavVehs == true)
+				await _favoriteVehiclesService.DeleteFavoriteVehiclesAsync(vehicleId);
+
+			//---
+
+			var result = await _vehiclesService.DeleteVehicleAsync(vehicleId);
+
+			if (result == false)
+				return StatusCode(500);
+
+			return Ok();
 		}
 	}
 }

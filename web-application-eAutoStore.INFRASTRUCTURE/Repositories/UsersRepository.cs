@@ -27,7 +27,7 @@ namespace web_application_eAutoStore.Repositories
 			return await vehicles.ToListAsync();
 		}
 
-		public async Task<User> GetByEmailAsync(string email)
+		public async Task<User?> GetByEmailAsync(string email)
 		{
 			return await _dataContext.Users.FirstOrDefaultAsync(x => x.Email == email);
 		}
@@ -44,9 +44,16 @@ namespace web_application_eAutoStore.Repositories
 			return user;
 		}
 
-		public async Task<User> GetUserByRefreshToken(string refreshToken)
+		public async Task<User?> GetUserByRefreshToken(string refreshToken)
 		{
+			if (refreshToken == null)
+				return null;
+
 			var refreshTokenModel = await _dataContext.RefreshTokens.FirstOrDefaultAsync(x => x.Guid.ToString() == refreshToken);
+
+			if (refreshTokenModel == null)
+				return null;
+
 			return await _dataContext.Users.FirstOrDefaultAsync(x => x.Id == refreshTokenModel.UserId);
 		}
 
@@ -64,7 +71,7 @@ namespace web_application_eAutoStore.Repositories
 
 		public async Task<bool> UpdateUserInfoAsync(UpdateUserRequest updateUserRequest, int userId, string? hashedPassword)
 		{
-			var user = _dataContext.Users.FirstOrDefault(x=>x.Id==userId);
+			var user = await _dataContext.Users.FirstOrDefaultAsync(x=>x.Id==userId);
 
 			if (user==null)
 				return false;

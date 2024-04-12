@@ -2,7 +2,7 @@
     const card = button.parentNode.parentNode;
     const vehicleId = card.getAttribute("data-id");
 
-    const url = "/Vehicles/DeleteVehicle?vehicleId="+ vehicleId;
+    const url = "/Vehicles/DeleteVehicle?vehicleId=" + encodeURIComponent(vehicleId);
 
     const data = {
         vehicleId: vehicleId
@@ -20,6 +20,7 @@
             console.log("Server response is negative");
         }
         card.remove();
+    } catch (error) {
+        console.log("Something went wrong", error);
     }
-    catch { console.log("Something went wrong"); }
 }

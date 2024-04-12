@@ -7,20 +7,12 @@ namespace web_application_eAutoStore.Data
     public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
-        public DbSet<Dialog> Dialogs { get; set; }
         public DbSet<FavoriteVehicle> FavoriteVehicles { get; set; }
-        public DbSet<Message> Messages { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<RefreshToken> RefreshTokens {  get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Dialog>()
-                .HasKey(d => d.Id);
-
-            modelBuilder.Entity<Message>()
-                .HasKey(d => d.Id);
-
             modelBuilder.Entity<User>()
                 .HasKey(d => d.Id);
 
@@ -38,24 +30,6 @@ namespace web_application_eAutoStore.Data
                 .WithOne(d => d.User)
                 .HasForeignKey(di => di.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
-
-            modelBuilder.Entity<Dialog>()
-                .HasMany(m => m.Messages)
-                .WithOne(d => d.Dialog)
-                .HasForeignKey(di => di.DialogId)
-                .OnDelete(DeleteBehavior.NoAction);
-
-            modelBuilder.Entity<User>()
-                .HasMany(m => m.SentMessages)
-                .WithOne(d => d.Sender)
-                .HasForeignKey(di => di.SenderId)
-                .OnDelete(DeleteBehavior.NoAction);
-
-            modelBuilder.Entity<User>()
-                .HasMany(m => m.ReceivedMessages)
-                .WithOne(d => d.Receiver)
-                .HasForeignKey(di => di.ReceiverId)
-                .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<User>()
                 .HasMany(m => m.FavoriteVehicles)
@@ -75,13 +49,6 @@ namespace web_application_eAutoStore.Data
                 .HasForeignKey(di => di.VehicleId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<Dialog>(builder =>
-            {
-                builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();
-                builder.Property(x => x.User1Id).IsRequired();
-                builder.Property(x => x.User2Id).IsRequired();
-            });
-
             modelBuilder.Entity<RefreshToken>(builder =>
             {
                 builder.Property(x => x.Guid).IsRequired().HasDefaultValueSql("NEWID()");
@@ -96,16 +63,6 @@ namespace web_application_eAutoStore.Data
                 builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();
                 builder.Property(x => x.UserId).IsRequired();
                 builder.Property(x => x.VehicleId).IsRequired();
-            });
-
-            modelBuilder.Entity<Message>(builder =>
-            {
-                builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();
-                builder.Property(x => x.Text).IsRequired();
-                builder.Property(x => x.SenderId).IsRequired();
-                builder.Property(x => x.ReceiverId).IsRequired();
-                builder.Property(x => x.MessageTime).IsRequired();
-                builder.Property(x => x.DialogId).IsRequired();
             });
 
             modelBuilder.Entity<User>(builder =>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q6dk7tMHp5KxcH6OAc4IyAEWqKiMvWw15gAEKBzYZaTIFuuy3AhuTM+05vX3nOAbGq9g/wbRjcNGv/RdQp2SrQ==",
+  "dgSpecHash": "PE4A9o+AUvZuLQNM5dbhNOQOiW8agH0Llsgdro3XiAqytjV3MgNoQCv4nC1DVhSJH8WuL64PkbApbK0iKitkTQ==",
   "success": true,
-  "projectFilePath": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

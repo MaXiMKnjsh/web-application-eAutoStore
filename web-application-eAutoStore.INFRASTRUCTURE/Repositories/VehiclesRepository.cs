@@ -1,17 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Globalization;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
 using web_application_eAutoStore.Data;
-using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
-using web_application_eAutoStore.DOMAIN.Models;
 using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
@@ -26,18 +16,18 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 
 		public async Task<int> GetQuantityAsync(VehicleFiltersRequest vehicleFilters)
 		{
-			var vehicles = ApplyFilters(vehicleFilters);
+			var vehicles = await ApplyFilters(vehicleFilters).ToListAsync();
 
-			if (vehicles == null)
+			if (vehicles?.Count == null)
 				return 0;
 
-			var totalQuantity = await vehicles.CountAsync();
+			var totalQuantity = vehicles.Count();
 
 			return totalQuantity;
 		}
-		private IQueryable<Vehicle>? ApplyFilters(VehicleFiltersRequest vehicleFilters)
+		private IQueryable<Vehicle> ApplyFilters(VehicleFiltersRequest vehicleFilters)
 		{
-			IQueryable<Vehicle>? vehicles = _dataContext.Vehicles;
+			IQueryable<Vehicle> vehicles = _dataContext.Vehicles;
 
 			if (vehicleFilters.SearchLineRequest != null)
 			{
@@ -92,12 +82,9 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 
 			return vehicles;
 		}
-		public async Task<IEnumerable<Vehicle>?> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters, int portionSize)
+		public async Task<IEnumerable<Vehicle>> GetWithFiltersAsync(VehicleFiltersRequest vehicleFilters, int portionSize)
 		{
 			var vehicles = ApplyFilters(vehicleFilters);
-
-			if (vehicles == null)
-				return null;
 
 			if (vehicleFilters.Portion <= 0)
 				vehicleFilters.Portion = 1;
@@ -147,18 +134,20 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 		{
 			var vehicle = await _dataContext.Vehicles.FirstOrDefaultAsync(x => x.Id == vehicleId);
 
-			if (vehicle != null)
-				return true;
+			if (vehicle == null)
+				return false;
 
-			return false;
+			return true;
 		}
 
 		public async Task<bool> DeleteVehicleAsync(int vehicleId)
 		{
 			var vehicleToDelete = await _dataContext.Vehicles.FirstOrDefaultAsync(x => x.Id == vehicleId);
 
-			if (vehicleToDelete != null)
-				_dataContext.Vehicles.Remove(vehicleToDelete);
+			if (vehicleToDelete == null)
+				return false;
+
+			_dataContext.Vehicles.Remove(vehicleToDelete);
 
 			return await SaveAsync();
 		}

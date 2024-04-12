@@ -10936,11 +10936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
       "projectName": "web-application-eAutoStore.WEB",
-      "projectPath": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\mainAUTOSTORE\\web-application-eAutoStore\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10961,8 +10961,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\mainAUTOSTORE\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj": {
-              "projectPath": "D:\\mainAUTOSTORE\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj"
+            "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj"
             }
           }
         }

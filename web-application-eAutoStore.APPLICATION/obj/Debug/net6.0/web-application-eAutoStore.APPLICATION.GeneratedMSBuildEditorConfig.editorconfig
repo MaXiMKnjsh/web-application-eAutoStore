@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = web_application_eAutoStore.APPLICATION
-build_property.ProjectDir = D:\mainAUTOSTORE\web-application-eAutoStore.APPLICATION\
+build_property.ProjectDir = C:\Users\User\Desktop\web-application-eAutoStore\web-application-eAutoStore.APPLICATION\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

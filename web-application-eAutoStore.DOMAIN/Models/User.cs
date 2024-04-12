@@ -13,8 +13,6 @@ namespace web_application_eAutoStore.Models
         public UserRole Role { get; set; }
         // navigation fields
         public ICollection<RefreshToken> RefreshTokens { get; set; }
-        public ICollection<Message> SentMessages { get; set; }
-        public ICollection<Message> ReceivedMessages {  get; set; }
         public ICollection<FavoriteVehicle> FavoriteVehicles { get; set; }
         public ICollection<Vehicle> Vehicles { get; set; }
     }

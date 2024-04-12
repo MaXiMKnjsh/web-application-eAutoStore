@@ -19,13 +19,11 @@ nextLink.addEventListener("click", function (event) {
                 return p1 + totalPage;
             }
         });
-        getVehicles(updatedUrl);//window.location.href = updatedUrl;
-        currentPageSpan.textContent = newValue;
+        getVehicles(updatedUrl, newValue);
     } else {
         var separator = currentUrl.indexOf("?") > -1 ? "&" : "?";
         var updatedUrl = currentUrl + separator + "portion=2";
-        getVehicles(updatedUrl);// window.location.href = newUrl;
-        currentPageSpan.textContent = "2";
+        getVehicles(updatedUrl, 2);
     }
 });
 
@@ -45,17 +43,15 @@ previousLink.addEventListener("click", function (event) {
                 return p1 + "1";
             }
         });
-        getVehicles(updatedUrl);//window.location.href = updatedUrl;
-        currentPageSpan.textContent = newValue;
+        getVehicles(updatedUrl, newValue);
     } else {
         var separator = currentUrl.indexOf("?") > -1 ? "&" : "?";
         var updatedUrl = currentUrl + separator + "portion=1";
-        getVehicles(updatedUrl);//window.location.href = newUrl;
-        currentPageSpan.textContent = "1";
+        getVehicles(updatedUrl, 1);
     }
 });
 
-async function getVehicles(query) {
+async function getVehicles(query, newValue) {
     const response = await fetch(query, { method: 'GET' });
     if (!response.ok) {
         console.log("Vehicles aren't updated");
@@ -80,4 +76,6 @@ async function getVehicles(query) {
     });
 
     addListenerToCards();
-};
+
+    currentPageSpan.textContent = newValue;
+}

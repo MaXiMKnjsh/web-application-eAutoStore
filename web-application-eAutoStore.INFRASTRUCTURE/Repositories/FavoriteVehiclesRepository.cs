@@ -14,9 +14,12 @@ namespace web_application_eAutoStore.Repositories
 			_dataContext = dataContext;
 		}
 
-		public async Task<bool> DeleteFavoriteVehicleAsync(int vehicleId, int userId)
+		public async Task<bool> DeleteFavoriteVehicleAsync(FavoriteVehicle favoriteVehicle)
 		{
-			var vehicleToDelete = await _dataContext.FavoriteVehicles.FirstOrDefaultAsync(x => x.VehicleId == vehicleId && x.UserId == userId);
+			if (favoriteVehicle==null)
+				return false;
+
+			var vehicleToDelete = await _dataContext.FavoriteVehicles.FirstOrDefaultAsync(x => x.VehicleId == favoriteVehicle.VehicleId && x.UserId == favoriteVehicle.UserId);
 
 			if (vehicleToDelete != null)
 				_dataContext.FavoriteVehicles.Remove(vehicleToDelete);
@@ -26,7 +29,7 @@ namespace web_application_eAutoStore.Repositories
 
 		public async Task<bool> DeleteFavoriteVehiclesAsync(int vehicleId)
 		{
-			var vehiclesToDelete = _dataContext.FavoriteVehicles.Where(x => x.VehicleId == vehicleId);
+			var vehiclesToDelete = await _dataContext.FavoriteVehicles.Where(x => x.VehicleId == vehicleId).ToListAsync();
 
 			if (vehiclesToDelete != null)
 				_dataContext.FavoriteVehicles.RemoveRange(vehiclesToDelete);
@@ -40,9 +43,12 @@ namespace web_application_eAutoStore.Repositories
 			return await vehicles.ToListAsync();
 		}
 
-		public async Task<bool> IsAlreadySavedAsync(int userId, int favoriteVehicleId)
+		public async Task<bool> IsAlreadySavedAsync(FavoriteVehicle favoriteVehicle)
 		{
-			var favVehicle = await _dataContext.FavoriteVehicles.FirstOrDefaultAsync(x => x.UserId == userId && x.VehicleId == favoriteVehicleId);
+			if (favoriteVehicle == null)
+				return false;
+
+				var favVehicle = await _dataContext.FavoriteVehicles.FirstOrDefaultAsync(x => x.UserId == favoriteVehicle.UserId && x.VehicleId == favoriteVehicle.VehicleId);
 
 			if (favVehicle != null)
 				return true;
@@ -66,15 +72,10 @@ namespace web_application_eAutoStore.Repositories
 			return savedCount > 0 ? true : false;
 		}
 
-		public async Task<bool> SaveFavoriteVehicleAsync(int userId, int favoriteVehicleId)
+		public async Task<bool> SaveFavoriteVehicleAsync(FavoriteVehicle favoriteVehicle)
 		{
-			var newFavoriteVehicle = new FavoriteVehicle()
-			{
-				VehicleId = favoriteVehicleId,
-				UserId = userId
-			};
-
-			await _dataContext.FavoriteVehicles.AddAsync(newFavoriteVehicle);
+			if (favoriteVehicle!=null)
+			await _dataContext.FavoriteVehicles.AddAsync(favoriteVehicle);
 			return await SaveAsync();
 		}
 	}

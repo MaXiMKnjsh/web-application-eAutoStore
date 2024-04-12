@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7EZx3VRnmEVxvUkntoT+dxqofIKsNYg5hEe57oD9xm7HXEzQPkJgFr3ndaLdJLyMf/tmG9dijYZennc5TuI1sw==",
+  "dgSpecHash": "3dHU4nWNW+5CpQGtJII8yEcxQisX9dJspQg/Vx5vgTZKW8XiqiNf6XJF7X7wwfEGw9b2aafAH4ofcBWB2QlH3w==",
   "success": true,
-  "projectFilePath": "D:\\mainAUTOSTORE\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

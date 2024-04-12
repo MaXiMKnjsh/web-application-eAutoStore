@@ -13,11 +13,11 @@
 });
 
 function addListenerToCards() {
-    const cards = document.querySelectorAll(".card");
-    cards.forEach(function (card) {
+    const cards = document.getElementsByClassName("card");
+
+    Array.from(cards).forEach(function (card) {
         const buttonSave = card.querySelector(".more-vehicle-btn");
         buttonSave.addEventListener("click", async function () {
-
             const vehicleId = card.getAttribute("data-id");
             const url = "/Vehicles/GetVehicleDetailsPartial?vehicleId=" + vehicleId;
 
@@ -29,13 +29,12 @@ function addListenerToCards() {
                 var targetDiv = document.getElementById("vehicle-review-body");
 
                 targetDiv.innerHTML = await response.text();
-            }
-            else {
+            } else {
                 console.log("Server response is negative");
             }
-
         });
     });
+
     document.getElementById("close-carreview").addEventListener("click", function () {
         document.getElementById("modal-carreview").classList.remove("show-carreview");
     });
@@ -49,13 +48,15 @@ function clearCookiesFromTokens() {
     clearCookie("rt");
     location.reload();
 }
+
 function clearCookie(name) {
     document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
 }
 
-const interval = 20 * 60 * 1000; // 20 mins in millisecs
+const interval = 20 * 60 * 1000; // 20 mins in milliseconds
 
 setInterval(checkTokens, interval);
+
 async function checkTokens() {
     const jwtToken = getCookieValue('jwt');
 
@@ -64,14 +65,21 @@ async function checkTokens() {
 
     if (isTokenExpired(jwtToken)) {
         const url = "/Token/UpdateToken";
-        const response = await fetch(url, { method: 'POST' });
-        if (response.ok)
-            console.log("Tokens are updated");
-        else
-            console.log("Token's aren't updated");
+        try {
+            const response = await fetch(url, { method: 'POST' });
+
+            if (response.ok) {
+                console.log("Tokens are updated");
+            } else {
+                console.log("Tokens are not updated");
+            }
+        } catch (error) {
+            console.log("An error occurred while updating tokens:", error);
+        }
+    } else {
+        console.log("Tokens do not need to be updated");
     }
-    else console.log("Tokens don't need to be updated");
-};
+}
 
 function getCookieValue(key) {
     const cookieArray = document.cookie.split(';');
@@ -86,9 +94,9 @@ function getCookieValue(key) {
 
 function isTokenExpired(token) {
     const expiration = getTokenExpiration(token); // time of token expiring
-    const currentTimestamp = Math.floor(Date.now() / 1000); // current time in secs
+    const currentTimestamp = Math.floor(Date.now() / 1000); // current time in seconds
 
-    const deadline = 20 * 60 * 1000; // 20 mins 
+    const deadline = 20 * 60 * 1000; // 20 mins
 
     return expiration - deadline < currentTimestamp;
 }

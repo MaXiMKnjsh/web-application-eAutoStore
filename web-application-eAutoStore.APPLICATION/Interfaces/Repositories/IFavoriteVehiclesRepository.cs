@@ -4,10 +4,10 @@ namespace web_application_eAutoStore.Interfaces.Repositories
 {
     public interface IFavoriteVehiclesRepository
     {
-        Task<bool> SaveFavoriteVehicleAsync(int userId, int favoriteVehicleId);
+        Task<bool> SaveFavoriteVehicleAsync(FavoriteVehicle favoriteVehicle);
         Task<IEnumerable<FavoriteVehicle>> GetFavoriteVehiclesAsync(int userId);
-        Task<bool> IsAlreadySavedAsync(int userId, int favoriteVehicleId);
-        Task<bool> DeleteFavoriteVehicleAsync(int vehicleId, int userId);
+        Task<bool> IsAlreadySavedAsync(FavoriteVehicle favoriteVehicle);
+        Task<bool> DeleteFavoriteVehicleAsync(FavoriteVehicle favoriteVehicle);
 		Task<bool> DeleteFavoriteVehiclesAsync(int vehicleId);
 		Task<bool> IsExist(int favoriteVehicelId);
 	}

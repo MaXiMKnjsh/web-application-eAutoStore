@@ -49,25 +49,6 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.ToTable("RefreshTokens");
                 });
 
-            modelBuilder.Entity("web_application_eAutoStore.Models.Dialog", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("User1Id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("User2Id")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Dialogs");
-                });
-
             modelBuilder.Entity("web_application_eAutoStore.Models.FavoriteVehicle", b =>
                 {
                     b.Property<int>("Id")
@@ -89,41 +70,6 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.HasIndex("VehicleId");
 
                     b.ToTable("FavoriteVehicles");
-                });
-
-            modelBuilder.Entity("web_application_eAutoStore.Models.Message", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("DialogId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("MessageTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ReceiverId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SenderId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Text")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DialogId");
-
-                    b.HasIndex("ReceiverId");
-
-                    b.HasIndex("SenderId");
-
-                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("web_application_eAutoStore.Models.User", b =>
@@ -240,33 +186,6 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.Navigation("Vehicle");
                 });
 
-            modelBuilder.Entity("web_application_eAutoStore.Models.Message", b =>
-                {
-                    b.HasOne("web_application_eAutoStore.Models.Dialog", "Dialog")
-                        .WithMany("Messages")
-                        .HasForeignKey("DialogId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("web_application_eAutoStore.Models.User", "Receiver")
-                        .WithMany("ReceivedMessages")
-                        .HasForeignKey("ReceiverId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("web_application_eAutoStore.Models.User", "Sender")
-                        .WithMany("SentMessages")
-                        .HasForeignKey("SenderId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("Dialog");
-
-                    b.Navigation("Receiver");
-
-                    b.Navigation("Sender");
-                });
-
             modelBuilder.Entity("web_application_eAutoStore.Models.Vehicle", b =>
                 {
                     b.HasOne("web_application_eAutoStore.Models.User", "User")
@@ -278,20 +197,11 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("web_application_eAutoStore.Models.Dialog", b =>
-                {
-                    b.Navigation("Messages");
-                });
-
             modelBuilder.Entity("web_application_eAutoStore.Models.User", b =>
                 {
                     b.Navigation("FavoriteVehicles");
 
-                    b.Navigation("ReceivedMessages");
-
                     b.Navigation("RefreshTokens");
-
-                    b.Navigation("SentMessages");
 
                     b.Navigation("Vehicles");
                 });

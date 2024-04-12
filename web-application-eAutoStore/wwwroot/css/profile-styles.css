@@ -8,16 +8,21 @@
 }
 
 .favorite-vehicles-block {
-    width: 100%;
+    width: 90%;
     height:auto;
     display:flex;
     position: relative;
     padding-top:40px;
+    flex-wrap:wrap;
 }
 
 .first-subblock {
     display: flex;
     flex-direction: row;
+}
+.second-subblock{
+    display: flex;
+    justify-content:center;
 }
 
 .input-box {
