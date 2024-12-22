@@ -17,5 +17,6 @@ namespace web_application_eAutoStore.Interfaces.Services
 		Task<IEnumerable<VehicleDto>?> GetNewVehiclesAsync(int count);
 		Task<bool> IsAlreadySavedAsync(int vehicleId);
 		Task<bool> DeleteVehicleAsync(int vehicleId);
+		Task<VehicleEstimates> GetMarketEstimates(int vehicleId);
 	}
 }

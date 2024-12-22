@@ -1,6 +1,7 @@
 ﻿@using web_application_eAutoStore.DOMAIN.DTOs.Vehicles
 
 @{
+	var vehicleEstimates = ViewBag.VehicleEstimates as VehicleEstimates;
 	var vehicleDto = ViewBag.VehicleDto as VehicleDto;
 	var ownerEmail = ViewBag.OwnerEmail as String;
 	var imageName = ViewBag.ImageName as String;
@@ -121,6 +122,24 @@
 				</div>
 			</div>
 		}
+		<div class="property-block">
+			<label>Average price: </label>
+			<div>
+				<input type="text" value="@vehicleEstimates?.AveragePrice" disabled>
+			</div>
+		</div>
+		<div class="property-block">
+			<label>Minimum price: </label>
+			<div>
+				<input type="text" value="@vehicleEstimates?.MinimumPrice" disabled>
+			</div>
+		</div>
+		<div class="property-block">
+			<label>Maximum price: </label>
+			<div>
+				<input type="text" value="@vehicleEstimates?.MaximumPrice" disabled>
+			</div>
+		</div>
 	</div>
 
 </div>

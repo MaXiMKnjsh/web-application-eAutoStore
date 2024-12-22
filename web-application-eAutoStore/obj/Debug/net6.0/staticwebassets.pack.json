@@ -5,6 +5,86 @@
       "PackagePath": "staticwebassets\\web-application-eAutoStore.WEB.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\0ab369a3-1f34-4bd7-b166-d31a931ff166.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\0ab369a3-1f34-4bd7-b166-d31a931ff166.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\1382.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\1382.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\2316.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\2316.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\4348da81-15bb-4276-9f48-9cc3f336f92f.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\4348da81-15bb-4276-9f48-9cc3f336f92f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\5987.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\5987.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\59e034c4-4bf2-472a-b724-83f144d8f482.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\59e034c4-4bf2-472a-b724-83f144d8f482.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\6b986c0a-b5ea-4ec7-901f-3c6fc9b04dec.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\6b986c0a-b5ea-4ec7-901f-3c6fc9b04dec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\705a6138-9414-462d-b32f-7d5a60b71b57.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\705a6138-9414-462d-b32f-7d5a60b71b57.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\7166.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\7166.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\75ebbbd2-caf1-4179-ab0f-1dd744d40a57.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\75ebbbd2-caf1-4179-ab0f-1dd744d40a57.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\7681.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\7681.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\9861.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\9861.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\987d63c0-d3ec-4236-9736-12be2d0b31fa.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\987d63c0-d3ec-4236-9736-12be2d0b31fa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\b088d1ef-dc04-4d70-83ae-59b4ff4b2c1e.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\b088d1ef-dc04-4d70-83ae-59b4ff4b2c1e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\b9630915-a649-47a2-bc96-82b91c11c6d1.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\b9630915-a649-47a2-bc96-82b91c11c6d1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\d765e2e9-eaf7-4551-a40d-fa02521d7334.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\d765e2e9-eaf7-4551-a40d-fa02521d7334.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\e160db23-05c6-4140-bbb3-8896c95822f0.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\e160db23-05c6-4140-bbb3-8896c95822f0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\fae8b75d-84f2-49d7-9f8c-a74d2e996925.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\fae8b75d-84f2-49d7-9f8c-a74d2e996925.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\fc1456df-9983-403d-bb8e-aa8dc9a7bcb1.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\fc1456df-9983-403d-bb8e-aa8dc9a7bcb1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\adsImages\\moto.jpg",
+      "PackagePath": "staticwebassets\\adsImages\\moto.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\css\\addadvertisement-styles.css",
       "PackagePath": "staticwebassets\\css\\addadvertisement-styles.css"
     },

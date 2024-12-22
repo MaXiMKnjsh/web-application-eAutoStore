@@ -39,6 +39,7 @@ namespace web_application_eAutoStore
 			builder.Services.AddTransient<IFavoriteVehiclesService, FavoriteVehiclesService>();
 
 			builder.Services.AddHttpContextAccessor();
+			builder.Services.AddHttpClient();
 
 			builder.Services.AddAutoMapper(typeof(Program).Assembly);
 

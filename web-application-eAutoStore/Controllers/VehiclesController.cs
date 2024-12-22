@@ -46,6 +46,7 @@ namespace web_application_eAutoStore.Controllers
 			if (vehicleDto == null || ownerEmail == null)
 				return StatusCode(500);
 
+			ViewBag.VehicleEstimates = await _vehiclesService.GetMarketEstimates(vehicleId);
 			ViewBag.VehicleDto = vehicleDto;
 			ViewBag.OwnerEmail = ownerEmail;
 			ViewBag.ImageName = vehicleDto.ImagePath;
