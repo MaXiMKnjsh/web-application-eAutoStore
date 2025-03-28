@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj": {}
+    "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj": {
+    "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj",
+        "projectUniqueName": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj",
         "projectName": "web-application-eAutoStore.APPLICATION",
-        "projectPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\obj\\",
+        "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj",
+        "packagesPath": "C:\\Users\\knish\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.APPLICATION\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\applications\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\knish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj"
+              "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj": {
+                "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj"
               }
             }
           }
@@ -38,7 +42,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -64,26 +74,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj": {
+    "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
+        "projectUniqueName": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
         "projectName": "web-application-eAutoStore.DOMAIN",
-        "projectPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\obj\\",
+        "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
+        "packagesPath": "C:\\Users\\knish\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.DOMAIN\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\applications\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\knish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,7 +131,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -134,21 +168,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj": {
+    "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj",
+        "projectUniqueName": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj",
         "projectName": "web-application-eAutoStore.INFRASTRUCTURE",
-        "projectPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.INFRASTRUCTURE\\obj\\",
+        "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj",
+        "packagesPath": "C:\\Users\\knish\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.INFRASTRUCTURE\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\applications\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\knish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -162,8 +200,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj"
+              "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj": {
+                "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj"
               }
             }
           }
@@ -172,7 +210,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -205,7 +249,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

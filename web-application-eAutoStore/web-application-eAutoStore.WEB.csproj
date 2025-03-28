@@ -19,8 +19,4 @@
     <ProjectReference Include="..\web-application-eAutoStore.INFRASTRUCTURE\web-application-eAutoStore.INFRASTRUCTURE.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\adsImages\" />
-  </ItemGroup>
-
 </Project>

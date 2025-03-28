@@ -2522,7 +2522,10 @@
           "web-application-eAutoStore.DOMAIN": "1.0.0"
         },
         "runtime": {
-          "web-application-eAutoStore.APPLICATION.dll": {}
+          "web-application-eAutoStore.APPLICATION.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "web-application-eAutoStore.DOMAIN/1.0.0": {
@@ -2531,7 +2534,10 @@
           "Microsoft.AspNetCore.Http.Features": "5.0.17"
         },
         "runtime": {
-          "web-application-eAutoStore.DOMAIN.dll": {}
+          "web-application-eAutoStore.DOMAIN.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "web-application-eAutoStore.INFRASTRUCTURE/1.0.0": {
@@ -2540,7 +2546,10 @@
           "web-application-eAutoStore.APPLICATION": "1.0.0"
         },
         "runtime": {
-          "web-application-eAutoStore.INFRASTRUCTURE.dll": {}
+          "web-application-eAutoStore.INFRASTRUCTURE.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

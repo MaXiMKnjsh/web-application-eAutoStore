@@ -49,6 +49,93 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.ToTable("RefreshTokens");
                 });
 
+            modelBuilder.Entity("web_application_eAutoStore.DOMAIN.Models.StatOfNewAds", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("DateOf")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("StatsOfNewAds");
+                });
+
+            modelBuilder.Entity("web_application_eAutoStore.Models.ClosedVehicle", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateOfSelling")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Model")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Quality")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Type")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("WayDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("WayOfAttraction")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WayOfSelling")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ClosedVehicles");
+                });
+
+            modelBuilder.Entity("web_application_eAutoStore.Models.DeletedAdvertisement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("DateOf")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ReasonOfRemoving")
+                        .HasColumnType("int");
+
+                    b.Property<string>("RemovingDescrtiption")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DeletedAdvertisements");
+                });
+
             modelBuilder.Entity("web_application_eAutoStore.Models.FavoriteVehicle", b =>
                 {
                     b.Property<int>("Id")
@@ -79,6 +166,9 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("DateOfRegistration")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -167,6 +257,28 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("web_application_eAutoStore.DOMAIN.Models.StatOfNewAds", b =>
+                {
+                    b.HasOne("web_application_eAutoStore.Models.User", "User")
+                        .WithMany("StatsOfNewAds")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("web_application_eAutoStore.Models.ClosedVehicle", b =>
+                {
+                    b.HasOne("web_application_eAutoStore.Models.User", "User")
+                        .WithMany("ClosedVehicles")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("web_application_eAutoStore.Models.FavoriteVehicle", b =>
                 {
                     b.HasOne("web_application_eAutoStore.Models.User", "User")
@@ -199,9 +311,13 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Migrations
 
             modelBuilder.Entity("web_application_eAutoStore.Models.User", b =>
                 {
+                    b.Navigation("ClosedVehicles");
+
                     b.Navigation("FavoriteVehicles");
 
                     b.Navigation("RefreshTokens");
+
+                    b.Navigation("StatsOfNewAds");
 
                     b.Navigation("Vehicles");
                 });

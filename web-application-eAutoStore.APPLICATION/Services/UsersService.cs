@@ -83,7 +83,8 @@ namespace web_application_eAutoStore.Services
 				Name = name,
 				Email = email,
 				HashedPassword = hashedPassword,
-				Role = UserRole.User
+				Role = UserRole.User,
+				DateOfRegistration = DateTime.Now
 			};
 
 			return await _usersRepository.AddAsync(user);

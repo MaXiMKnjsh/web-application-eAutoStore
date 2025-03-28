@@ -11,9 +11,12 @@ namespace web_application_eAutoStore.Models
         public string HashedPassword { get; set; }
         public string Email { get; set; }
         public UserRole Role { get; set; }
+        public DateTime DateOfRegistration { get; set; }
         // navigation fields
         public ICollection<RefreshToken> RefreshTokens { get; set; }
         public ICollection<FavoriteVehicle> FavoriteVehicles { get; set; }
         public ICollection<Vehicle> Vehicles { get; set; }
+        public ICollection<ClosedVehicle> ClosedVehicles { get; set; }
+        public ICollection<StatOfNewAds> StatsOfNewAds { get; set; }
     }
 }
