@@ -10936,11 +10936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
+      "projectUniqueName": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
       "projectName": "web-application-eAutoStore.WEB",
-      "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
+      "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
       "packagesPath": "C:\\Users\\knish\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore\\obj\\",
+      "outputPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\applications\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10961,8 +10961,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj": {
-              "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj"
+            "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj": {
+              "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj"
             }
           }
         }

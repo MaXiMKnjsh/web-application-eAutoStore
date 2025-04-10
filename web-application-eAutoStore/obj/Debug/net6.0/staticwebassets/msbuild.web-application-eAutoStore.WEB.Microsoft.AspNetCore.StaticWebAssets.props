@@ -522,6 +522,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\reasonOfRemoving.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>web-application-eAutoStore.WEB</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/web-application-eAutoStore.WEB</BasePath>
+      <RelativePath>css/reasonOfRemoving.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>66h7wbkfd1</Fingerprint>
+      <Integrity>rn6yYpIKZ4gZImsjZaYQh3/dDYvJ2CGgSZ9Rpe/sDIU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\reasonOfRemoving.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\settings-styles.css'))">
       <SourceType>Package</SourceType>
       <SourceId>web-application-eAutoStore.WEB</SourceId>
@@ -768,8 +786,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ppxmqje5a8</Fingerprint>
-      <Integrity>LfoIk50nLTxdHbLY/XQOZq9KSDxeEI1KMKAeBrJbL40=</Integrity>
+      <Fingerprint>6bp918u65i</Fingerprint>
+      <Integrity>nvaD86pzV3WZsmX5iACdSh5Z6waBwlyfkCLgBcKfbA8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\inline-card.js'))</OriginalItemSpec>

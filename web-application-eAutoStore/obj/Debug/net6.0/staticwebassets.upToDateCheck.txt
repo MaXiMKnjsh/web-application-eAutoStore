@@ -27,6 +27,7 @@ wwwroot\css\home-styles.css
 wwwroot\css\layout-styles.css
 wwwroot\css\login-register-styles.css
 wwwroot\css\profile-styles.css
+wwwroot\css\reasonOfRemoving.css
 wwwroot\css\settings-styles.css
 wwwroot\css\vehiclepreview-styles.css
 wwwroot\css\vehiclereview-styles.css

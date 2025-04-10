@@ -1,0 +1,93 @@
+﻿.modal {
+    background-color: rgba(40, 40, 40, 0.4); /* Полупрозрачный фон */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100000; /* На переднем плане */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    display: none; /* Скрыто по умолчанию */
+}
+
+.show-delete {
+    display: grid; /* Отображаем как сетку для центрирования */
+}
+
+.modal .modal-box {
+    background-color: white; /* Основной фон */
+    margin: 30px 15px; /* Отступы */
+    border-radius: 10px; /* Закругленные углы */
+    background: linear-gradient(to bottom, #328f00 1%, #f7f7f7 1%); /* Градиент */
+    padding: 30px 20px; /* Внутренние отступы */
+    max-width: 500px;
+    width: 100%;
+    display: flex; /* Flexbox для управления элементами */
+    flex-direction: column; /* Расположение элементов вертикально */
+    gap: 15px; /* Промежуток между элементами */
+}
+
+.modal .modal-header {
+    position: relative;
+    height: auto; /* Автоматическая высота */
+    width: 100%;
+}
+
+    .modal .modal-header > h5 {
+        font-size: 25px;
+        margin: 0; /* Убираем внешние отступы */
+    }
+
+.modal .modal-body {
+    display: flex; /* Flexbox для расположения содержимого */
+    flex-direction: column;
+    gap: 10px; /* Промежуток между элементами */
+}
+
+.modal .radio-group label {
+    display: block; /* Отображение как блочного элемента */
+    margin-bottom: 10px; /* Отступы между радиокнопками */
+    font-size: 16px; /* Размер текста */
+}
+
+textarea {
+    margin-top: 10px;
+    resize: none;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.modal .modal-footer {
+    display: flex; /* Flexbox для кнопок */
+    justify-content: space-between; /* Равномерное распределение кнопок */
+}
+
+.modal .btn {
+    margin-top: 10px;
+    width: 48%; /* Ширина кнопок */
+    font-size: 15px; /* Размер текста */
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal .gray {
+    background-color: rgb(150, 150, 150); /* Цвет кнопки "Отмена" */
+}
+
+.modal .btn:hover {
+    background-color: rgb(69, 129, 69); /* Цвет кнопок при наведении */
+}
+
+.modal .gray:hover {
+    background-color: rgb(176, 176, 176); /* Цвет кнопки "Отмена" при наведении */
+}

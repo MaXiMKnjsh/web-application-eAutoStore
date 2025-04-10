@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/rijye3FyVw=",
+  "dgSpecHash": "nDpJhh0PWxc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
+  "projectFilePath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\knish\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\knish\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

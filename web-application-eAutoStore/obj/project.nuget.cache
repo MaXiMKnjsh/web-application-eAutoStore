@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mmw7uwGPC0M=",
+  "dgSpecHash": "cQRAmUWx9ec=",
   "success": true,
-  "projectFilePath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
+  "projectFilePath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\web-application-eAutoStore.WEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\knish\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\knish\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

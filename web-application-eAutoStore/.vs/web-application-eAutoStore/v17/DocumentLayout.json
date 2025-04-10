@@ -1,12 +1,307 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-main\\web-application-eAutoStore\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\wwwroot\\js\\inline-card.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:wwwroot\\js\\inline-card.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\views\\shared\\partials\\reasonofremovingpopup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:views\\shared\\partials\\reasonofremovingpopup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2434EE3C-B0DE-4DEE-8658-6F2529B36D4D}|..\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore.domain\\models\\deletedadvertisement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\wwwroot\\css\\reasonofremoving.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:wwwroot\\css\\reasonofremoving.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\wwwroot\\css\\settings-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:wwwroot\\css\\settings-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\views\\shared\\partials\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:views\\shared\\partials\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\views\\shared\\partials\\card-inline.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:views\\shared\\partials\\card-inline.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06176395-0370-4AAF-B78E-FCA03B278C7D}|..\\web-application-eAutoStore.INFRASTRUCTURE\\web-application-eAutoStore.INFRASTRUCTURE.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore.infrastructure\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "settings-styles.css",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\settings-styles.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\settings-styles.css",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\settings-styles.css",
+              "RelativeToolTip": "wwwroot\\css\\settings-styles.css",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-10T11:50:50.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "layout.js",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\layout.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\layout.js",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\layout.js",
+              "RelativeToolTip": "wwwroot\\js\\layout.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-10T11:42:55.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T11:39:05.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Settings.cshtml",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Views\\Shared\\Partials\\Settings.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Partials\\Settings.cshtml",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Views\\Shared\\Partials\\Settings.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Partials\\Settings.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T11:38:28.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "reasonOfRemoving.css",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\reasonOfRemoving.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\reasonOfRemoving.css",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\reasonOfRemoving.css",
+              "RelativeToolTip": "wwwroot\\css\\reasonOfRemoving.css",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAcwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-10T11:27:59.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReasonOfRemovingPopUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Views\\Shared\\Partials\\ReasonOfRemovingPopUp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Partials\\ReasonOfRemovingPopUp.cshtml",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Views\\Shared\\Partials\\ReasonOfRemovingPopUp.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Partials\\ReasonOfRemovingPopUp.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T11:26:33.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeletedAdvertisement.cs",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\Models\\DeletedAdvertisement.cs",
+              "RelativeDocumentMoniker": "..\\web-application-eAutoStore.DOMAIN\\Models\\DeletedAdvertisement.cs",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\Models\\DeletedAdvertisement.cs",
+              "RelativeToolTip": "..\\web-application-eAutoStore.DOMAIN\\Models\\DeletedAdvertisement.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T11:14:39.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "inline-card.js",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\inline-card.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\inline-card.js",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\inline-card.js",
+              "RelativeToolTip": "wwwroot\\js\\inline-card.js",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwCYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-10T09:55:15.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Card-inline.cshtml",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Views\\Shared\\Partials\\Card-inline.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Partials\\Card-inline.cshtml",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Views\\Shared\\Partials\\Card-inline.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Partials\\Card-inline.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T09:53:40.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Views\\User\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Views\\User\\Profile.cshtml",
+              "RelativeToolTip": "Views\\User\\Profile.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAHQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T09:52:23.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T09:52:10.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VehiclesController.cs",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Controllers\\VehiclesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VehiclesController.cs",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Controllers\\VehiclesController.cs",
+              "RelativeToolTip": "Controllers\\VehiclesController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T09:52:00.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAgwDIAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T09:41:26.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.INFRASTRUCTURE\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "..\\web-application-eAutoStore.INFRASTRUCTURE\\Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.INFRASTRUCTURE\\Data\\DataContext.cs",
+              "RelativeToolTip": "..\\web-application-eAutoStore.INFRASTRUCTURE\\Data\\DataContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T09:41:20.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-10T09:41:02.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-10T09:40:46.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-10T09:39:47.357Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

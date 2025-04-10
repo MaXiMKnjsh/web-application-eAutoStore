@@ -9,81 +9,85 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = web_application_eAutoStore
 build_property.RootNamespace = web_application_eAutoStore
-build_property.ProjectDir = C:\Users\knish\Desktop\web-application-eAutoStore-main\web-application-eAutoStore\
+build_property.ProjectDir = C:\Users\knish\Desktop\web-application-eAutoStore-mai\web-application-eAutoStore\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\knish\Desktop\web-application-eAutoStore-main\web-application-eAutoStore
+build_property.MSBuildProjectDirectory = C:\Users\knish\Desktop\web-application-eAutoStore-mai\web-application-eAutoStore
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 6.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Home/Index.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Shared/Partials/Card-inline.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Shared/Partials/Card-inline.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXENhcmQtaW5saW5lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Shared/Partials/Card.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Shared/Partials/Card.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXENhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Shared/Partials/FiltersBlock.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Shared/Partials/FiltersBlock.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXEZpbHRlcnNCbG9jay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Shared/Partials/Settings.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Shared/Partials/ReasonOfRemovingPopUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXFJlYXNvbk9mUmVtb3ZpbmdQb3BVcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Shared/Partials/Settings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXFNldHRpbmdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Shared/Partials/VehiclePreview.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Shared/Partials/VehiclePreview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXFZlaGljbGVQcmV2aWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Shared/Partials/VehicleReview.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Shared/Partials/VehicleReview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXFZlaGljbGVSZXZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Shared/Partials/VehicleReviewBody.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Shared/Partials/VehicleReviewBody.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXFZlaGljbGVSZXZpZXdCb2R5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/User/Login.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/User/Profile.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/User/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/User/Register.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Vehicles/AddAdvertisement.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Vehicles/AddAdvertisement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcQWRkQWR2ZXJ0aXNlbWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Vehicles/Index.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Vehicles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/_ViewImports.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/_ViewStart.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/knish/Desktop/web-application-eAutoStore-main/web-application-eAutoStore/Views/Shared/_Layout.cshtml]
+[C:/Users/knish/Desktop/web-application-eAutoStore-mai/web-application-eAutoStore/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jdlg7c4oar

@@ -1,0 +1,32 @@
+﻿<link rel="stylesheet" href="~/css/reasonOfRemoving.css" asp-append-version="true" />
+
+<div id="modal-delete" class="modal">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h5>Причина удаления объявления</h5>
+        </div>
+        <div class="modal-body">
+            <form id="deleteForm">
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="reason" value="Sold" required> Продано
+                    </label>
+                    <label>
+                        <input type="radio" name="reason" value="ChangedMind" required> Передумал
+                    </label>
+                    <label>
+                        <input type="radio" name="reason" value="DislikePlatform" required> Не нравится платформа
+                    </label>
+                    <label>
+                        <input type="radio" name="reason" value="Another" required> Другая причина
+                    </label>
+                </div>
+                <textarea id="removingDescription" name="description" placeholder="Опишите причину" disabled></textarea>
+                <div class="modal-footer">
+                    <button type="submit" class="btn">Удалить</button>
+                    <button type="button" class="btn gray" id="cancel-button">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
