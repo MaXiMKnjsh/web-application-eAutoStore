@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
 using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
+using web_application_eAutoStore.APPLICATION.Interfaces.Services;
 using web_application_eAutoStore.APPLICATION.Services;
 using web_application_eAutoStore.Data;
 using web_application_eAutoStore.INFRASTRUCTURE.Repositories;
@@ -34,8 +35,10 @@ namespace web_application_eAutoStore
 
 			builder.Services.AddTransient<IVehiclesService, VehiclesService>();
 			builder.Services.AddTransient<IVehiclesRepository, VehiclesRepository>();
+            builder.Services.AddTransient<IDeletedAdvertisementsService, DeletedAdvertisementsService>();
 
-			builder.Services.AddTransient<IFavoriteVehiclesRepository, FavoriteVehiclesRepository>();
+            builder.Services.AddTransient<IDeletedAdvertismentsRepository, DeletedAdvertismentsRepository>();
+            builder.Services.AddTransient<IFavoriteVehiclesRepository, FavoriteVehiclesRepository>();
 			builder.Services.AddTransient<IFavoriteVehiclesService, FavoriteVehiclesService>();
 
 			builder.Services.AddHttpContextAccessor();

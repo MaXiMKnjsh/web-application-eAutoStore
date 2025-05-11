@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+using web_application_eAutoStore.Enumerations;
 using web_application_eAutoStore.Interfaces.Services;
 
 namespace web_application_eAutoStore.Controllers
@@ -112,5 +113,32 @@ namespace web_application_eAutoStore.Controllers
 
 			return Ok();
 		}
-	}
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> DeleteVehicleWithReason([FromBody] DeleteVehicleRequest request)
+        {
+            var userId = _tokensService.GetUserId();
+
+            if (userId == null)
+                return Unauthorized();
+
+            var isExist = await _vehiclesService.IsAlreadySavedAsync(request.VehicleId);
+
+            if (!isExist)
+                return BadRequest("Vehicle not found.");
+
+            var isExistInFavVehs = await _favoriteVehiclesService.IsExist(request.VehicleId);
+
+            if (isExistInFavVehs)
+                await _favoriteVehiclesService.DeleteFavoriteVehiclesAsync(request.VehicleId);
+
+            var result = await _vehiclesService.DeleteVehicleWithReasonAsync(request);
+
+            if (!result)
+                return StatusCode(500, "Failed to delete the vehicle.");
+
+            return Ok("Vehicle successfully deleted.");
+        }
+    }
 }

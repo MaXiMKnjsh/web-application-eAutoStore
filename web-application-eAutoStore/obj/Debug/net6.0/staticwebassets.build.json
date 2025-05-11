@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/a7qK62nMw4C3U97gnyyVjMIZqIrRqkmMcE5D7h7N4w=",
+  "Hash": "zSaqZz5AVzAV34iqQZ1Y39mzghKcoIyZ0poyeRFYANI=",
   "Source": "web-application-eAutoStore.WEB",
   "BasePath": "_content/web-application-eAutoStore.WEB",
   "Mode": "Default",
@@ -976,8 +976,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6bp918u65i",
-      "Integrity": "nvaD86pzV3WZsmX5iACdSh5Z6waBwlyfkCLgBcKfbA8=",
+      "Fingerprint": "ity16jo0mp",
+      "Integrity": "htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\inline-card.js"
@@ -1023,6 +1023,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\profile.js"
+    },
+    {
+      "Identity": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\reasonOfRemovingPopUp.js",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "js/reasonOfRemovingPopUp#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nvayq00zfw",
+      "Integrity": "bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\reasonOfRemovingPopUp.js"
     },
     {
       "Identity": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\register.js",
@@ -5792,7 +5813,7 @@
       ]
     },
     {
-      "Route": "js/inline-card.6bp918u65i.js",
+      "Route": "js/inline-card.ity16jo0mp.js",
       "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\inline-card.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5802,7 +5823,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3283"
+          "Value": "3161"
         },
         {
           "Name": "Content-Type",
@@ -5810,11 +5831,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nvaD86pzV3WZsmX5iACdSh5Z6waBwlyfkCLgBcKfbA8=\""
+          "Value": "\"htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 12:17:30 GMT"
+          "Value": "Sun, 11 May 2025 14:27:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5824,7 +5845,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6bp918u65i"
+          "Value": "ity16jo0mp"
         },
         {
           "Name": "label",
@@ -5832,7 +5853,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nvaD86pzV3WZsmX5iACdSh5Z6waBwlyfkCLgBcKfbA8="
+          "Value": "sha256-htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60="
         }
       ]
     },
@@ -5847,7 +5868,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3283"
+          "Value": "3161"
         },
         {
           "Name": "Content-Type",
@@ -5855,11 +5876,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nvaD86pzV3WZsmX5iACdSh5Z6waBwlyfkCLgBcKfbA8=\""
+          "Value": "\"htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 12:17:30 GMT"
+          "Value": "Sun, 11 May 2025 14:27:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5869,7 +5890,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nvaD86pzV3WZsmX5iACdSh5Z6waBwlyfkCLgBcKfbA8="
+          "Value": "sha256-htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60="
         }
       ]
     },
@@ -6034,6 +6055,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-tBGdD6fg9NeHslg46T2f0Jz0VAf8JSHrpLMLhxe8cUE="
+        }
+      ]
+    },
+    {
+      "Route": "js/reasonOfRemovingPopUp.js",
+      "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\reasonOfRemovingPopUp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 14:42:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc="
+        }
+      ]
+    },
+    {
+      "Route": "js/reasonOfRemovingPopUp.nvayq00zfw.js",
+      "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\reasonOfRemovingPopUp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 14:42:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nvayq00zfw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/reasonOfRemovingPopUp.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc="
         }
       ]
     },

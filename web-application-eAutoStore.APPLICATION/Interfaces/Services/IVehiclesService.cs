@@ -18,5 +18,7 @@ namespace web_application_eAutoStore.Interfaces.Services
 		Task<bool> IsAlreadySavedAsync(int vehicleId);
 		Task<bool> DeleteVehicleAsync(int vehicleId);
 		Task<VehicleEstimates> GetMarketEstimates(int vehicleId);
-	}
+		Task<bool> DeleteVehicleWithReasonAsync(DeleteVehicleRequest request);
+
+    }
 }

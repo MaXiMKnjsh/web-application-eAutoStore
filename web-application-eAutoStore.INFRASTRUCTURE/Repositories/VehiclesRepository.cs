@@ -2,6 +2,7 @@
 using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
 using web_application_eAutoStore.Data;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+using web_application_eAutoStore.Enumerations;
 using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
@@ -151,5 +152,5 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 
 			return await SaveAsync();
 		}
-	}
+    }
 }

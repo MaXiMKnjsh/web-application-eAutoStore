@@ -17,26 +17,22 @@
         });
     });
 
-    // Обработка кнопки "Удалить"
-    const deleteButton = document.getElementById("deleteVehButton");
-    deleteButton.addEventListener("click", function () {
-        const modal = document.getElementById("modal-delete");
-        modal.classList.add("show-delete");
+    // Выбираем все кнопки с классом .deleteVehButton
+    document.querySelectorAll(".deleteVehButton").forEach(deleteButton => {
+        deleteButton.addEventListener("click", function () {
+            const modal = document.getElementById("modal-delete");
+            modal.classList.add("show-delete");
 
-        // Сохраняем кнопку для дальнейших действий
-        modal.dataset.targetButton = deleteButton;
+            // Сохраняем кнопку для дальнейших действий
+            modal.dataset.targetButton = deleteButton;
+        });
     });
 
     // Обработка кнопки "Отмена" и закрытия модального окна
     const cancelButton = document.getElementById("cancel-button");
-    const closeButton = document.getElementById("close-button-delete");
     const modal = document.getElementById("modal-delete");
 
     cancelButton.addEventListener("click", function () {
-        modal.classList.remove("show-delete");
-    });
-
-    closeButton.addEventListener("click", function () {
         modal.classList.remove("show-delete");
     });
 

@@ -3529,7 +3529,7 @@
       ]
     },
     {
-      "Route": "js/inline-card.6bp918u65i.js",
+      "Route": "js/inline-card.ity16jo0mp.js",
       "AssetFile": "js/inline-card.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3543,7 +3543,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3283"
+          "Value": "3161"
         },
         {
           "Name": "Content-Type",
@@ -3551,21 +3551,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nvaD86pzV3WZsmX5iACdSh5Z6waBwlyfkCLgBcKfbA8=\""
+          "Value": "\"htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 12:17:30 GMT"
+          "Value": "Sun, 11 May 2025 14:27:12 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6bp918u65i"
+          "Value": "ity16jo0mp"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nvaD86pzV3WZsmX5iACdSh5Z6waBwlyfkCLgBcKfbA8="
+          "Value": "sha256-htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60="
         },
         {
           "Name": "label",
@@ -3588,7 +3588,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3283"
+          "Value": "3161"
         },
         {
           "Name": "Content-Type",
@@ -3596,17 +3596,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nvaD86pzV3WZsmX5iACdSh5Z6waBwlyfkCLgBcKfbA8=\""
+          "Value": "\"htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 12:17:30 GMT"
+          "Value": "Sun, 11 May 2025 14:27:12 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nvaD86pzV3WZsmX5iACdSh5Z6waBwlyfkCLgBcKfbA8="
+          "Value": "sha256-htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60="
         }
       ]
     },
@@ -3771,6 +3771,88 @@
         {
           "Name": "label",
           "Value": "js/profile.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/reasonOfRemovingPopUp.js",
+      "AssetFile": "js/reasonOfRemovingPopUp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 14:42:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc="
+        }
+      ]
+    },
+    {
+      "Route": "js/reasonOfRemovingPopUp.nvayq00zfw.js",
+      "AssetFile": "js/reasonOfRemovingPopUp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 14:42:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nvayq00zfw"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc="
+        },
+        {
+          "Name": "label",
+          "Value": "js/reasonOfRemovingPopUp.js"
         }
       ]
     },

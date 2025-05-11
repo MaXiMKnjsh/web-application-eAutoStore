@@ -19,17 +19,19 @@ namespace web_application_eAutoStore.Services
 {
 	public class VehiclesService : IVehiclesService
 	{
+		private readonly IDeletedAdvertismentsRepository _deletedAdvsRepository;
 		private readonly IVehiclesRepository _vehiclesRepository;
 		private readonly IMapper _mapper;
 		private readonly IWebHostEnvironment _appEnvironment;
 		private readonly HttpClient _httpClient;
 		private const string adsImagesPath = "/adsImages/";
 
-		public VehiclesService(IVehiclesRepository vehiclesRepository, IMapper mapper, IWebHostEnvironment appEnvironment, HttpClient httpClient)
+		public VehiclesService(IVehiclesRepository vehiclesRepository, IMapper mapper, IWebHostEnvironment appEnvironment, HttpClient httpClient,IDeletedAdvertismentsRepository deletedAdvsRepository)
 		{
 			_mapper = mapper;
 			_vehiclesRepository = vehiclesRepository;
-			_appEnvironment = appEnvironment;
+			_deletedAdvsRepository = deletedAdvsRepository;
+            _appEnvironment = appEnvironment;
 			_httpClient = httpClient;
 		}
 
@@ -125,5 +127,37 @@ namespace web_application_eAutoStore.Services
 			// Возвращаем значение AveragePrice
 			return estimates;
 		}
-	}
+
+        public async Task<bool> DeleteVehicleWithReasonAsync(DeleteVehicleRequest request)
+        {
+            var result = await _vehiclesRepository.DeleteVehicleAsync(request.VehicleId);
+
+			var result2 = false;
+
+			if (result)
+			{
+				var deletedAdvertisement = new DeletedAdvertisement();
+
+				ReasonOfRemoving reasonEnum;
+				if (request.ReasonEnum == "Sold") {
+					reasonEnum =ReasonOfRemoving.Sold;
+                } else if (request.ReasonEnum == "ChangedMind") {
+                    reasonEnum = ReasonOfRemoving.ChangedMind;
+                } else if (request.ReasonEnum == "DislikePlatform") {
+                    reasonEnum = ReasonOfRemoving.DislikePlatform;
+                }
+				else {
+                    reasonEnum = ReasonOfRemoving.Another;
+                }
+
+                deletedAdvertisement.RemovingDescrtiption = request.Reason;
+                deletedAdvertisement.ReasonOfRemoving = reasonEnum;
+				deletedAdvertisement.DateOf = DateTime.Now;
+
+                result2 = await _deletedAdvsRepository.AddReasonOfRemovingAsync(deletedAdvertisement);
+			}
+
+			return result2;
+        }
+    }
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.DOMAIN.Models;
+using web_application_eAutoStore.Enumerations;
 using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.APPLICATION.Interfaces.Repositories
@@ -22,5 +23,6 @@ namespace web_application_eAutoStore.APPLICATION.Interfaces.Repositories
         Task<IEnumerable<Vehicle>> GetNewVehiclesAsync(int count);
 		Task<bool> IsAlreadySavedAsync(int vehicleId);
         Task<bool> DeleteVehicleAsync(int vehicleId);
-	}
+
+    }
 }
