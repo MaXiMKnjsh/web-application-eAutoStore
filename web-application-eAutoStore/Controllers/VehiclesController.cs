@@ -4,6 +4,7 @@ using web_application_eAutoStore.APPLICATION.Interfaces.Auth;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.Enumerations;
 using web_application_eAutoStore.Interfaces.Services;
+using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Controllers
 {
@@ -118,6 +119,8 @@ namespace web_application_eAutoStore.Controllers
         [Authorize]
         public async Task<IActionResult> DeleteVehicleWithReason([FromBody] DeleteVehicleRequest request)
         {
+            var vehicleData = await _vehiclesService.GetVehicleAsync(request.VehicleId);
+
             var userId = _tokensService.GetUserId();
 
             if (userId == null)
@@ -138,7 +141,36 @@ namespace web_application_eAutoStore.Controllers
             if (!result)
                 return StatusCode(500, "Failed to delete the vehicle.");
 
-            return Ok("Vehicle successfully deleted.");
+            return Ok(vehicleData);
+        }
+
+		[HttpPost]
+		[Authorize]
+		public async Task<IActionResult> SubmitVehicleInfo([FromBody]ClosedVehicleRequest request)
+		{
+            var userId = _tokensService.GetUserId();
+
+            if (userId == null)
+                return Unauthorized();
+
+			var result = await _vehiclesService.AddVehicleInfoAsync(request, (int)userId);
+
+            if (!result)
+                return StatusCode(500, "Failed to add the vehicle stat.");
+
+            return Ok("Vehicle's stat successfully addded.");
+        }
+
+        [HttpGet("{vehicleId}")]
+        [Authorize]
+		public async Task<IActionResult> GetVehicleData(int vehicleId)
+        {
+            var vehicleData = await _vehiclesService.GetVehicleAsync(vehicleId);
+
+            if (vehicleData == null)
+                return NotFound("Транспортное средство не найдено.");
+
+            return Ok(vehicleData);
         }
     }
 }

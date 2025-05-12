@@ -19,6 +19,7 @@ namespace web_application_eAutoStore.Interfaces.Services
 		Task<bool> DeleteVehicleAsync(int vehicleId);
 		Task<VehicleEstimates> GetMarketEstimates(int vehicleId);
 		Task<bool> DeleteVehicleWithReasonAsync(DeleteVehicleRequest request);
+		Task<bool> AddVehicleInfoAsync(ClosedVehicleRequest request, int userId);
 
     }
 }

@@ -23,8 +23,9 @@
             const modal = document.getElementById("modal-delete");
             modal.classList.add("show-delete");
 
-            // Сохраняем кнопку для дальнейших действий
-            modal.dataset.targetButton = deleteButton;
+            // Сохраняем кнопку напрямую в объекте modal (НЕ dataset)
+            modal.targetButton = deleteButton;
+            console.log("Кнопка сохранена:", deleteButton); // Проверяем, сохраняется ли кнопка
         });
     });
 
@@ -41,29 +42,69 @@
     form.onsubmit = async function (e) {
         e.preventDefault();
 
-        const button = modal.dataset.targetButton; // Кнопка, вызвавшая модальное окно
-        const reason = document.querySelector('input[name="reason"]:checked').value;
+        const button = modal.targetButton; // Теперь это объект DOM, а не строка
 
-        await deleteAdvertisementWithReason(button, reason, descriptionInput.value); // Передача данных
+        console.log("Переданная кнопка:", button); // Проверяем, передается ли объект
+
+        if (!button) {
+            console.error("Ошибка: кнопка не была сохранена перед отправкой формы.");
+            return;
+        }
+
+        const reason = document.querySelector('input[name="reason"]:checked').value;
+        await deleteAdvertisementWithReason(button, reason, descriptionInput.value);
         modal.classList.remove("show-delete");
     };
 });
 
 async function deleteAdvertisementWithReason(button, reason, description) {
-    const card = button.parentNode.parentNode;
+    if (!button || !(button instanceof HTMLElement)) {
+        console.error("Ошибка: переданная кнопка не является HTML-элементом.");
+        return;
+    }
+
+    const card = button.closest('.card-inline'); // Используем closest вместо parentNode.parentNode
+    if (!card) {
+        console.error("Ошибка: карточка не найдена.");
+        return;
+    }
+
     const vehicleId = card.getAttribute("data-id");
-
-    const url = "/Vehicles/DeleteVehicleWithReason";
-
-    const data = {
-        vehicleId: vehicleId,
-        reasonOfRemoving: reason,
-        removingDescription: description
-    };
-
+    if (!vehicleId) {
+        console.error("Ошибка: data-id отсутствует.");
+        return;
+    }
     try {
+        const url = `/Vehicles/${vehicleId}`;
+
         const response = await fetch(url, {
-            method: 'DELETE',
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            console.error("Server response is negative");
+            alert('Ошибка при получении данных.');
+            return;
+        } 
+
+        const vehicleData = await response.json();
+        console.log('Полученные данные о транспортном средстве:', vehicleData);
+
+        const data = {
+            vehicleId: vehicleId,
+            reasonOfRemoving: reason,
+            removingDescription: description
+        };
+        const url = "/Vehicles/DeleteVehicleWithReason";
+
+        const infoModal = document.getElementById('modal-vehicle-info');
+        infoModal.classList.add('show-stats');
+
+        const response = await fetch(url, {
+            method: 'POST',
             body: JSON.stringify(data),
             headers: {
                 'Content-Type': 'application/json'
@@ -72,10 +113,15 @@ async function deleteAdvertisementWithReason(button, reason, description) {
 
         if (response.ok) {
             card.remove(); // Удаляем карточку из DOM
+            console.log(`Транспортное средство с ID ${vehicleId} удалено.`);
+
         } else {
-            console.error("Server response is negative");
+            console.error("Ошибка: сервер вернул отрицательный ответ.");
         }
-    } catch (error) {
-        console.error("Something went wrong:", error);
+
     }
+    catch (error) {
+        console.error("Ошибка", error);
+    }
+
 }

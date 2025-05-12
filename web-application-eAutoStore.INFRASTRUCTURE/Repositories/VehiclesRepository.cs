@@ -2,6 +2,7 @@
 using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
 using web_application_eAutoStore.Data;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+using web_application_eAutoStore.DOMAIN.Models;
 using web_application_eAutoStore.Enumerations;
 using web_application_eAutoStore.Models;
 
@@ -121,7 +122,15 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 
 		public async Task<bool> AddVehicleAsync(Vehicle newVehicle)
 		{
-			await _dataContext.Vehicles.AddAsync(newVehicle);
+			var result = await _dataContext.Vehicles.AddAsync(newVehicle);
+
+			// add vehicle to stats
+			var statOfVeh = new StatOfNewAds();
+			statOfVeh.UserId = newVehicle.OwnerId;
+			statOfVeh.DateOf = DateTime.Now;
+			statOfVeh.User = newVehicle.User;
+
+			await _dataContext.StatsOfNewAds.AddAsync(statOfVeh);
 			return await SaveAsync();
 		}
 
@@ -150,6 +159,12 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
 
 			_dataContext.Vehicles.Remove(vehicleToDelete);
 
+			return await SaveAsync();
+		}
+
+        public async Task<bool> AddVehicleInfoAsync(ClosedVehicle request)
+        {
+            var result = await _dataContext.ClosedVehicles.AddAsync(request);
 			return await SaveAsync();
 		}
     }

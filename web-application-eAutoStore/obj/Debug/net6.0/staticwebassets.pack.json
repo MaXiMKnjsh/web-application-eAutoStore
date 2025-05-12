@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\css\\settings-styles.css"
     },
     {
+      "Id": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\vehicleInfoPopUp.css",
+      "PackagePath": "staticwebassets\\css\\vehicleInfoPopUp.css"
+    },
+    {
       "Id": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\vehiclepreview-styles.css",
       "PackagePath": "staticwebassets\\css\\vehiclepreview-styles.css"
     },
@@ -195,6 +199,10 @@
     {
       "Id": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\register.js",
       "PackagePath": "staticwebassets\\js\\register.js"
+    },
+    {
+      "Id": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\vehicleInfoPopUp.js",
+      "PackagePath": "staticwebassets\\js\\vehicleInfoPopUp.js"
     },
     {
       "Id": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\vehicles.js",

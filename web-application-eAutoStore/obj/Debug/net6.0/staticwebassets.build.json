@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zSaqZz5AVzAV34iqQZ1Y39mzghKcoIyZ0poyeRFYANI=",
+  "Hash": "BZjuL0ojkHsHNI8YeZqTLvZyP/abwKwWehFgcBl8JLY=",
   "Source": "web-application-eAutoStore.WEB",
   "BasePath": "_content/web-application-eAutoStore.WEB",
   "Mode": "Default",
@@ -710,6 +710,27 @@
       "OriginalItemSpec": "wwwroot\\css\\settings-styles.css"
     },
     {
+      "Identity": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\vehicleInfoPopUp.css",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "css/vehicleInfoPopUp#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a7aj6759i5",
+      "Integrity": "mnPcEaJ8s7qI5hE5CMz/9VaQQGpRSRSqsWY2JEFvSeE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\vehicleInfoPopUp.css"
+    },
+    {
       "Identity": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\vehiclepreview-styles.css",
       "SourceId": "web-application-eAutoStore.WEB",
       "SourceType": "Discovered",
@@ -976,8 +997,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ity16jo0mp",
-      "Integrity": "htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60=",
+      "Fingerprint": "tcr8ba2mj6",
+      "Integrity": "fS8NfEogy1AhzSwAzCvgOS0w+ooEwzOtCl90nMLmHYE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\inline-card.js"
@@ -1039,8 +1060,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nvayq00zfw",
-      "Integrity": "bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc=",
+      "Fingerprint": "35jkan718w",
+      "Integrity": "51MzxKQarmsM1VhwvysZLmK2bmbQCGoyh5bdAojElbE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\reasonOfRemovingPopUp.js"
@@ -1065,6 +1086,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\register.js"
+    },
+    {
+      "Identity": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\vehicleInfoPopUp.js",
+      "SourceId": "web-application-eAutoStore.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\",
+      "BasePath": "_content/web-application-eAutoStore.WEB",
+      "RelativePath": "js/vehicleInfoPopUp#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fk0d3jwkwc",
+      "Integrity": "H1Ovql2Ku041Wbwarpwh7LR2uI1CglmuUr9n60eL/Ls=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vehicleInfoPopUp.js"
     },
     {
       "Identity": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\vehicles.js",
@@ -4829,6 +4871,88 @@
       ]
     },
     {
+      "Route": "css/vehicleInfoPopUp.a7aj6759i5.css",
+      "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\vehicleInfoPopUp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4489"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mnPcEaJ8s7qI5hE5CMz/9VaQQGpRSRSqsWY2JEFvSeE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 08:11:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a7aj6759i5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/vehicleInfoPopUp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mnPcEaJ8s7qI5hE5CMz/9VaQQGpRSRSqsWY2JEFvSeE="
+        }
+      ]
+    },
+    {
+      "Route": "css/vehicleInfoPopUp.css",
+      "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\vehicleInfoPopUp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4489"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mnPcEaJ8s7qI5hE5CMz/9VaQQGpRSRSqsWY2JEFvSeE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 08:11:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mnPcEaJ8s7qI5hE5CMz/9VaQQGpRSRSqsWY2JEFvSeE="
+        }
+      ]
+    },
+    {
       "Route": "css/vehiclepreview-styles.css",
       "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\css\\vehiclepreview-styles.css",
       "Selectors": [],
@@ -5813,51 +5937,6 @@
       ]
     },
     {
-      "Route": "js/inline-card.ity16jo0mp.js",
-      "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\inline-card.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3161"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 14:27:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ity16jo0mp"
-        },
-        {
-          "Name": "label",
-          "Value": "js/inline-card.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60="
-        }
-      ]
-    },
-    {
       "Route": "js/inline-card.js",
       "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\inline-card.js",
       "Selectors": [],
@@ -5868,7 +5947,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3161"
+          "Value": "4949"
         },
         {
           "Name": "Content-Type",
@@ -5876,11 +5955,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60=\""
+          "Value": "\"fS8NfEogy1AhzSwAzCvgOS0w+ooEwzOtCl90nMLmHYE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 14:27:12 GMT"
+          "Value": "Mon, 12 May 2025 11:03:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5890,7 +5969,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60="
+          "Value": "sha256-fS8NfEogy1AhzSwAzCvgOS0w+ooEwzOtCl90nMLmHYE="
+        }
+      ]
+    },
+    {
+      "Route": "js/inline-card.tcr8ba2mj6.js",
+      "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\inline-card.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fS8NfEogy1AhzSwAzCvgOS0w+ooEwzOtCl90nMLmHYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 11:03:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tcr8ba2mj6"
+        },
+        {
+          "Name": "label",
+          "Value": "js/inline-card.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fS8NfEogy1AhzSwAzCvgOS0w+ooEwzOtCl90nMLmHYE="
         }
       ]
     },
@@ -6059,6 +6183,51 @@
       ]
     },
     {
+      "Route": "js/reasonOfRemovingPopUp.35jkan718w.js",
+      "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\reasonOfRemovingPopUp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"51MzxKQarmsM1VhwvysZLmK2bmbQCGoyh5bdAojElbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 11:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "35jkan718w"
+        },
+        {
+          "Name": "label",
+          "Value": "js/reasonOfRemovingPopUp.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-51MzxKQarmsM1VhwvysZLmK2bmbQCGoyh5bdAojElbE="
+        }
+      ]
+    },
+    {
       "Route": "js/reasonOfRemovingPopUp.js",
       "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\reasonOfRemovingPopUp.js",
       "Selectors": [],
@@ -6069,7 +6238,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3778"
+          "Value": "4436"
         },
         {
           "Name": "Content-Type",
@@ -6077,11 +6246,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc=\""
+          "Value": "\"51MzxKQarmsM1VhwvysZLmK2bmbQCGoyh5bdAojElbE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 14:42:43 GMT"
+          "Value": "Mon, 12 May 2025 11:26:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6091,52 +6260,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc="
-        }
-      ]
-    },
-    {
-      "Route": "js/reasonOfRemovingPopUp.nvayq00zfw.js",
-      "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\reasonOfRemovingPopUp.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3778"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 14:42:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nvayq00zfw"
-        },
-        {
-          "Name": "label",
-          "Value": "js/reasonOfRemovingPopUp.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc="
+          "Value": "sha256-51MzxKQarmsM1VhwvysZLmK2bmbQCGoyh5bdAojElbE="
         }
       ]
     },
@@ -6219,6 +6343,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-3QfNLjOZjzTKNED+pP63Gc4xx0ex22vX+Slvz6sB1t8="
+        }
+      ]
+    },
+    {
+      "Route": "js/vehicleInfoPopUp.fk0d3jwkwc.js",
+      "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\vehicleInfoPopUp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H1Ovql2Ku041Wbwarpwh7LR2uI1CglmuUr9n60eL/Ls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 12:38:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fk0d3jwkwc"
+        },
+        {
+          "Name": "label",
+          "Value": "js/vehicleInfoPopUp.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H1Ovql2Ku041Wbwarpwh7LR2uI1CglmuUr9n60eL/Ls="
+        }
+      ]
+    },
+    {
+      "Route": "js/vehicleInfoPopUp.js",
+      "AssetFile": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\vehicleInfoPopUp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H1Ovql2Ku041Wbwarpwh7LR2uI1CglmuUr9n60eL/Ls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 12:38:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H1Ovql2Ku041Wbwarpwh7LR2uI1CglmuUr9n60eL/Ls="
         }
       ]
     },

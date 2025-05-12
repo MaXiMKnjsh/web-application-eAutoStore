@@ -29,6 +29,7 @@ wwwroot\css\login-register-styles.css
 wwwroot\css\profile-styles.css
 wwwroot\css\reasonOfRemoving.css
 wwwroot\css\settings-styles.css
+wwwroot\css\vehicleInfoPopUp.css
 wwwroot\css\vehiclepreview-styles.css
 wwwroot\css\vehiclereview-styles.css
 wwwroot\css\vehicles-styles.css
@@ -46,6 +47,7 @@ wwwroot\js\layout.js
 wwwroot\js\profile.js
 wwwroot\js\reasonOfRemovingPopUp.js
 wwwroot\js\register.js
+wwwroot\js\vehicleInfoPopUp.js
 wwwroot\js\vehicles.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

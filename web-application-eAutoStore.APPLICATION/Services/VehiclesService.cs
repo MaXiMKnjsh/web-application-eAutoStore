@@ -14,6 +14,8 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Text.Json;
+using web_application_eAutoStore.DOMAIN.Models;
+using web_application_eAutoStore.DOMAIN.Enumerations;
 
 namespace web_application_eAutoStore.Services
 {
@@ -158,6 +160,85 @@ namespace web_application_eAutoStore.Services
 			}
 
 			return result2;
+        }
+
+        public async Task<bool> AddVehicleInfoAsync(ClosedVehicleRequest request, int userId)
+        {
+			var data = new ClosedVehicle();
+			WayOfAttraction wayOfAttraction;
+            if (request.WayOfAttraction == "SocialNetwork"){
+				wayOfAttraction = WayOfAttraction.SocialNetwork;
+            } else if (request.WayOfAttraction == "Friend"){
+                wayOfAttraction = WayOfAttraction.Friend;
+            } else if (request.WayOfAttraction == "ContextAd"){
+                wayOfAttraction = WayOfAttraction.ContextAd;
+            }
+			else{
+                wayOfAttraction = WayOfAttraction.Search;
+            }
+			data.WayOfAttraction = wayOfAttraction;
+            data.WayDescription = request.WayDescription;
+            WayOfSelling wayOfSelling;
+            if (request.WayOfSelling == "Credit")
+            {
+                wayOfSelling = WayOfSelling.Credit;
+            }
+            else if (request.WayOfSelling == "FullPrice")
+            {
+                wayOfSelling = WayOfSelling.FullPrice;
+            }
+            else if (request.WayOfSelling == "Leasing")
+            {
+                wayOfSelling = WayOfSelling.Leasing;
+            }
+            else
+            {
+                wayOfSelling = WayOfSelling.Installments;
+            }
+            data.WayOfSelling = wayOfSelling;
+            CarQuality carQuality;
+            if (request.Quality == 2) {
+                carQuality = CarQuality.Repairable;
+            }
+            else if (request.Quality == 0) {
+                carQuality = CarQuality.New;
+            }
+            else {
+                carQuality = CarQuality.Used;
+            }
+            data.Quality = carQuality;
+            data.Brand = request.Brand;
+            data.Model = request.Model;
+			CarType carType;
+            if (request.Type == 0)
+            {
+                carType = CarType.Passenger;
+            }
+            else if (request.Type == 1)
+            {
+                carType = CarType.Motorcycles;
+            }
+            else if (request.Type == 2)
+            {
+                carType = CarType.Trucks;
+            }
+            else if (request.Type == 3)
+            {
+                carType = CarType.Special;
+            }
+            else if (request.Type == 4)
+            {
+                carType = CarType.Buses;
+            }
+            else
+            {
+                carType = CarType.Other;
+            }
+            data.Type = carType;
+            data.DateOfSelling = DateTime.Now;
+			data.UserId = userId;
+
+            return await _vehiclesRepository.AddVehicleInfoAsync(data);          
         }
     }
 }

@@ -17,7 +17,7 @@ document.querySelectorAll('.deleteVehButton').forEach(button => {
         modal.setAttribute('data-vehicle-id', vehicleId); // Устанавливаем ID в атрибут попапа
 
         // Открытие попапа
-        modal.classList.add('active'); // Добавляем класс active для отображения попапа
+        modal.classList.add('show-delete'); // Добавляем класс active для отображения попапа
         console.log(`Vehicle ID передан на попап: ${vehicleId}`);
     });
 });
@@ -48,6 +48,7 @@ document.getElementById('btnDeleteVeh').addEventListener('click', async function
     };
 
     try {
+        
         const url = "/Vehicles/DeleteVehicleWithReason";
         const response = await fetch(url, {
             method: 'POST',
@@ -65,6 +66,9 @@ document.getElementById('btnDeleteVeh').addEventListener('click', async function
 
         console.log('Успешно удалено:');
 
+        const data = await response.json(); // Парсим ответ как JSON
+        console.log("Ответ от сервера:", data); // Выводим полученные данные
+
         // Закрываем попап после успешного удаления
         modal.classList.remove('show-delete');
 
@@ -75,8 +79,15 @@ document.getElementById('btnDeleteVeh').addEventListener('click', async function
             console.log(`Элемент с ID ${vehicleId} удален из DOM.`);
         }
 
+        // Открываем новый попап с информацией о транспортном средстве
+        const infoModal = document.getElementById('modal-vehicle-info');
+        infoModal.setAttribute('data-vehicle', JSON.stringify(data));
+        infoModal.classList.add('show-stats');
+        console.log('Открыт попап с информацией о транспортном средстве.');
+
     } catch (error) {
         console.error("Error occurred during the request:", error);
         alert('Произошла ошибка при удалении.');
     }
 });
+

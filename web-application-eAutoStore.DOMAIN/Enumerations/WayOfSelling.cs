@@ -5,7 +5,7 @@
 
         Credit = 0,
         Leasing = 1,
-        Cash = 2,
+        FullPrice = 2,
         Installments = 3
 
     }

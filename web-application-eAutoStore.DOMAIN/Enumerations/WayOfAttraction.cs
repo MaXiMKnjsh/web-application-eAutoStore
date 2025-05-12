@@ -6,7 +6,7 @@
         SocialNetwork = 0,
         Friend = 1,
         ContextAd = 2,
-        Another = 3
+        Search = 3
 
     }
 }

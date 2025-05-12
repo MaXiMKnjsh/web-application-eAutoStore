@@ -558,6 +558,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\settings-styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\vehicleInfoPopUp.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>web-application-eAutoStore.WEB</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/web-application-eAutoStore.WEB</BasePath>
+      <RelativePath>css/vehicleInfoPopUp.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>a7aj6759i5</Fingerprint>
+      <Integrity>mnPcEaJ8s7qI5hE5CMz/9VaQQGpRSRSqsWY2JEFvSeE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\vehicleInfoPopUp.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\vehiclepreview-styles.css'))">
       <SourceType>Package</SourceType>
       <SourceId>web-application-eAutoStore.WEB</SourceId>
@@ -786,8 +804,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ity16jo0mp</Fingerprint>
-      <Integrity>htgIvZhjh64AAeSeDlzRVrgH81MLPv3kxTbIUpqsV60=</Integrity>
+      <Fingerprint>tcr8ba2mj6</Fingerprint>
+      <Integrity>fS8NfEogy1AhzSwAzCvgOS0w+ooEwzOtCl90nMLmHYE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\inline-card.js'))</OriginalItemSpec>
@@ -840,8 +858,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>nvayq00zfw</Fingerprint>
-      <Integrity>bXqbZYmqTXaBO8wvfeDUHEi7f3Xb0S1WDt/IhaXQiEc=</Integrity>
+      <Fingerprint>35jkan718w</Fingerprint>
+      <Integrity>51MzxKQarmsM1VhwvysZLmK2bmbQCGoyh5bdAojElbE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\reasonOfRemovingPopUp.js'))</OriginalItemSpec>
@@ -863,6 +881,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\register.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vehicleInfoPopUp.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>web-application-eAutoStore.WEB</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/web-application-eAutoStore.WEB</BasePath>
+      <RelativePath>js/vehicleInfoPopUp.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fk0d3jwkwc</Fingerprint>
+      <Integrity>H1Ovql2Ku041Wbwarpwh7LR2uI1CglmuUr9n60eL/Ls=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vehicleInfoPopUp.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vehicles.js'))">
       <SourceType>Package</SourceType>

@@ -1,0 +1,118 @@
+﻿#modal-vehicle-info {
+    background-color: rgba(40, 40, 40, 0.4); /* Полупрозрачный фон */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100000; /* На переднем плане */
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    display: none; /* Скрыто по умолчанию */
+}
+
+/* При добавлении класса pop-up становится видимым */
+.show-stats {
+    display: flex !important; /* Обеспечивает видимость */
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-vehicle-info .modal-box {
+    background-color: white; /* Основной фон */
+    margin: 30px 15px; /* Отступы */
+    border-radius: 10px; /* Закругленные углы */
+    background: linear-gradient(to bottom, #328f00 1%, #f7f7f7 1%); /* Зеленый градиент */
+    padding: 30px 20px; /* Внутренние отступы */
+    max-width: 500px;
+    width: 100%;
+    display: flex; /* Flexbox для управления элементами */
+    flex-direction: column; /* Расположение элементов вертикально */
+    gap: 20px; /* Увеличенный промежуток между элементами */
+}
+
+#modal-vehicle-info .modal-header {
+    position: relative;
+    height: auto; /* Автоматическая высота */
+    width: 100%;
+}
+
+    #modal-vehicle-info .modal-header > h5 {
+        font-size: 25px;
+        margin: 0; /* Убираем внешние отступы */
+    }
+
+#modal-vehicle-info .modal-body {
+    display: flex; /* Flexbox для расположения содержимого */
+    flex-direction: column;
+    gap: 20px; /* Увеличенный промежуток между параметрами */
+}
+
+#modal-vehicle-info .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Уменьшенный промежуток между элементами внутри input-group */
+    margin-bottom: 20px; /* Увеличенный отступ между группами */
+}
+
+#modal-vehicle-info .select-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Уменьшенный промежуток между элементами внутри select-group */
+    margin-bottom: 20px; /* Увеличенный отступ между группами */
+}
+
+#modal-vehicle-info textarea {
+    margin-top: 10px;
+    resize: none;
+    width: 100%;
+    height: 100px; /* Увеличенная высота */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#modal-vehicle-info .modal-footer {
+    display: flex; /* Flexbox для кнопок */
+    justify-content: space-between; /* Равномерное распределение кнопок */
+}
+
+#modal-vehicle-info .btn {
+    margin-top: 10px;
+    width: 48%; /* Ширина кнопок */
+    font-size: 15px; /* Размер текста */
+    border-radius: 30px;
+    background-color: green; /* Зеленый цвет кнопки */
+    color: white;
+    height: 40px; /* Увеличенная высота кнопок */
+    border: none;
+    cursor: pointer;
+}
+
+#modal-vehicle-info .btn-cancel {
+    background-color: rgb(120, 120, 120); /* Серый цвет кнопки "Отмена" */
+}
+
+#modal-vehicle-info .btn:hover {
+    background-color: rgb(69, 129, 69); /* Зеленый цвет кнопки при наведении */
+}
+
+#modal-vehicle-info .btn-cancel:hover {
+    background-color: rgb(160, 160, 160); /* Светло-серый цвет при наведении */
+}
+#modal-vehicle-info .input-group select {
+    border-radius: 8px; /* Закругленные углы */
+    padding: 5px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Граница */
+    background-color: white; /* Фон */
+    font-size: 16px; /* Размер шрифта */
+}
+#modal-vehicle-info .input-group select,
+#modal-vehicle-info .input-group input {
+    border-radius: 8px; /* Закругленные углы */
+    padding: 5px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Граница */
+    background-color: white; /* Фон */
+    font-size: 16px; /* Размер шрифта */
+}
