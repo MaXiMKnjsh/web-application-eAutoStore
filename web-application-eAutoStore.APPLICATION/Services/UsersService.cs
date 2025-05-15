@@ -7,6 +7,8 @@ using web_application_eAutoStore.Interfaces.Services;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
 using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using AutoMapper;
+using web_application_eAutoStore.APPLICATION.Interfaces.Repositories;
+using web_application_eAutoStore.DOMAIN.Models;
 
 namespace web_application_eAutoStore.Services
 {
@@ -39,10 +41,13 @@ namespace web_application_eAutoStore.Services
 		{
 			var vehicles = await _usersRepository.GetUserAdvertisementsAsync(id);
 			var vehiclesDtos = _mapper.Map<IEnumerable<VehicleDto>>(vehicles);
-			return vehiclesDtos;
+            return vehiclesDtos;
 		}
-
-		public async Task<UserDto> GetUserByEmailAsync(string email)
+        public async Task<List<User>> GetAllUsersData()
+        {
+            return await _usersRepository.GetAllUsersData();
+        }
+        public async Task<UserDto> GetUserByEmailAsync(string email)
 		{
 			var user = await _usersRepository.GetByEmailAsync(email);
 			var userDto = _mapper.Map<UserDto>(user);

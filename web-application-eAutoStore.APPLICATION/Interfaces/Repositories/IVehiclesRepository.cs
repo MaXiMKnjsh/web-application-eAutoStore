@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,10 @@ namespace web_application_eAutoStore.APPLICATION.Interfaces.Repositories
 		Task<bool> IsAlreadySavedAsync(int vehicleId);
         Task<bool> DeleteVehicleAsync(int vehicleId);
         Task<bool> AddVehicleInfoAsync(ClosedVehicle request);
+        Task<List<Vehicle>> GetAllVehiclesAsync(); 
+        Task<List<StatOfNewAds>> GetAllStats();
+        Task<List<DeletedAdvertisement>> GetAllDeletedAdsData();
+        Task<List<ClosedVehicle>> GetAllClosedVehiclesData();
 
     }
 }

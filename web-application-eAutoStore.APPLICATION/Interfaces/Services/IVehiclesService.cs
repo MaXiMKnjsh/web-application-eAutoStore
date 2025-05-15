@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
 using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+using web_application_eAutoStore.DOMAIN.Models;
 using web_application_eAutoStore.Interfaces.Repositories;
 using web_application_eAutoStore.Models;
 
@@ -20,6 +22,9 @@ namespace web_application_eAutoStore.Interfaces.Services
 		Task<VehicleEstimates> GetMarketEstimates(int vehicleId);
 		Task<bool> DeleteVehicleWithReasonAsync(DeleteVehicleRequest request);
 		Task<bool> AddVehicleInfoAsync(ClosedVehicleRequest request, int userId);
-
+		Task<List<Vehicle>> GetAllVehiclesAsync();
+        Task<List<StatOfNewAds>> GetAllStats();
+        Task<List<DeletedAdvertisement>> GetAllDeletedAdsData();
+        Task<List<ClosedVehicle>> GetAllClosedVehiclesData();
     }
 }

@@ -3,13 +3,14 @@ using System.ComponentModel;
 using web_application_eAutoStore.Data;
 using web_application_eAutoStore.DOMAIN.DTOs.Users;
 using web_application_eAutoStore.DOMAIN.DTOs.Vehicles;
+using web_application_eAutoStore.DOMAIN.Models;
 using web_application_eAutoStore.Interfaces.Repositories;
 using web_application_eAutoStore.Models;
 
 namespace web_application_eAutoStore.Repositories
 {
-	public class UsersRepository : IUsersRepository	
-	{
+    public class UsersRepository : IUsersRepository
+    {
 		private readonly DataContext _dataContext;
 		public UsersRepository(DataContext dataContext)
 		{
@@ -27,7 +28,13 @@ namespace web_application_eAutoStore.Repositories
 			return await vehicles.ToListAsync();
 		}
 
-		public async Task<User?> GetByEmailAsync(string email)
+		public async Task<List<User>> GetAllUsersData()
+		{
+			return await _dataContext.Users.ToListAsync();
+		}
+        
+
+        public async Task<User?> GetByEmailAsync(string email)
 		{
 			return await _dataContext.Users.FirstOrDefaultAsync(x => x.Email == email);
 		}

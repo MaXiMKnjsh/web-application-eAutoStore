@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj": {}
+    "E:\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj": {}
   },
   "projects": {
-    "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj": {
+    "E:\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj",
+        "projectUniqueName": "E:\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj",
         "projectName": "web-application-eAutoStore.APPLICATION",
-        "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj",
+        "projectPath": "E:\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj",
         "packagesPath": "C:\\Users\\knish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\obj\\",
+        "outputPath": "E:\\web-application-eAutoStore\\web-application-eAutoStore.APPLICATION\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\applications\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj": {
-                "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj"
+              "E:\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj": {
+                "projectPath": "E:\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj": {
+    "E:\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
+        "projectUniqueName": "E:\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
         "projectName": "web-application-eAutoStore.DOMAIN",
-        "projectPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
+        "projectPath": "E:\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj",
         "packagesPath": "C:\\Users\\knish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\obj\\",
+        "outputPath": "E:\\web-application-eAutoStore\\web-application-eAutoStore.DOMAIN\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\applications\\Microsoft Visual Studio\\Shared\\NuGetPackages"

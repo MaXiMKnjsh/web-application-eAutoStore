@@ -1,23 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\",
+  "WorkspaceRootPath": "E:\\web-application-eAutoStore\\web-application-eAutoStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\wwwroot\\js\\vehicleinfopopup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|e:\\web-application-eautostore\\web-application-eautostore\\wwwroot\\js\\vehicleinfopopup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:wwwroot\\js\\vehicleinfopopup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2D2410B-B963-40D4-9E4D-4A9694004B6C}|..\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore.application\\services\\vehiclesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\knish\\Desktop\\\u0431\u0431\u0431\\web-application-eAutoStore.APPLICATION\\Interfaces\\Services\\IVehiclesService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|e:\\web-application-eautostore\\web-application-eautostore\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B032F1B5-7BF6-4D1C-AF64-6B7FBA3BC778}|web-application-eAutoStore.WEB.csproj|solutionrelative:controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2434EE3C-B0DE-4DEE-8658-6F2529B36D4D}|..\\web-application-eAutoStore.DOMAIN\\web-application-eAutoStore.DOMAIN.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore.domain\\dtos\\vehicles\\closedvehiclerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\Interfaces\\Services\\IVehiclesService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2D2410B-B963-40D4-9E4D-4A9694004B6C}|..\\web-application-eAutoStore.APPLICATION\\web-application-eAutoStore.APPLICATION.csproj|c:\\users\\knish\\desktop\\web-application-eautostore-mai\\web-application-eautostore.application\\interfaces\\services\\ivehiclesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\DTOs\\Vehicles\\ClosedVehicleRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\Services\\VehiclesService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,67 +30,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 186,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "IVehiclesService.cs",
-              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\Interfaces\\Services\\IVehiclesService.cs",
-              "RelativeDocumentMoniker": "..\\web-application-eAutoStore.APPLICATION\\Interfaces\\Services\\IVehiclesService.cs",
-              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\Interfaces\\Services\\IVehiclesService.cs",
-              "RelativeToolTip": "..\\web-application-eAutoStore.APPLICATION\\Interfaces\\Services\\IVehiclesService.cs",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\\u0431\u0431\u0431\\web-application-eAutoStore.APPLICATION\\Interfaces\\Services\\IVehiclesService.cs",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\\u0431\u0431\u0431\\web-application-eAutoStore.APPLICATION\\Interfaces\\Services\\IVehiclesService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T12:33:43.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T12:37:14.914Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ClosedVehicleRequest.cs",
-              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\DTOs\\Vehicles\\ClosedVehicleRequest.cs",
-              "RelativeDocumentMoniker": "..\\web-application-eAutoStore.DOMAIN\\DTOs\\Vehicles\\ClosedVehicleRequest.cs",
-              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\DTOs\\Vehicles\\ClosedVehicleRequest.cs",
-              "RelativeToolTip": "..\\web-application-eAutoStore.DOMAIN\\DTOs\\Vehicles\\ClosedVehicleRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAWAAAAAAAAAA==",
+              "Title": "IVehiclesService.cs",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\Interfaces\\Services\\IVehiclesService.cs",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\Interfaces\\Services\\IVehiclesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T12:17:39.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T12:33:43.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "ClosedVehicleRequest.cs",
+              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\DTOs\\Vehicles\\ClosedVehicleRequest.cs",
+              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.DOMAIN\\DTOs\\Vehicles\\ClosedVehicleRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T12:17:39.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "VehiclesService.cs",
               "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\Services\\VehiclesService.cs",
-              "RelativeDocumentMoniker": "..\\web-application-eAutoStore.APPLICATION\\Services\\VehiclesService.cs",
               "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore.APPLICATION\\Services\\VehiclesService.cs",
-              "RelativeToolTip": "..\\web-application-eAutoStore.APPLICATION\\Services\\VehiclesService.cs",
               "ViewState": "AgIAAN0AAAAAAAAAAAAWwPAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T12:04:43.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T12:04:43.314Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "VehiclesController.cs",
-              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Controllers\\VehiclesController.cs",
+              "DocumentMoniker": "E:\\web-application-eAutoStore\\web-application-eAutoStore\\Controllers\\VehiclesController.cs",
               "RelativeDocumentMoniker": "Controllers\\VehiclesController.cs",
-              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\Controllers\\VehiclesController.cs",
+              "ToolTip": "E:\\web-application-eAutoStore\\web-application-eAutoStore\\Controllers\\VehiclesController.cs",
               "RelativeToolTip": "Controllers\\VehiclesController.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAAAUwJYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T08:52:07.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T08:52:07.357Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "vehicleInfoPopUp.js",
-              "DocumentMoniker": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\vehicleInfoPopUp.js",
+              "DocumentMoniker": "E:\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\js\\vehicleInfoPopUp.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\vehicleInfoPopUp.js",
-              "ToolTip": "C:\\Users\\knish\\Desktop\\web-application-eAutoStore-mai\\web-application-eAutoStore\\wwwroot\\js\\vehicleInfoPopUp.js",
+              "ToolTip": "E:\\web-application-eAutoStore\\web-application-eAutoStore\\wwwroot\\js\\vehicleInfoPopUp.js",
               "RelativeToolTip": "wwwroot\\js\\vehicleInfoPopUp.js",
               "ViewState": "AgIAABgAAAAAAAAAAAASwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("web-application-eAutoStore.INFRASTRUCTURE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+370982ef86578b09d055f20c0a717cdf65351338")]
 [assembly: System.Reflection.AssemblyProductAttribute("web-application-eAutoStore.INFRASTRUCTURE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("web-application-eAutoStore.INFRASTRUCTURE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

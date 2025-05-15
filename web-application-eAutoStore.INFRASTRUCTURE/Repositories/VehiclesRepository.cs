@@ -167,5 +167,24 @@ namespace web_application_eAutoStore.INFRASTRUCTURE.Repositories
             var result = await _dataContext.ClosedVehicles.AddAsync(request);
 			return await SaveAsync();
 		}
+
+        public async Task<List<Vehicle>> GetAllVehiclesAsync()
+        {
+            return await _dataContext.Vehicles.ToListAsync();
+        }
+        public async Task<List<StatOfNewAds>> GetAllStats()
+        {
+            return await _dataContext.StatsOfNewAds.ToListAsync();
+        }
+
+        public async Task<List<DeletedAdvertisement>> GetAllDeletedAdsData()
+        {
+            return await _dataContext.DeletedAdvertisements.ToListAsync();
+        }
+
+        public async Task<List<ClosedVehicle>> GetAllClosedVehiclesData()
+        {
+            return await _dataContext.ClosedVehicles.ToListAsync();
+        }
     }
 }

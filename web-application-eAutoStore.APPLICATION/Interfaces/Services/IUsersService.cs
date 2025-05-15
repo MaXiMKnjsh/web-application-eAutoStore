@@ -16,5 +16,7 @@ namespace web_application_eAutoStore.Interfaces.Services
 		Task<UserDto> GetUserByIdAsync(int id);
 		Task<IEnumerable<VehicleDto>?> GetAdsByIdAsync(IEnumerable<int>? vehsIds);
 		Task<bool> UpdateUserInfoAsync(UpdateUserRequest updateUserRequest, int userId);
-	}
+		Task<List<User>> GetAllUsersData();
+
+    }
 }

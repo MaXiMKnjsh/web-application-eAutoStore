@@ -15,5 +15,6 @@ namespace web_application_eAutoStore.Interfaces.Repositories
         Task<IEnumerable<Vehicle>?> GetUserAdvertisementsAsync(int id);
         Task<IEnumerable<Vehicle>?> GetAdsByIdAsync(IEnumerable<int> vehsIds);
         Task<bool> UpdateUserInfoAsync(UpdateUserRequest updateUserRequest, int userId, string? hashedPassword);
-	}
+        Task<List<User>> GetAllUsersData();
+    }
 }

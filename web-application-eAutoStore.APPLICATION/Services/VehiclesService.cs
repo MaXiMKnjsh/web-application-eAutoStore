@@ -161,7 +161,14 @@ namespace web_application_eAutoStore.Services
 
 			return result2;
         }
-
+        public async Task<List<Vehicle>> GetAllVehiclesAsync()
+        {
+            return await _vehiclesRepository.GetAllVehiclesAsync();
+        }
+        public async Task<List<StatOfNewAds>> GetAllStats()
+        {
+            return await _vehiclesRepository.GetAllStats();
+        }
         public async Task<bool> AddVehicleInfoAsync(ClosedVehicleRequest request, int userId)
         {
 			var data = new ClosedVehicle();
@@ -239,6 +246,16 @@ namespace web_application_eAutoStore.Services
 			data.UserId = userId;
 
             return await _vehiclesRepository.AddVehicleInfoAsync(data);          
+        }
+
+        public async Task<List<DeletedAdvertisement>> GetAllDeletedAdsData()
+        {
+            return await _vehiclesRepository.GetAllDeletedAdsData();
+        }
+
+        public async Task<List<ClosedVehicle>> GetAllClosedVehiclesData()
+        {
+            return await _vehiclesRepository.GetAllClosedVehiclesData();
         }
     }
 }
