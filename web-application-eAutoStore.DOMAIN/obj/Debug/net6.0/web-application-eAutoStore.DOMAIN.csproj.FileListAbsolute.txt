@@ -83,3 +83,16 @@ E:\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0
 E:\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\refint\web-application-eAutoStore.DOMAIN.dll
 E:\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb
 E:\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\ref\web-application-eAutoStore.DOMAIN.dll
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.deps.json
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.dll
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.csproj.AssemblyReference.cache
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.AssemblyInfoInputs.cache
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.AssemblyInfo.cs
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.csproj.CoreCompileInputs.cache
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.sourcelink.json
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.dll
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\refint\web-application-eAutoStore.DOMAIN.dll
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.DOMAIN\obj\Debug\net6.0\ref\web-application-eAutoStore.DOMAIN.dll

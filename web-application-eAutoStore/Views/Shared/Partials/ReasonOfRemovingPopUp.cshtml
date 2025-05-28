@@ -3,28 +3,28 @@
 <div id="modal-delete" class="modal">
     <div class="modal-box">
         <div class="modal-header">
-            <h5>Причина удаления объявления</h5>
+            <h5>Reason of removing</h5>
         </div>
         <div class="modal-body">
             <form id="deleteForm">
                 <div class="radio-group">
                     <label>
-                        <input type="radio" name="reason" value="Sold" required checked> Продано
+                        <input type="radio" name="reason" value="Sold" required checked> Sold
                     </label>
                     <label>
-                        <input type="radio" name="reason" value="ChangedMind" required> Передумал
+                        <input type="radio" name="reason" value="ChangedMind" required> Changed mind
                     </label>
                     <label>
-                        <input type="radio" name="reason" value="DislikePlatform" required> Не нравится платформа
+                        <input type="radio" name="reason" value="DislikePlatform" required> Don't like the platform
                     </label>
                     <label>
-                        <input type="radio" name="reason" value="Another" required> Другая причина
+                        <input type="radio" name="reason" value="Another" required> Another reason
                     </label>
                 </div>
-                <textarea id="removingDescription" name="description" placeholder="Опишите причину" disabled></textarea>
+                <textarea id="removingDescription" name="description" placeholder="Describe the reason" disabled></textarea>
                 <div class="modal-footer">
-                    <button id="btnDeleteVeh" type="submit" class="btn">Удалить</button>
-                    <button type="button" class="btn gray" id="cancel-button">Отмена</button>
+                    <button id="btnDeleteVeh" type="submit" class="btn">Delete</button>
+                    <button type="button" class="btn gray" id="cancel-button">Cancel</button>
                 </div>
             </form>
         </div>

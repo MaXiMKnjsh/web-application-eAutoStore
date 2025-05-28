@@ -3,42 +3,42 @@
 <div id="modal-vehicle-info" class="modal">
     <div class="modal-box">
         <div class="modal-header">
-            <h5>Информация о продаже</h5>
+            <h5>Information about selling</h5>
         </div>
         <div class="modal-body">
             <form id="vehicleInfoForm"> 
 
                 <!-- Источник информации о платформе -->
                 <div class="input-group">
-                    <label for="platformSource">Откуда узнали о платформе:</label>
+                    <label for="platformSource">How have you known about us?:</label>
                     <select id="platformSource" name="platformSource" required>
-                        <option value="ads">Реклама</option>
-                        <option value="friends">Рекомендации друзей</option>
-                        <option value="search">Поиск в интернете</option>
-                        <option value="social">Социальные сети</option>
+                        <option value="ads">Advertisement</option>
+                        <option value="friends">Recommendation</option>
+                        <option value="search">Web search</option>
+                        <option value="social">Social networks</option>
                     </select>
                 </div>
 
                 <!-- Вид продажи -->
                 <div class="input-group">
-                    <label for="saleType">Вид продажи:</label>
+                    <label for="saleType">Type of selling:</label>
                     <select id="saleType" name="saleType" required>
-                        <option value="full-payment">Полная сумма</option>
-                        <option value="installment">Рассрочка</option>
-                        <option value="leasing">Лизинг</option>
-                        <option value="credit">Кредит</option>
+                        <option value="full-payment">Full price</option>
+                        <option value="installment">Installment</option>
+                        <option value="leasing">Leasing</option>
+                        <option value="credit">Credit</option>
                     </select>
                 </div>
 
                 <!-- Комментарий/отзыв -->
                 <div class="input-group">
-                    <label for="feedback">Комментарий / отзыв:</label>
-                    <textarea id="feedback" name="feedback" placeholder="Напишите свой отзыв"></textarea>
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" placeholder="Write your opinion"></textarea>
                 </div>
 
                 <div class="modal-footer">
-                    <button id="btnSubmitVehicleInfo" type="submit" class="btn btn-submit" >Отправить</button>
-                    <button type="button" class="btn btn-cancel" id="btnCancelVehicleInfo">Отмена</button>
+                    <button id="btnSubmitVehicleInfo" type="submit" class="btn btn-submit" >Send</button>
+                    <button type="button" class="btn btn-cancel" id="btnCancelVehicleInfo">Cancel</button>
                 </div>
             </form>
         </div>

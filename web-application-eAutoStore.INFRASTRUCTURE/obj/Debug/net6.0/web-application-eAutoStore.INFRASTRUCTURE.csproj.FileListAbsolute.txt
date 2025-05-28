@@ -125,3 +125,23 @@ E:\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debu
 E:\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.pdb
 E:\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.genruntimeconfig.cache
 E:\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\ref\web-application-eAutoStore.INFRASTRUCTURE.dll
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.deps.json
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.runtimeconfig.json
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.dll
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.pdb
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.APPLICATION.dll
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.dll
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.APPLICATION.pdb
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\bin\Debug\net6.0\web-application-eAutoStore.DOMAIN.pdb
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.csproj.AssemblyReference.cache
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.GeneratedMSBuildEditorConfig.editorconfig
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.AssemblyInfoInputs.cache
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.AssemblyInfo.cs
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.csproj.CoreCompileInputs.cache
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.sourcelink.json
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-appl.EFD70137.Up2Date
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.dll
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\refint\web-application-eAutoStore.INFRASTRUCTURE.dll
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.pdb
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\web-application-eAutoStore.INFRASTRUCTURE.genruntimeconfig.cache
+E:\Диплом\Моё\Правки 28.05\web-application-eAutoStore\web-application-eAutoStore.INFRASTRUCTURE\obj\Debug\net6.0\ref\web-application-eAutoStore.INFRASTRUCTURE.dll
